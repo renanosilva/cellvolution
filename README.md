@@ -1,2 +1,2 @@
 # Principal
-Desenvolvimento em trio do game Cellvolution
+Desenvolvimento do game Cellvolution
