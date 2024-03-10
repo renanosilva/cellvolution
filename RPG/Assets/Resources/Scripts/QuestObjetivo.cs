@@ -2,21 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+[System.Serializable] // Permite que a classe seja serializável e exibida no Unity Inspector
 public class QuestObjetivo 
 {
+    // Tipo de objetivo da quest (coletar itens ou pressionar botão)
     public TipoObjetivo tipoObjetivo;
+    // Referência para o inventário
     public Inventory inventory;
+    // Lista que armazena a quantidade atual de cada item necessário para completar o objetivo
     public List<int> QuantAtual;
+    // Lista que armazena a quantidade requerida de cada item para completar o objetivo
     public List<int> QuantRequerida;
+    // Lista que armazena os IDs dos itens necessários para completar o objetivo
     public List<int> idItem;
+    // Código da tecla associada ao objetivo de pressionar botão
     public KeyCode keyCode;
 
-
-
+    // Método para verificar se o objetivo foi completado
     public bool completou()
     {
         bool r = false;
+        // Percorre a lista de quantidades requeridas e verifica se todas as quantidades atuais são maiores ou iguais às requeridas
         for(int i = 0; i < QuantRequerida.Count; i++)
         {
             if (QuantAtual[i] >= QuantRequerida[i])
@@ -26,30 +32,37 @@ public class QuestObjetivo
             else
             {
                 r = false;
-                break;
+                break; // Se uma quantidade atual for menor que a requerida, sai do loop
             }
         }
         return  r;
-        
     }
-     public void ProgressoColeta(List<int> itensNecessarios,List<int> idN)
+    
+    // Método para atualizar o progresso de coleta de itens
+    public void ProgressoColeta(List<int> itensNecessarios,List<int> idN)
     {
+        // Percorre o inventário
         for (int i = 0; i < inventory.itemInInv.Count; i++)
         {
             int id = inventory.itemInInv[i].id;
+            // Compara os IDs dos itens no inventário com os IDs dos itens necessários
             for (int l = 0; l< QuantAtual.Count; l++)
             {
                 if(idN[l] == id)
                 {
+                    // Atualiza a quantidade atual de cada item necessária para completar o objetivo
                     QuantAtual[l] = inventory.itemInInv[i].count;
                 }
             }
         }
+        // Atualiza a lista de quantidades requeridas com os novos valores
         QuantRequerida = itensNecessarios;
     }
 }
+
+// Enumeração que define os tipos de objetivo possíveis
 public enum TipoObjetivo
 {
-    pressioneBotão,
-    Colete
+    pressioneBotão, // Objetivo de pressionar botão
+    Colete // Objetivo de coletar itens
 }
