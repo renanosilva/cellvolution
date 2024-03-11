@@ -6568,7 +6568,7 @@ PrefabInstance:
     - target: {fileID: 1961942567508527164, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
       propertyPath: m_Text
-      value: "Comunique-se Com Outra C\xE9lula"
+      value: "Comunique-se Com Outra C\xE9lula (Aproxime-se da c\xE9lula para se comunicar)"
       objectReference: {fileID: 0}
     - target: {fileID: 1961942567508527164, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
@@ -48478,6 +48478,12 @@ PrefabInstance:
       propertyPath: OnQuestEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 89a54680c4aa9c34f8b9d25b23631926, type: 3}
+    - target: {fileID: 8392489913380282290, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: "Descri\xE7\xE3o"
+      value: "Direcione-se para a extremidade norte da c\xE9lula e construa o glicocalix
+        (Voc\xEA pode utilizar o minimapa para se orientar)"
+      objectReference: {fileID: 0}
     - target: {fileID: 8392489913337825151, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
       propertyPath: MC
@@ -48793,6 +48799,12 @@ PrefabInstance:
       propertyPath: OnQuestEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 89a54680c4aa9c34f8b9d25b23631926, type: 3}
+    - target: {fileID: 8392489911978243167, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: "Descri\xE7\xE3o"
+      value: "Busque saber o que h\xE1 de errado (procure outras c\xE9lulas na regi\xE3o
+        Norte do organismo)"
+      objectReference: {fileID: 0}
     - target: {fileID: 8392489912062261840, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
       propertyPath: MC
@@ -49273,6 +49285,12 @@ PrefabInstance:
       propertyPath: OnQuestEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 89a54680c4aa9c34f8b9d25b23631926, type: 3}
+    - target: {fileID: 8392489913337825149, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: "Descri\xE7\xE3o"
+      value: "colete 4 glicoses e 3 prote\xEDnas (os itens estar\xE3o epalhados pelo
+        mapa)"
+      objectReference: {fileID: 0}
     - target: {fileID: 8392489913380282289, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
       propertyPath: MC
