@@ -119,6 +119,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (36)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -158,11 +163,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -314,6 +314,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -354,11 +359,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (25)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1 &37209300 stripped
@@ -398,6 +398,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -438,11 +443,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (27)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &68968152
@@ -452,6 +452,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (62)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -492,11 +497,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (62)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!114 &122500985 stripped
@@ -518,6 +518,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (27)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -558,11 +563,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (27)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &135524480 stripped
@@ -578,6 +578,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (43)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -618,11 +623,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (43)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &160314908
@@ -632,6 +632,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (40)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -671,11 +676,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (40)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -1059,6 +1059,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (13)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -1098,11 +1103,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (13)"
       objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
@@ -1475,7 +1475,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &245151029
 MonoBehaviour:
@@ -1497,6 +1497,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (45)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -1537,11 +1542,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (45)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &269579028
@@ -1551,6 +1551,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (48)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -1591,11 +1596,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (48)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &270432180
@@ -1605,6 +1605,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (46)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -1645,11 +1650,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (46)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &279029208
@@ -1659,6 +1659,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (29)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -1699,11 +1704,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (29)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &287882590
@@ -1713,6 +1713,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (54)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -1753,11 +1758,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (54)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &289008473
@@ -1767,6 +1767,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (28)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -1807,11 +1812,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (28)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &289063592
@@ -1821,6 +1821,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (41)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -1860,11 +1865,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -2004,6 +2004,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -2043,11 +2048,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -2161,6 +2161,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (67)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -2200,11 +2205,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (67)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -2376,6 +2376,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (46)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -2416,11 +2421,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (46)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &361987171
@@ -2430,6 +2430,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (41)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -2470,11 +2475,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (41)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &377392355
@@ -2484,6 +2484,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (10)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -2523,11 +2528,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (10)"
       objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
@@ -2702,6 +2702,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (14)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -2741,11 +2746,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (14)"
       objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
@@ -3023,6 +3023,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (20)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -3063,11 +3068,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (20)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &475024760
@@ -3077,6 +3077,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (18)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -3117,11 +3122,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (18)"
-      objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -3141,6 +3141,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (43)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -3180,11 +3185,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (43)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -3317,6 +3317,12 @@ PolygonCollider2D:
       - {x: -2.48, y: -2.4199998}
       - {x: -2.31, y: -2.34}
       - {x: -2.1599998, y: -2.29}
+--- !u!224 &537607011 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3615044951588607053, guid: a88d73eae3854174094641175d58ddba,
+    type: 3}
+  m_PrefabInstance: {fileID: 538338347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &537624214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5250,7 +5256,7 @@ PrefabInstance:
     - target: {fileID: 3615044951588607053, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6067029453672889367, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
@@ -6587,7 +6593,7 @@ PrefabInstance:
     - target: {fileID: 1961942567508527164, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 30
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 2844286698200959447, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
@@ -6848,6 +6854,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -124.09985
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790171631113716873, guid: a88d73eae3854174094641175d58ddba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 308
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790171631113716873, guid: a88d73eae3854174094641175d58ddba,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 416.7
       objectReference: {fileID: 0}
     - target: {fileID: 8251803695430486541, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
@@ -7152,12 +7168,12 @@ PrefabInstance:
     - target: {fileID: 2792797860336826300, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 650
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2792797860336826300, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 290
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 2833167722848343161, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
@@ -7258,6 +7274,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825164022124469342, guid: a88d73eae3854174094641175d58ddba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825164022124469342, guid: a88d73eae3854174094641175d58ddba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 327
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2745963508590924226, guid: a88d73eae3854174094641175d58ddba, type: 3}
@@ -7524,6 +7550,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -7564,11 +7595,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (29)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &542174236
@@ -7578,6 +7604,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (53)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -7618,11 +7649,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (53)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &542537163
@@ -7632,6 +7658,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (66)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -7672,11 +7703,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (66)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &543210244
@@ -7686,6 +7712,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (19)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -7726,11 +7757,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (19)"
-      objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -7750,6 +7776,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -7790,11 +7821,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (30)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &560345153
@@ -7804,6 +7830,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (37)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -7843,11 +7874,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -7937,6 +7963,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (34)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -7977,11 +8008,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (34)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &596328985
@@ -7991,6 +8017,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (38)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -8031,11 +8062,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (38)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1 &606495907 stripped
@@ -8051,6 +8077,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -8090,11 +8121,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -8245,6 +8271,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (39)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -8285,11 +8316,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (39)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &691007604
@@ -8299,6 +8325,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (32)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -8338,11 +8369,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (32)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -8385,6 +8411,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (65)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -8425,11 +8456,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (65)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &727168164
@@ -8439,6 +8465,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (42)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -8479,11 +8510,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (42)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &740601309
@@ -8493,6 +8519,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (23)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -8532,11 +8563,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (23)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -8676,6 +8702,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (49)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -8715,11 +8746,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (49)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -8833,6 +8859,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (57)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -8872,11 +8903,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (57)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -9003,6 +9029,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -9043,11 +9074,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (20)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &823949521
@@ -9057,6 +9083,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (64)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -9096,11 +9127,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (64)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -9227,6 +9253,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (44)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -9267,11 +9298,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (44)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!114 &868338889 stripped
@@ -9286,6 +9312,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca5de7b571d63349803da7a86056eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &878553278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 633776957}
+    m_Modifications:
+    - target: {fileID: 7296803514151531866, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_Name
+      value: MinimapCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296803514151531942, guid: 210319ed8d7f08a49ae0b005e51e1e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 210319ed8d7f08a49ae0b005e51e1e58, type: 3}
 --- !u!1001 &895275192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9293,6 +9388,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (32)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -9332,11 +9432,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -9380,7 +9475,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &933561619
 PrefabInstance:
@@ -9478,6 +9573,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -9517,11 +9617,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -9576,6 +9671,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (26)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -9616,11 +9716,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (26)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1021258176
@@ -9630,6 +9725,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (12)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -9670,11 +9770,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (12)"
-      objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -9694,6 +9789,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (37)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -9734,11 +9834,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (37)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1044839237
@@ -9748,6 +9843,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (11)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -9787,11 +9887,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (11)"
       objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
@@ -9941,6 +10036,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (35)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -9981,11 +10081,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (35)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1071307036
@@ -9995,6 +10090,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (52)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -10035,11 +10135,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (52)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1079221140
@@ -10049,6 +10144,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (38)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -10088,11 +10188,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (38)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -10219,6 +10314,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (60)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -10259,11 +10359,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (60)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1120841565
@@ -10273,6 +10368,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (50)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -10313,11 +10413,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (50)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1124923165
@@ -10327,6 +10422,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (40)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -10367,11 +10467,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (40)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &1140399089 stripped
@@ -10408,7 +10503,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1146328656
 PrefabInstance:
@@ -10417,6 +10512,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -10456,11 +10556,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -10734,7 +10829,7 @@ PrefabInstance:
     - target: {fileID: 6520081835720163742, guid: 6bd45a20947480740b1a56484e1ce1eb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6520081835720163742, guid: 6bd45a20947480740b1a56484e1ce1eb,
         type: 3}
@@ -11235,6 +11330,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (55)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11275,11 +11375,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (55)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1266200847
@@ -11289,6 +11384,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (61)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11328,11 +11428,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (61)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -11387,6 +11482,131 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1793855390}
+--- !u!1001 &1301346680
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 537607011}
+    m_Modifications:
+    - target: {fileID: 7308363966916981805, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_Name
+      value: MinimapWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308363966827103245, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6cc5845a37d88b24fac82585032452e1,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51c9af7e184e5aa4580f4c89d5147cd4, type: 3}
 --- !u!1001 &1302697901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11394,6 +11614,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (47)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11434,11 +11659,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (47)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!114 &1314225016 stripped
@@ -11460,6 +11680,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (56)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11500,11 +11725,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (56)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!114 &1361575040 stripped
@@ -11526,6 +11746,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (22)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -11566,11 +11791,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (22)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1371263251
@@ -11580,6 +11800,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (48)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11620,11 +11845,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (48)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1373610930
@@ -11634,6 +11854,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (58)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11673,11 +11898,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (58)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -11739,6 +11959,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (59)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11778,11 +12003,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (59)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -11896,6 +12116,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -11935,11 +12160,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -12066,6 +12286,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (25)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -12105,11 +12330,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (25)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -12352,6 +12572,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (34)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -12392,11 +12617,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (34)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1464063433
@@ -12406,6 +12626,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (30)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -12445,11 +12670,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (30)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -12742,6 +12962,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (21)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -12782,11 +13007,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (21)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1576194907
@@ -12796,6 +13016,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (16)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -12836,11 +13061,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (16)"
-      objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -12853,85 +13073,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
---- !u!1001 &1576487591
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866217, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_Name
-      value: MinimapCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: orthographic size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866213, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1140399089}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 46ca1bcbfdc1e244792b1012b0e8947e, type: 3}
 --- !u!1001 &1578272576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12939,6 +13080,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (15)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -12978,11 +13124,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (15)"
       objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
@@ -13135,6 +13276,76 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 5.0413294
       objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825866, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_Name
+      value: MC
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8678103473941825867, guid: 8c7a99f1b3a84a945923cd33015bf135,
         type: 3}
       propertyPath: cam
@@ -13210,76 +13421,6 @@ PrefabInstance:
       propertyPath: "Constru\xEDdo"
       value: 
       objectReference: {fileID: 8300000, guid: 38fc7d6493fea6244855e1629922f8c3, type: 3}
-    - target: {fileID: 8678103473941825866, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_Name
-      value: MC
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678103473941825870, guid: 8c7a99f1b3a84a945923cd33015bf135,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8678103473941825869, guid: 8c7a99f1b3a84a945923cd33015bf135,
         type: 3}
       propertyPath: m_Sprite
@@ -13673,6 +13814,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (45)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -13713,11 +13859,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (45)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1604540860
@@ -13727,6 +13868,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (68)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -13767,11 +13913,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (68)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1615596731
@@ -13781,6 +13922,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (49)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -13821,11 +13967,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (49)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1615946473
@@ -13835,6 +13976,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (33)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -13875,11 +14021,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (33)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1621533611
@@ -13889,6 +14030,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (35)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -13929,11 +14075,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (35)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1621600822
@@ -13943,6 +14084,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (51)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -13983,11 +14129,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (51)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &1642503228
@@ -13997,6 +14138,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (24)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -14036,11 +14182,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (24)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -14269,6 +14410,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (44)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -14309,11 +14455,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (44)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1768987725
@@ -14323,6 +14464,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (63)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -14362,11 +14508,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (63)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -14556,6 +14697,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (51)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -14596,11 +14742,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (51)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1845168321
@@ -14610,6 +14751,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (52)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -14649,11 +14795,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (52)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -15077,6 +15218,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (36)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -15117,11 +15263,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (36)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1906374223
@@ -15131,6 +15272,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (31)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -15171,11 +15317,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (31)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1958483051
@@ -15185,6 +15326,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (53)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -15224,11 +15370,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (53)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -15471,6 +15612,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (47)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -15511,11 +15657,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (47)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &1974261235
@@ -15525,6 +15666,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (39)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -15565,11 +15711,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (39)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!114 &1991113222 stripped
@@ -15591,6 +15732,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (33)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -15631,11 +15777,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (33)"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!1001 &2039053111
@@ -15645,6 +15786,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (31)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -15685,11 +15831,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (31)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!95 &2041670071 stripped
@@ -15705,6 +15846,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -15744,11 +15890,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -15799,6 +15940,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (17)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_RootOrder
@@ -15839,11 +15985,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (17)"
-      objectReference: {fileID: 0}
     - target: {fileID: 929678135415126411, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -15869,6 +16010,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (42)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -15908,11 +16054,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -16026,6 +16167,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (69)
+      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_RootOrder
@@ -16066,11 +16212,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.099999994
       objectReference: {fileID: 0}
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (69)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!1001 &2121238536
@@ -16080,6 +16221,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135524480}
     m_Modifications:
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (50)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -16119,11 +16265,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (50)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -48580,7 +48721,7 @@ PrefabInstance:
     - target: {fileID: 8392489911828980072, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8392489911828980072, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
@@ -50083,128 +50224,3 @@ PrefabInstance:
     - {fileID: 2640831953813373218, guid: ee9035a40836a5b4083f5e14f6f7cf88, type: 3}
     - {fileID: 3968194266024690452, guid: ee9035a40836a5b4083f5e14f6f7cf88, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ee9035a40836a5b4083f5e14f6f7cf88, type: 3}
---- !u!1001 &8933389838273986574
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 633776957}
-    m_Modifications:
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866215, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866217, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_Name
-      value: MinimapCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866217, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: orthographic size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_AllowMSAA
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_AllowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_OcclusionCulling
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_Depth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.6997597
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.7038448
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866214, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.8018868
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933389838046866213, guid: 46ca1bcbfdc1e244792b1012b0e8947e,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1140399089}
-    m_RemovedComponents:
-    - {fileID: 8933389838046866213, guid: 46ca1bcbfdc1e244792b1012b0e8947e, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 46ca1bcbfdc1e244792b1012b0e8947e, type: 3}
