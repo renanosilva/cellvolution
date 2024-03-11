@@ -5423,6 +5423,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.98999023
       objectReference: {fileID: 0}
+    - target: {fileID: 500656249596290188, guid: a88d73eae3854174094641175d58ddba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.2475586
+      objectReference: {fileID: 0}
     - target: {fileID: 7695190301165418905, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -6568,7 +6573,7 @@ PrefabInstance:
     - target: {fileID: 1961942567508527164, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
       propertyPath: m_Text
-      value: "Comunique-se Com Outra C\xE9lula (Aproxime-se da c\xE9lula para se comunicar)"
+      value: "Comunique-se Com Outra C\xE9lula (Use as teclas W, S, A, D para se movimentar)"
       objectReference: {fileID: 0}
     - target: {fileID: 1961942567508527164, guid: a88d73eae3854174094641175d58ddba,
         type: 3}
@@ -11572,12 +11577,12 @@ PrefabInstance:
     - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -2450
+      value: -1820
       objectReference: {fileID: 0}
     - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -714
+      value: -980
       objectReference: {fileID: 0}
     - target: {fileID: 7308363966916981806, guid: 51c9af7e184e5aa4580f4c89d5147cd4,
         type: 3}
