@@ -4,37 +4,53 @@ using UnityEngine;
 
 public class Construção : MonoBehaviour
 {
-    // Referência para o script do personagem
     private Char Char;
-    // Flag para indicar se pode abrir a tela de construção
     private bool podeAbrir;
-    // Referência para o objeto da tela de construção
     public GameObject telaConstrução;
 
-    // Distância para ativar a interação com a construção
     [SerializeField]
     public float distance;
+    public TextoQuest t;
+    public string txt;
+    public Quest q;
+    private string mensagem;
+    private float distanceInicial = 1.5f;
 
     private void Start()
     {
-        // Encontra e atribui a referência para o script do personagem
         Char = FindObjectOfType<Char>();
+        mensagem = q.Descrição; 
+
     }
 
     void Update()
     {
-        // Verifica se o personagem está próximo e pressionou a tecla E para interagir com a construção
+
+        if (Vector2.Distance(Char.transform.position, transform.position) < distance)
+        {
+            t.desc.text = txt;
+
+        }
+
         if (Vector2.Distance(Char.transform.position, transform.position) < distance && Input.GetKeyDown(KeyCode.E) && !telaConstrução.activeSelf && podeAbrir)
         {
-            // Ativa a tela de construção e desabilita os controles do personagem
+            distance = 0;
             telaConstrução.SetActive(true);
             Char.DisableControls();
         }
+
+        if (Vector2.Distance(Char.transform.position, transform.position) > distanceInicial)
+        {
+            distance = distanceInicial;
+            t.desc.text = mensagem;
+        }
+
     }
 
-    // Método para definir a flag que permite abrir a tela de construção
     public void SetPodeAbrirTrue()
     {
         podeAbrir = true;
     }
+
+
 }
