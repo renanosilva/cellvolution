@@ -60,7 +60,7 @@ public class Dialogue : MonoBehaviour
         txt.text = "";
         // Converte a string do diálogo em um array de caracteres
         char[] chars = str.ToCharArray();
-        // Itera sobre cada caractere do diálogo
+        // Itera sbore cada caractere do diálogo
         for (int i = 0; i < chars.Length; i++)
         {
             // Inicia uma coroutine para adicionar cada letra com um atraso

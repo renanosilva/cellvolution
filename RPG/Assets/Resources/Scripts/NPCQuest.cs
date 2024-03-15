@@ -17,7 +17,7 @@ public class NPCQuest : MonoBehaviour
     // Método chamado quando o objeto é inicializado
     public void Start()
     {
-        // Obtém a referência para o Collider2D do personagem principal
+        // Obtém a referência para o Collider2D do personagem  principal
         colisor = MC.GetComponent<Collider2D>();
     }
 
