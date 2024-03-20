@@ -13,8 +13,7 @@ public class MenuPrincipalManager : MonoBehaviour
     {
         SceneManager.LoadScene(nomeDoLevelDeJogo);
     }
-    public void abrirOpcoes()
-    {
+    public void abrirOpcoes() {
         painelMenuInicial.SetActive(false);
         painelOpcoes.SetActive(true);
     }
