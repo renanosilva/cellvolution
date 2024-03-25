@@ -22,19 +22,22 @@ public class Construção : MonoBehaviour
 
     void Update()
     {
-        if (Vector2.Distance(Char.transform.position, transform.position) < distance && podeAbrir)
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, distance);
+
+        // Verifica se o personagem está dentro do círculo e atende às condições
+        foreach (Collider2D collider in colliders)
         {
-            t.desc.text = txt;
-        }
-        if (Vector2.Distance(Char.transform.position, transform.position) < distance
-            && Input.GetKeyDown(KeyCode.C)
-            && !telaConstrução.activeSelf
-            && podeAbrir
-            && !GetMissao()) // Verifica se a missão não está concluída
-        {
-            
-            telaConstrução.SetActive(true);
-            Char.DisableControls();
+            if (collider.gameObject == Char.gameObject && podeAbrir && !txt.Equals(""))
+            {
+                t.desc.text = txt;
+            }
+
+            if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
+                && !telaConstrução.activeSelf && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
+            {
+                telaConstrução.SetActive(true);
+                Char.DisableControls();
+            }
         }
     }
 
@@ -49,6 +52,7 @@ public class Construção : MonoBehaviour
         distance = 0;
         missaoConcluida = concluida;
     }
+
     public bool GetMissao()
     {
         return missaoConcluida;

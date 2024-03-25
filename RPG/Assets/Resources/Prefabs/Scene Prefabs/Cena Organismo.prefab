@@ -37,8 +37,96 @@ Transform:
   - {fileID: 4336151597227357350}
   - {fileID: 4449172162389811462}
   m_Father: {fileID: 8392489911828980072}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &331707835125395638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8407873379285322047}
+  - component: {fileID: 9167821365137748708}
+  - component: {fileID: 6614557580397580645}
+  m_Layer: 0
+  m_Name: Q Verdades pt-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8407873379285322047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331707835125395638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8392489911828980072}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9167821365137748708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331707835125395638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5857f0eeabaa112489c9cb76b0c2e15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 6614557580397580645}
+  MC: {fileID: 0}
+  texto: {fileID: 0}
+--- !u!114 &6614557580397580645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331707835125395638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca5de7b571d63349803da7a86056eeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titulo: Q Verdades pt-4
+  "Descri\xE7\xE3o": "Volte para o organismo e fale com a c\xE9lula mencionada."
+  nPC: {fileID: 9167821365137748708}
+  textoQuest: {fileID: 0}
+  npc: {fileID: 8392489912470803188}
+  OnQuestEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8392489912470803179}
+        m_MethodName: IniciarQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  objetivo:
+    tipoObjetivo: 1
+    inventory: {fileID: 0}
+    QuantAtual: 00000000
+    QuantRequerida: 05000000
+    idItem: 01000000
+    keyCode: 0
+  isActive: 1
 --- !u!1 &408780151751335775
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +607,105 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.1573849}
   serializedVersion: 2
   m_Radius: 2.008238
+--- !u!1 &2637282639934982811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445431265923674197}
+  - component: {fileID: 3593314872889058724}
+  - component: {fileID: 4728369683196224082}
+  m_Layer: 0
+  m_Name: Q Verdades pt-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445431265923674197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637282639934982811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8392489911828980072}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3593314872889058724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637282639934982811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5857f0eeabaa112489c9cb76b0c2e15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 4728369683196224082}
+  MC: {fileID: 0}
+  texto: {fileID: 0}
+--- !u!114 &4728369683196224082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637282639934982811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca5de7b571d63349803da7a86056eeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titulo: Q Verdades pt-3
+  "Descri\xE7\xE3o": "V\xE1 at\xE9 os centrilos e melhore o fortalecimento"
+  nPC: {fileID: 3593314872889058724}
+  textoQuest: {fileID: 0}
+  npc: {fileID: 8392489912470803188}
+  OnQuestEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8392489912470803179}
+        m_MethodName: IniciarQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9167821365137748708}
+        m_MethodName: IniciarQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  objetivo:
+    tipoObjetivo: 1
+    inventory: {fileID: 0}
+    QuantAtual: 00000000
+    QuantRequerida: 05000000
+    idItem: 01000000
+    keyCode: 0
+  isActive: 1
 --- !u!1 &3105725185401708388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1222,8 @@ Transform:
   - {fileID: 8392489911978243160}
   - {fileID: 8392489912459859592}
   - {fileID: 8392489913111675634}
+  - {fileID: 445431265923674197}
+  - {fileID: 8407873379285322047}
   - {fileID: 2062693021020764460}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2358,8 +2547,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8392489913111675634}
-  - component: {fileID: 8392489913111675632}
   - component: {fileID: 8392489913111675633}
+  - component: {fileID: 8392489913111675632}
   m_Layer: 0
   m_Name: Q Verdades pt-1
   m_TagString: Untagged
@@ -2381,6 +2570,21 @@ Transform:
   m_Father: {fileID: 8392489911828980072}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8392489913111675633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392489913111675635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5857f0eeabaa112489c9cb76b0c2e15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 8392489913111675632}
+  MC: {fileID: 0}
+  texto: {fileID: 0}
 --- !u!114 &8392489913111675632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2394,7 +2598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titulo: Q Verdades pt-1
-  "Descri\xE7\xE3o": "Fale com a c\xE9lula comentada"
+  "Descri\xE7\xE3o": "Fale com a c\xE9lula comentada, mas primeiro colete 5 proteinas
+    e fortale\xE7a a sua c\xE9lula."
   nPC: {fileID: 8392489913111675633}
   textoQuest: {fileID: 0}
   npc: {fileID: 8392489912470803188}
@@ -2415,28 +2620,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   objetivo:
-    tipoObjetivo: 0
+    tipoObjetivo: 1
     inventory: {fileID: 0}
     QuantAtual: 00000000
-    QuantRequerida: 01000000
-    idItem: 
+    QuantRequerida: 05000000
+    idItem: 01000000
     keyCode: 0
   isActive: 1
---- !u!114 &8392489913111675633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8392489913111675635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5857f0eeabaa112489c9cb76b0c2e15b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 8392489913111675632}
-  MC: {fileID: 0}
-  texto: {fileID: 0}
 --- !u!1 &8392489913236350170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,11 +3260,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3129,6 +3314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -3219,11 +3409,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3279,6 +3464,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982330390185039 stripped
@@ -3294,11 +3484,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (3)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3354,6 +3539,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (3)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770030857485972 stripped
@@ -3369,11 +3559,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (12)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3429,6 +3614,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (12)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318563480542 stripped
@@ -3444,11 +3634,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (2)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3504,6 +3689,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (2)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318558941685 stripped
@@ -3519,11 +3709,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (14)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3579,6 +3764,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (14)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318735256545 stripped
@@ -3594,11 +3784,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (8)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3654,6 +3839,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (8)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318716115090 stripped
@@ -3669,11 +3859,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (19)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3728,6 +3913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (19)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -3818,11 +4008,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3877,6 +4062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -4041,11 +4231,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4101,6 +4286,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982330105005482 stripped
@@ -4116,11 +4306,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (15)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4176,6 +4361,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (15)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318861110668 stripped
@@ -4191,11 +4381,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (3)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4251,6 +4436,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (3)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318840564886 stripped
@@ -4266,11 +4456,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4326,6 +4511,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982330131874610 stripped
@@ -4341,11 +4531,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4401,6 +4586,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982330160201339 stripped
@@ -4416,11 +4606,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (1)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4476,6 +4661,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (1)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318804724440 stripped
@@ -4491,11 +4681,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (18)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4551,6 +4736,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (18)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318993783665 stripped
@@ -4566,11 +4756,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (7)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4626,6 +4811,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (7)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770030533202215 stripped
@@ -4641,11 +4831,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4701,6 +4886,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (10)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982330254247468 stripped
@@ -4716,11 +4906,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4776,6 +4961,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (15)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982330270620297 stripped
@@ -4791,11 +4981,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (16)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4851,6 +5036,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (16)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921318929585074 stripped
@@ -4866,11 +5056,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4925,6 +5110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -5015,11 +5205,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (4)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5075,6 +5260,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (4)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770031475770204 stripped
@@ -5090,11 +5280,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5150,6 +5335,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (8)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329889664603 stripped
@@ -5165,11 +5355,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5225,6 +5410,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329886852024 stripped
@@ -5240,11 +5430,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (5)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5299,6 +5484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (5)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -5389,11 +5579,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5449,6 +5634,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329817406039 stripped
@@ -5464,11 +5654,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5524,6 +5709,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329811224270 stripped
@@ -5539,11 +5729,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (9)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5598,6 +5783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (9)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -5688,11 +5878,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5748,6 +5933,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (14)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329931394000 stripped
@@ -5763,11 +5953,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5823,6 +6008,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329952573713 stripped
@@ -5838,11 +6028,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5898,6 +6083,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (18)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329617834791 stripped
@@ -5913,11 +6103,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (9)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5973,6 +6158,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (9)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770031181877411 stripped
@@ -5988,11 +6178,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (8)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6048,6 +6233,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (8)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770031140535947 stripped
@@ -6063,11 +6253,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6123,6 +6308,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770031097122635 stripped
@@ -6138,11 +6328,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6198,6 +6383,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (19)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329740296058 stripped
@@ -6213,11 +6403,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6273,6 +6458,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (17)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982329732296005 stripped
@@ -6288,11 +6478,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (6)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6347,6 +6532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (6)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -6437,11 +6627,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6496,6 +6681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -6586,11 +6776,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (11)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6645,6 +6830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (11)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -6735,11 +6925,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (2)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6795,6 +6980,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (2)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770031747153438 stripped
@@ -6810,11 +7000,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (1)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6870,6 +7055,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (1)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770031690387990 stripped
@@ -6885,11 +7075,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (6)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6945,6 +7130,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (6)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
 --- !u!4 &6323770031707223720 stripped
@@ -6960,11 +7150,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7019,6 +7204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
@@ -7109,11 +7299,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (10)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7169,6 +7354,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (10)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921317919791294 stripped
@@ -7184,11 +7374,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Glicose (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 7684602462022419836, guid: b7e5c4dc19ff41446988f097bfcc56e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7244,6 +7429,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684602462022419809, guid: b7e5c4dc19ff41446988f097bfcc56e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Glicose (12)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7e5c4dc19ff41446988f097bfcc56e3, type: 3}
 --- !u!4 &2223982328779883758 stripped
@@ -7259,11 +7449,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (13)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7319,6 +7504,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (13)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921317009130778 stripped
@@ -7334,11 +7524,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (4)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7393,6 +7578,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (4)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
@@ -7483,11 +7673,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (7)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7543,6 +7728,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (7)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
 --- !u!4 &5445921317152672890 stripped
@@ -7558,11 +7748,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
-        type: 3}
-      propertyPath: m_Name
-      value: "Lip\xEDdios (5)"
-      objectReference: {fileID: 0}
     - target: {fileID: 2574535384218289515, guid: f32f9914e27870041815541dbf72b753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7617,6 +7802,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721163238590381703, guid: f32f9914e27870041815541dbf72b753,
+        type: 3}
+      propertyPath: m_Name
+      value: "Lip\xEDdios (5)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32f9914e27870041815541dbf72b753, type: 3}
@@ -7707,11 +7897,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8392489912976301211}
     m_Modifications:
-    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
-        type: 3}
-      propertyPath: m_Name
-      value: "Prote\xEDna (17)"
-      objectReference: {fileID: 0}
     - target: {fileID: 4606005434108656310, guid: 483f5dc76421ba14aa3a9751dde473f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7766,6 +7951,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606005434108656307, guid: 483f5dc76421ba14aa3a9751dde473f0,
+        type: 3}
+      propertyPath: m_Name
+      value: "Prote\xEDna (17)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483f5dc76421ba14aa3a9751dde473f0, type: 3}
