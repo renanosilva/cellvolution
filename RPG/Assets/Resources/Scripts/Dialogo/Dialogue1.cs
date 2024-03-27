@@ -38,7 +38,7 @@ public class Dialogue1 : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && onRadious && !estaAberto)
+        if (/*Input.GetKeyDown(KeyCode.Space) &&*/ onRadious && !estaAberto)
         {
             dc.Speech(profile, speechText, actorName);
             estaAberto = true;
