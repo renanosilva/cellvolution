@@ -16,6 +16,7 @@ public class DialogueControl : MonoBehaviour
     private int turnoAtual = 0;
 
     public NPC NPC;
+    public Char player;
     public Dialogue1 dialogue;
 
     [Header("Settings")]
@@ -84,6 +85,7 @@ public class DialogueControl : MonoBehaviour
                 index = 0;
                 dialogueObj.SetActive(false);
                 turnoAtual = 0;
+                player.EnableControls();
             }
         }
     }

@@ -11,6 +11,7 @@ public class Dialogue1 : MonoBehaviour
 
     public NPC npc;
     public NPC1 npc1;
+    public Char player;
 
     public LayerMask playerLayer;
     public float radius;
@@ -42,6 +43,7 @@ public class Dialogue1 : MonoBehaviour
         {
             dc.Speech(profile, speechText, actorName);
             estaAberto = true;
+            player.DisableControls();
         }
     }
 

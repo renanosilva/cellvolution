@@ -15015,6 +15015,7 @@ MonoBehaviour:
   actorNameText: {fileID: 5704226487152330376}
   qtdTurnos: 
   NPC: {fileID: 1909161058}
+  player: {fileID: 1598014818}
   dialogue: {fileID: 1909161065}
   typingSpeed: 0
 --- !u!114 &1909161065
@@ -15034,6 +15035,7 @@ MonoBehaviour:
   actorName: CEL GEN
   npc: {fileID: 1909161058}
   npc1: {fileID: 1909161056}
+  player: {fileID: 1598014818}
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -16164,6 +16166,7 @@ MonoBehaviour:
   actorName: Organismo
   npc: {fileID: 2064745479}
   npc1: {fileID: 2064745480}
+  player: {fileID: 1598014818}
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -16187,6 +16190,7 @@ MonoBehaviour:
   actorNameText: {fileID: 5704226487152330376}
   qtdTurnos: 
   NPC: {fileID: 2064745479}
+  player: {fileID: 1598014818}
   dialogue: {fileID: 2064745483}
   typingSpeed: 0
 --- !u!1 &2074345975
@@ -25405,6 +25409,7 @@ GameObject:
   - component: {fileID: 5704226488961566753}
   - component: {fileID: 5704226488961566751}
   - component: {fileID: 5704226488961566750}
+  - component: {fileID: 5704226488961566754}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -25432,6 +25437,25 @@ RectTransform:
   m_AnchoredPosition: {x: 451, y: -59}
   m_SizeDelta: {x: 150.1, y: 75.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &5704226488961566754
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5704226488961566752}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 828969072926a7b478eb63a330211e70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5708625192565156816
 GameObject:
   m_ObjectHideFlags: 0
@@ -60870,6 +60894,236 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 3265765683918216970}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1413160682}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 2093313838}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[5]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[7]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[8]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[9]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[10]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[11]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[12]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[13]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[14]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[15]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 3265765683918216970}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1909161054}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[5]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[7]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
+        type: 3}
+      propertyPath: qtdTurnosnpc.Array.data[8]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8392489913337825150, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
       propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.size
@@ -61116,161 +61370,6 @@ PrefabInstance:
       propertyPath: MinimapCam
       value: 
       objectReference: {fileID: 3615044951757583549}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.size
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 3265765683918216970}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 1413160682}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Target
-      value: 
-      objectReference: {fileID: 2093313838}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[2]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[3]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[4]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[5]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[6]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[7]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[8]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[9]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[10]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[11]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[12]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[13]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[14]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600451, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[15]
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8392489912220600456, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
       propertyPath: OnQuestEnd.m_PersistentCalls.m_Calls.Array.size
@@ -61376,81 +61475,6 @@ PrefabInstance:
       propertyPath: texto
       value: 
       objectReference: {fileID: 8250508729397415570}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 3265765683918216970}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 1909161054}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[2]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[3]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[4]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[5]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[6]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[7]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392489912220600463, guid: ee9035a40836a5b4083f5e14f6f7cf88,
-        type: 3}
-      propertyPath: qtdTurnosnpc.Array.data[8]
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8392489912281174327, guid: ee9035a40836a5b4083f5e14f6f7cf88,
         type: 3}
       propertyPath: MinimapCam
