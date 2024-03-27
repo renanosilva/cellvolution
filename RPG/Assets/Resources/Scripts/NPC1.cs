@@ -17,9 +17,10 @@ public class NPC1 : MonoBehaviour
 
     [Header("Imports")] // Cabeçalho para importações de outros componentes
     // Referência para o script do diálogo
-    public Dialogue dialogue;
+
     // Lista de falas do NPC
-    public List<string> falas = new List<string>();
+    public string[] falas;
+    public int[] qtdTurnosnpc;
     // Referência para o Collider2D
     private Collider2D collider;
     // Referência para a quest associada ao NPC
@@ -47,13 +48,11 @@ public class NPC1 : MonoBehaviour
         if (collider.tag == "Player")
         {
             // Define o NPC como o NPC1 do diálogo
-            dialogue.nPC1 = this;
         }
         // Verifica se a condição para iniciar o diálogo é verdadeira
         if (condição == true)
         {
             // Inicia o diálogo
-            dialogue.showDiolog();
         }
     }
 
