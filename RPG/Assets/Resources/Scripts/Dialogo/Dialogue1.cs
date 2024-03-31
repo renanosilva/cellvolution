@@ -11,6 +11,7 @@ public class Dialogue1 : MonoBehaviour
 
     public NPC npc;
     public NPC1 npc1;
+    public NPC2 npc2;
     public Char player;
 
     public LayerMask playerLayer;
@@ -27,7 +28,7 @@ public class Dialogue1 : MonoBehaviour
 
     private void Update()
     {
-        if (npc.condição == true)
+        if (npc.condição == true )
         {
             speechText = npc.falas;
             dc.qtdTurnos = npc.qtdTurnosnpc;
@@ -37,6 +38,13 @@ public class Dialogue1 : MonoBehaviour
             speechText = npc1.falas;
             dc.qtdTurnos = npc1.qtdTurnosnpc;
         }
+
+        if (npc2.condição == true)	
+        {
+            speechText = npc2.falas;
+            dc.qtdTurnos = npc2.qtdTurnosnpc;
+        }
+
 
 
         if (/*Input.GetKeyDown(KeyCode.Space) &&*/ onRadious && !estaAberto)

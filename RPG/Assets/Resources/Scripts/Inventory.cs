@@ -57,6 +57,8 @@ public class Inventory : MonoBehaviour
     public AudioClip seleção; // Som de seleção de item
 
     // Inicialização
+    
+    
     private void Start()
     {
         // Inicialização de variáveis e componentes
@@ -165,7 +167,15 @@ public class Inventory : MonoBehaviour
         if (option == true)
         {
             // Prepara o inventário para ser mostrado
-            itensToShow.Clear();
+            if (itensToShow != null)
+            {
+                itensToShow.Clear();
+            }
+            else 
+            {
+                itensToShow = new List<string>();
+            }
+
             selected = 0;
             invScene.SetActive(true);
             audioManager.PlayAudio(abriu);

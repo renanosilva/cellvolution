@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.UI;
 
 public class DialogueControl : MonoBehaviour
@@ -43,6 +44,13 @@ public class DialogueControl : MonoBehaviour
         }
     }
 
+    public void FixedUpdate(){
+        if(dialogueObj.activeSelf){
+            if(Input.GetKeyDown(KeyCode.Return)){
+                NextSentence();
+            }
+        }
+    }
     public void NextSentence()
     {
         if(speechText.text == sentences[index])

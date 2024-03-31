@@ -64,5 +64,7 @@ public class QuestObjetivo
 public enum TipoObjetivo
 {
     pressioneBotão, // Objetivo de pressionar botão
-    Colete // Objetivo de coletar itens
+    Colete, // Objetivo de coletar itens
+    none 
+    
 }

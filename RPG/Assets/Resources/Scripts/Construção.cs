@@ -37,6 +37,11 @@ public class Construção : MonoBehaviour
             {
                 telaConstrução.SetActive(true);
                 Char.DisableControls();
+            }else if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
+                && telaConstrução.activeSelf && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
+            {
+                telaConstrução.SetActive(false);
+                Char.DisableControls();
             }
         }
     }
@@ -51,6 +56,7 @@ public class Construção : MonoBehaviour
     {
         distance = 0;
         missaoConcluida = concluida;
+        Char.EnableControls();
     }
 
     public bool GetMissao()
