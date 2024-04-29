@@ -56,6 +56,9 @@ public class Inventory : MonoBehaviour
     public AudioClip abriu; // Som de abertura do inventário
     public AudioClip seleção; // Som de seleção de item
 
+    public Image imagemItemSelecionado;
+
+
     // Inicialização
     
     
@@ -69,6 +72,7 @@ public class Inventory : MonoBehaviour
         description = GameObject.Find("Descricao").GetComponent<Text>();
         itemBG = GameObject.Find("itemBG").GetComponent<ItemBG>();
         invScene.SetActive(false);
+
     }
 
     // Método para adicionar um item ao inventário
@@ -185,7 +189,7 @@ public class Inventory : MonoBehaviour
                 int id = itemInInv[i].id;
                 itemImages[i].ItemInvsprite = itemInInv[i].imagemDoItem;
                 if (i == 0)
-                    itensToShow.Add("> " + ItemsDB[id].name + " / " + itemInInv[i].count);
+                    itensToShow.Add(ItemsDB[id].name + " / " + itemInInv[i].count);
                 else
                     itensToShow.Add(ItemsDB[id].name + " / " + itemInInv[i].count);
             }
@@ -243,12 +247,6 @@ public class Inventory : MonoBehaviour
     public void selectedItem(int item)
     {
         selected += item;
-        for (int i = 0; i < itensToShow.Count; i++)
-        {
-            itensToShow[i] = itensToShow[i].Replace(">", "");
-            if (i == selected)
-                itensToShow[i] = ">" + itensToShow[i];
-        }
         reloadInv();
     }
 
@@ -260,7 +258,9 @@ public class Inventory : MonoBehaviour
         {
             for (int i = 0; i < itensToShow.Count; i++)
             {
-                itens.text += itensToShow[i] + "\n";
+                itens.text = itensToShow[selected];
+                imagemItemSelecionado.sprite = itemInInv[selected].imagemDoItem;
+                imagemItemSelecionado.color = new Color32(255, 255, 255, 255);
             }
             if (itemInInv[selected].id >= 0 && itemInInv[selected].id < ItemsDB.Count)
             {
