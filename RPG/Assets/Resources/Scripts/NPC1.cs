@@ -9,20 +9,20 @@ public class NPC1 : MonoBehaviour
     [Header("EnemyConfig")] // Cabeçalho para configurações do NPC
     
     // Nome do NPC
-    public string name;
+    public string nome;
     // Condição que determina se o diálogo pode ser iniciado
     public bool condição = false;
     // Referência para o script do personagem
     private Char @char;
 
     [Header("Imports")] // Cabeçalho para importações de outros componentes
-    // Referência para o script do diálogo
+    // Referência para o script do diálogon
 
     // Lista de falas do NPC
     public string[] falas;
     public int[] qtdTurnosnpc;
     // Referência para o Collider2D
-    private Collider2D collider;
+    private Collider2D colisor;
     // Referência para a quest associada ao NPC
     private Quest quest;
 
@@ -34,7 +34,7 @@ public class NPC1 : MonoBehaviour
     private void Start()
     {
         // Obtém a referência para o Collider2D do personagem
-        collider = GameObject.Find("MC").GetComponent<Collider2D>();
+        colisor = GameObject.Find("MC").GetComponent<Collider2D>();
         // Obtém a referência para o script do personagem
         @char = GameObject.Find("MC").GetComponent<Char>();
         // Obtém a referência para a quest associada ao NPC
@@ -45,7 +45,7 @@ public class NPC1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Verifica se o objeto que entrou na área de colisão é o personagem
-        if (collider.tag == "Player")
+        if (colisor.tag == "Player")
         {
             // Define o NPC como o NPC1 do diálogo
         }
@@ -60,7 +60,7 @@ public class NPC1 : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         // Verifica se o objeto que saiu da área de colisão é o personagem e se a condição para iniciar o diálogo é verdadeira
-        if (collider.tag == "Player" && condição == true)
+        if (colisor.tag == "Player" && condição == true)
         {
             // Invoca o evento ao final do diálogo
             OnDialogueEnd.Invoke();

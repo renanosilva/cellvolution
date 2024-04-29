@@ -46,6 +46,7 @@ public class DialogueControl : MonoBehaviour
 
     public void FixedUpdate(){
         if(dialogueObj.activeSelf){
+            
             if(Input.GetKeyDown(KeyCode.Return)){
                 NextSentence();
             }
@@ -78,7 +79,7 @@ public class DialogueControl : MonoBehaviour
 
                     if (qtdTurnos[turnoAtual] == 0)
                     {
-                        actorNameText.text = NPC.name;
+                        actorNameText.text = NPC.nome;
                         nameAtual = 0;
                         turnoAtual++;
                         profile.sprite = dialogue.profile;

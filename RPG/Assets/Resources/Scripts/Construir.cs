@@ -11,7 +11,7 @@ public class Construir : MonoBehaviour
     // Array de itens necessários para a construção
     public Item[] items;
     // Referência para o animador
-    public Animator animation;
+    public Animator anim;
     // Referência para o botão falso
     public GameObject fakeButton;
     // Referência para o script do personagem
@@ -51,7 +51,7 @@ public class Construir : MonoBehaviour
             else
             {
                 // Se não houver itens suficientes, reproduz a animação e o áudio
-                animation.Play("ISFentry");
+                anim.Play("ISFentry");
                 pessoa.audioManager.PlayAudio(pessoa.ISF);
                 r = false;
                 break;
