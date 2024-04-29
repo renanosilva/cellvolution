@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3a6360937ab3b40acfe90b7514347f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDoLevelDeJogo: Organismo
+  nomeDoLevelDeJogo: Intro
   painelMenuInicial: {fileID: 137956432}
   painelOpcoes: {fileID: 1813082524}
 --- !u!4 &215591245

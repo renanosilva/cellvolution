@@ -14,7 +14,7 @@ public class DialogueControl : MonoBehaviour
     private float nameAtual = 0;
    
     public int[] qtdTurnos;
-    private int turnoAtual = 0;
+    public int turnoAtual = 0;
 
     public NPC NPC;
     public Char player;
