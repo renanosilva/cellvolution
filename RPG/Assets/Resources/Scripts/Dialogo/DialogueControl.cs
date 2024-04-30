@@ -96,7 +96,7 @@ public class DialogueControl : MonoBehaviour
                 turnoAtual = 0;
                 player.EnableControls();
             }
-        }
+        } 
     }
 
    
