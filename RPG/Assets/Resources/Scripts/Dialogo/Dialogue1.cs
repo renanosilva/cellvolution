@@ -33,13 +33,14 @@ public class Dialogue1 : MonoBehaviour
             speechText = npc.falas;
             dc.qtdTurnos = npc.qtdTurnosnpc;
         }
-        else if (npc1.condição == true)
+
+        if (npc1.condição == true)
         {
             speechText = npc1.falas;
             dc.qtdTurnos = npc1.qtdTurnosnpc;
         }
 
-        else if (npc2.condição == true)	
+        if (npc2 != null && npc2.condição == true)	
         {
             speechText = npc2.falas;
             dc.qtdTurnos = npc2.qtdTurnosnpc;
