@@ -6,7 +6,8 @@ public class Construção : MonoBehaviour
 {
     private Char Char;
     private bool podeAbrir;
-    public GameObject telaConstrução;
+    public GameObject[] telaConstrução;
+    private int nivelAtual; // Nível atual da construção
 
     [SerializeField]
     public float distance;
@@ -33,14 +34,14 @@ public class Construção : MonoBehaviour
             }
 
             if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
-                && !telaConstrução.activeSelf && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
+                && telaConstrução[nivelAtual].activeSelf == false && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
             {
-                telaConstrução.SetActive(true);
+                telaConstrução[nivelAtual].SetActive(true);
                 Char.DisableControls();
             }else if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
-                && telaConstrução.activeSelf && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
+                && telaConstrução[nivelAtual].activeSelf && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
             {
-                telaConstrução.SetActive(false);
+                telaConstrução[nivelAtual].SetActive(false);
                 Char.DisableControls();
             }
         }
@@ -57,6 +58,13 @@ public class Construção : MonoBehaviour
         distance = 0;
         missaoConcluida = concluida;
         Char.EnableControls();
+       
+    }
+    public void SetProximoNivelConstrucao(){
+        distance = 1.5f;
+        missaoConcluida = false; 
+        podeAbrir = false; 
+        nivelAtual++;
     }
 
     public bool GetMissao()
