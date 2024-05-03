@@ -30,6 +30,8 @@ public class NPC1 : MonoBehaviour
     // Evento Unity que é invocado ao final do diálogo
     public UnityEvent OnDialogueEnd;
 
+    public Dialogue1 dialogue;
+
     // Método chamado quando o objeto é inicializado
     private void Start()
     {
@@ -62,8 +64,11 @@ public class NPC1 : MonoBehaviour
         // Verifica se o objeto que saiu da área de colisão é o personagem e se a condição para iniciar o diálogo é verdadeira
         if (colisor.tag == "Player" && condição == true)
         {
-            // Invoca o evento ao final do diálogo
-            OnDialogueEnd.Invoke();
+            if (dialogue.forcaMembranaRequerida <= AtributoManager.instance.forcaMembrana || dialogue.nivelComunicacaoRequerido <= AtributoManager.instance.nivelComunicacao)
+            {
+                // Invoca o evento ao final do diálogo
+                OnDialogueEnd.Invoke();
+            }
         }
     }
 

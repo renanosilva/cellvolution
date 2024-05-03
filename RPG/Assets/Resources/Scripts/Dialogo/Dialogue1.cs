@@ -7,12 +7,15 @@ public class Dialogue1 : MonoBehaviour
     public Sprite profile;
     public string[] speechText;
     public string actorName;
-    private bool estaAberto;
+    public bool estaAberto;
 
     public NPC npc;
     public NPC1 npc1;
     public NPC2 npc2;
     public Char player;
+
+    public int forcaMembranaRequerida;
+    public int nivelComunicacaoRequerido;
 
     public LayerMask playerLayer;
     public float radius;
@@ -50,15 +53,37 @@ public class Dialogue1 : MonoBehaviour
 
         if (/*Input.GetKeyDown(KeyCode.Space) &&*/ onRadious && !estaAberto)
         {
-            dc.Speech(profile, speechText, actorName);
-            estaAberto = true;
-            player.DisableControls();
+
+            if ((AtributoManager.instance.forcaMembrana >= forcaMembranaRequerida) || (AtributoManager.instance.nivelComunicacao >= nivelComunicacaoRequerido))
+            {
+                dc.Speech(profile, speechText, actorName);
+                estaAberto = true;
+                player.DisableControls();
+                
+            }
+            else
+            {
+                string[] speechTextISF = new string[1];
+                int[] qtdTurnosISF = new int[1];
+
+                speechTextISF[0] = "Sua estrutura Celular Precisa ter forca da membrana maior ou igual a " + forcaMembranaRequerida + 
+                    " e nivel de comunicação maior ou igual a " + nivelComunicacaoRequerido + ". Aumente esses atributos e depois volte aqui";
+                qtdTurnosISF[0] = 1;
+
+                dc.qtdTurnos = qtdTurnosISF;
+
+                dc.Speech(profile, speechTextISF, "Bloqueado");
+                estaAberto = true;
+                player.DisableControls();
+            }
         }
     }
 
     private void FixedUpdate()
     {
         Interact();
+
+        
     }
 
     public void Interact()
