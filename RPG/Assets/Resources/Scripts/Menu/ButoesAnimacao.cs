@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class ButoesAnimacao : MonoBehaviour
 {
+    // Configuração da movimentação
+    public float amplitude = 0.1f; // Amplitude do balanço
+    public float speed = 1.0f; // Velocidade do balanço
 
-    public float speed = 1f; // Velocidade de movimento da imagem de fundo
-    public float amplitude = 1f; // Amplitude do movimento vertical
-    private Vector3 posicaoIncial;
+    // Posição original da imagem
+    private Vector3 originalPosition;
 
     void Start()
     {
-        posicaoIncial = transform.position;
+        // Salva a posição original da imagem
+        originalPosition = transform.position;
     }
 
     void Update()
     {
-        // Calcula a posição vertical baseada no tempo, na velocidade e na amplitude do movimento
-        float posicaoV = Mathf.Sin(Time.time * speed) * amplitude;
-
-        // Aplica o deslocamento na posição do objeto
-        transform.position = posicaoIncial + new Vector3(0, posicaoV, 0);
+        // Calcula a posição vertical baseada em uma função senoidal
+        float yOffset = Mathf.Sin(Time.time * speed) * amplitude;
+        // Aplica a posição vertical à imagem
+        transform.position = originalPosition + new Vector3(0, yOffset, 0);
     }
 }
