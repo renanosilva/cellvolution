@@ -24,6 +24,7 @@ public class DialogueControl : MonoBehaviour
     public float typingSpeed;
     private string[] sentences;
     private int index;
+     private bool showFullText = false;
     
 
     public void Speech(Sprite p, string[] txt, string actorName)
@@ -35,10 +36,17 @@ public class DialogueControl : MonoBehaviour
         StartCoroutine(TypeSentence());
     }
 
-    IEnumerator TypeSentence()
+       IEnumerator TypeSentence()
     {
         foreach (char letter in sentences[index].ToCharArray())
         {
+            if (showFullText) // Verifica se deve mostrar todo o texto imediatamente
+            {
+                speechText.text = sentences[index];
+                showFullText = false; // Reinicia a variável para o próximo texto
+                yield break; // Sai da coroutine
+            }
+
             speechText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
@@ -47,13 +55,28 @@ public class DialogueControl : MonoBehaviour
     public void FixedUpdate(){
         if(dialogueObj.activeSelf){
             
-            if(Input.GetKeyDown(KeyCode.Return)){
-                NextSentence();
+              if(Input.GetKeyDown(KeyCode.P)){
+                GoToLastSentence();
             }
+                if (Input.GetKeyDown(KeyCode.Return))
+            {
+                showFullText = true;
+               
+            }
+
         }
     }
+
+    public void GoToLastSentence()
+{
+    index = sentences.Length - 1; // Define o índice para o último elemento do array
+    StopAllCoroutines(); // Interrompe todas as coroutines em execução
+    speechText.text = sentences[index]; // Atualiza o texto do diálogo para o último elemento
+}
+
     public void NextSentence()
     {
+      
         if(speechText.text == sentences[index])
         {
             //ainda há textos
@@ -95,6 +118,7 @@ public class DialogueControl : MonoBehaviour
                 dialogueObj.SetActive(false);
                 turnoAtual = 0;
                 player.EnableControls();
+               
             }
         } 
     }

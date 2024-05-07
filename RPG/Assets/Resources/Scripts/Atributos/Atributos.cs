@@ -74,5 +74,17 @@ public class Atributos : MonoBehaviour {
         textoNivelComunicacao.text = "Nivel de comunicação: " + nivelComunicacao;
     }
 
+    public int GetVelocidade()
+    {
+        return velocidade;
+    }
+
+    public int GetForcaMembrana(){
+        return forcaMembrana;
+    }
+
+    public int GetNivelComunicacao(){
+        return nivelComunicacao;
+    }
 
 }

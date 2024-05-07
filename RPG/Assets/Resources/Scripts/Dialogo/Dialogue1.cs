@@ -9,19 +9,25 @@ public class Dialogue1 : MonoBehaviour
     public string actorName;
     public bool estaAberto;
 
+    [Header("Referência ao NPC")]
     public NPC npc;
     public NPC1 npc1;
     public NPC2 npc2;
+    [Header("Referência ao player")]
     public Char player;
 
+    [Header("Habilidades requeridas")]
     public int forcaMembranaRequerida;
     public int nivelComunicacaoRequerido;
 
+    [Header("Layer do player")]
     public LayerMask playerLayer;
+    [Header("Raio de colisão")]
     public float radius;
 
+    [Header("Referência ao dialogue control")]
     public DialogueControl dc;
-    bool onRadious;
+    public bool onRadious;
 
     private void Start()
     {
