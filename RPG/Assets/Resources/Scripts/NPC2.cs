@@ -64,7 +64,7 @@ public class NPC2 : MonoBehaviour
         // Verifica se o objeto que saiu da área de colisão é o personagem e se a condição para iniciar o diálogo é verdadeira
         if (colisor.tag == "Player" && condição == true)
         {
-            if (dialogue.forcaMembranaRequerida <= AtributoManager.instance.forcaMembrana || dialogue.nivelComunicacaoRequerido <= AtributoManager.instance.nivelComunicacao)
+            if (dialogue.forcaMembranaRequerida <= AtributoManager.instance.forcaMembrana && dialogue.nivelComunicacaoRequerido <= AtributoManager.instance.nivelComunicacao)
             {
                 // Invoca o evento ao final do diálogo
                 OnDialogueEnd.Invoke();

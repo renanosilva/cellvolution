@@ -5,25 +5,34 @@ using UnityEngine.UI;
 
 public class Atributos : MonoBehaviour {
 
+    //atributos referentes às habilidades
     private int velocidade;
     private int forcaMembrana;
     private int nivelComunicacao;
 
+    //atributos referentes às barreiras
+    private int nivelFortalecimento;
+
+    [Header("Objetos do painel de atributos")]
     public Text textoVelocidade;
     public Text textoForcaMembrana;
     public Text textoNivelComunicacao;
-
     public GameObject painelAtributos;
     
 
     // Start is called before the first frame update
     void Start()
     {
+
+        //Atributos referentes à habilidades
         velocidade = AtributoManager.instance.velocidade;
         forcaMembrana = AtributoManager.instance.forcaMembrana;
         nivelComunicacao = AtributoManager.instance.nivelComunicacao;
 
+        //Atributos referentes às barreiras
+        nivelFortalecimento = AtributoManager.instance.nivelFortalecimento;
 
+        //Substituindo os textos dos objetos do painel de atributos
         textoVelocidade.text = "Velocidade: " + AtributoManager.instance.velocidade;
         textoForcaMembrana.text = "Força da Membrana: " + AtributoManager.instance.forcaMembrana;
         textoNivelComunicacao.text = "Nivel de comunicação: " + AtributoManager.instance.nivelComunicacao;
@@ -53,38 +62,32 @@ public class Atributos : MonoBehaviour {
     }
 
 
-    public void SetVelocidade(int velocidade)
+    public void SetAumentoVelocidade(int velocidade)
     {
-        this.velocidade = velocidade;
-        AtributoManager.instance.velocidade = velocidade;
-        textoVelocidade.text = "Velocidade: " + velocidade;
+        this.velocidade = this.velocidade + velocidade;
+        AtributoManager.instance.velocidade = this.velocidade;
+        textoVelocidade.text = "Velocidade: " + this.velocidade;
     }
 
-    public void SetForcaMembrana(int forcaMembrana)
+    public void SetAumentoForcaMembrana(int forcaMembrana)
     {
-        this.forcaMembrana = forcaMembrana;
-        AtributoManager.instance.forcaMembrana = forcaMembrana;
-        textoForcaMembrana.text = "Força da Membrana: " + forcaMembrana;
+        this.forcaMembrana = this.forcaMembrana + forcaMembrana;
+        AtributoManager.instance.forcaMembrana = this.forcaMembrana;
+        textoForcaMembrana.text = "Força da Membrana: " + this.forcaMembrana;
     }
 
-    public void SetNivelComunicacao(int nivelComunicacao)
+    public void SetAumentoNivelComunicacao(int nivelComunicacao)
     {
-        this.nivelComunicacao = nivelComunicacao;
-        AtributoManager.instance.nivelComunicacao = nivelComunicacao;
-        textoNivelComunicacao.text = "Nivel de comunicação: " + nivelComunicacao;
+        this.nivelComunicacao = this.nivelComunicacao + nivelComunicacao;
+        AtributoManager.instance.nivelComunicacao = this.nivelComunicacao;
+        textoNivelComunicacao.text = "Nivel de comunicação: " + this.nivelComunicacao;
     }
 
-    public int GetVelocidade()
+    public void SetAumentoNivelFortalecimento(int nivelFortalecimento)
     {
-        return velocidade;
+        this.nivelFortalecimento = this.nivelFortalecimento + nivelFortalecimento;
+        AtributoManager.instance.nivelFortalecimento = this.nivelFortalecimento;
     }
 
-    public int GetForcaMembrana(){
-        return forcaMembrana;
-    }
-
-    public int GetNivelComunicacao(){
-        return nivelComunicacao;
-    }
 
 }

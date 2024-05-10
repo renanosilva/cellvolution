@@ -9,9 +9,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 [Serializable]
 public class PlayerDados
 {
+    //Atributos referentes às habilidades
     public int velocidade;
     public int forcaMembrana;
     public int nivelComunicacao;
+
+    //Atributos referentes às barreiras
+    public int nivelFortalecimento;
 }
 
 
@@ -19,9 +23,13 @@ public class AtributoManager : MonoBehaviour {
 
     public static AtributoManager instance;
 
+    [Header("Atributos referentes às habilidades")]
     public int velocidade;
     public int forcaMembrana;
     public int nivelComunicacao;
+
+    [Header("Atributos referentes às barreiras")]
+    public int nivelFortalecimento;
 
     private string path;
 
@@ -52,6 +60,8 @@ public class AtributoManager : MonoBehaviour {
         data.forcaMembrana = forcaMembrana;
         data.nivelComunicacao = nivelComunicacao;
 
+        data.nivelFortalecimento = nivelFortalecimento;
+
         bf.Serialize(file, data);
 
         file.Close();
@@ -70,6 +80,8 @@ public class AtributoManager : MonoBehaviour {
             velocidade = data.velocidade;
             forcaMembrana = data.forcaMembrana;
             nivelComunicacao = data.nivelComunicacao;
+
+            nivelFortalecimento = data.nivelFortalecimento;
         }
     }
 

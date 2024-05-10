@@ -57,11 +57,14 @@ public class DialogueControl : MonoBehaviour
             
               if(Input.GetKeyDown(KeyCode.P)){
                 GoToLastSentence();
-            }
-                if (Input.GetKeyDown(KeyCode.Return))
-            {
+              }
+
+              if (Input.GetKeyDown(KeyCode.U)){
                 showFullText = true;
-               
+              }
+
+              if (Input.GetKeyDown(KeyCode.Return)){
+                NextSentence();
             }
 
         }

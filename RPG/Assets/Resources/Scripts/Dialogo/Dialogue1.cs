@@ -8,6 +8,7 @@ public class Dialogue1 : MonoBehaviour
     public string[] speechText;
     public string actorName;
     public bool estaAberto;
+    public bool celulaMissao;
 
     [Header("Referência ao NPC")]
     public NPC npc;
@@ -19,6 +20,10 @@ public class Dialogue1 : MonoBehaviour
     [Header("Habilidades requeridas")]
     public int forcaMembranaRequerida;
     public int nivelComunicacaoRequerido;
+    public string textoBloqueio;
+
+    [Header("Referência ao grupo das missões secundárias")]
+    public GameObject grupoMissoes;
 
     [Header("Layer do player")]
     public LayerMask playerLayer;
@@ -29,11 +34,6 @@ public class Dialogue1 : MonoBehaviour
     public DialogueControl dc;
     public bool onRadious;
 
-    private void Start()
-    {
-        dc = FindObjectOfType<DialogueControl>();
-        
-    }
 
     private void Update()
     {
@@ -60,11 +60,13 @@ public class Dialogue1 : MonoBehaviour
         if (/*Input.GetKeyDown(KeyCode.Space) &&*/ onRadious && !estaAberto)
         {
 
-            if ((AtributoManager.instance.forcaMembrana >= forcaMembranaRequerida) || (AtributoManager.instance.nivelComunicacao >= nivelComunicacaoRequerido))
+            if ((AtributoManager.instance.forcaMembrana >= forcaMembranaRequerida) && (AtributoManager.instance.nivelComunicacao >= nivelComunicacaoRequerido))
             {
                 dc.Speech(profile, speechText, actorName);
                 estaAberto = true;
                 player.DisableControls();
+
+                SetGrupoMissoes(false);
                 
             }
             else
@@ -72,8 +74,7 @@ public class Dialogue1 : MonoBehaviour
                 string[] speechTextISF = new string[1];
                 int[] qtdTurnosISF = new int[1];
 
-                speechTextISF[0] = "Sua estrutura Celular Precisa ter forca da membrana maior ou igual a " + forcaMembranaRequerida + 
-                    " e nivel de comunicação maior ou igual a " + nivelComunicacaoRequerido + ". Aumente esses atributos e depois volte aqui";
+                speechTextISF[0] = textoBloqueio;
                 qtdTurnosISF[0] = 1;
 
                 dc.qtdTurnos = qtdTurnosISF;
@@ -81,8 +82,16 @@ public class Dialogue1 : MonoBehaviour
                 dc.Speech(profile, speechTextISF, "Bloqueado");
                 estaAberto = true;
                 player.DisableControls();
+
+                SetGrupoMissoes(true);
+
             }
         }
+        else if(!onRadious && celulaMissao)
+        {
+            estaAberto = false;
+        }
+
     }
 
     private void FixedUpdate()
@@ -114,5 +123,13 @@ public class Dialogue1 : MonoBehaviour
     public void SetEstaAberto(bool state)
     {
         estaAberto = state;
+    }
+
+    public void SetGrupoMissoes(bool state)
+    {
+        if(grupoMissoes != null)
+        {
+            grupoMissoes.SetActive(state);
+        }
     }
 }
