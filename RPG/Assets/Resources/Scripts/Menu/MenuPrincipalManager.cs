@@ -8,10 +8,11 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private string nomeDoLevelDeJogo;
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
+    [SerializeField] private LevelLoader levelLoader;
 
     public void jogar()
     {
-        SceneManager.LoadScene(nomeDoLevelDeJogo);
+        levelLoader.Transition(nomeDoLevelDeJogo);
     }
     public void abrirOpcoes() {
         painelMenuInicial.SetActive(false);

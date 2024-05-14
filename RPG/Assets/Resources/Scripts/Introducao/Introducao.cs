@@ -10,6 +10,9 @@ public class Introducao : MonoBehaviour
     int contador = 0;
     public Text texto;
 
+    [Header("referência ao levelLoader")]
+    public LevelLoader levelLoader;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +28,7 @@ public class Introducao : MonoBehaviour
             yield return new WaitForSeconds(5);
             StartCoroutine(rotina());
         } else {
-            SceneManager.LoadScene("Organismo");
+            levelLoader.Transition("Organismo");
         }
 
     }
