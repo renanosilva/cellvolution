@@ -8,12 +8,13 @@ public class Construção : MonoBehaviour
     private bool podeAbrir;
     [Header("Menu de Construção")]   
     public GameObject[] telaConstrução;
-    [Header("Menu de construção necessario")]
-    public Construção[] construcao;
-    private int construcaoNecessaria;
-    private bool  checkConstrução;
-
+    
     private int ConstrucaoAtual; // Nível atual da construção
+    [Header("Menu de construção necessario")]
+    public Construção construcao;
+    public Construção construção2; 
+    private bool  checkConstrução;
+    private bool  checkConstrução2;
 
     [SerializeField]
     public float distance;
@@ -26,7 +27,7 @@ public class Construção : MonoBehaviour
 
     [Header("Animação da construção ao conclui-la")]
     public Animator anim;
-    public Animator anim2;
+ 
 
     private void Start()
     {
@@ -36,11 +37,12 @@ public class Construção : MonoBehaviour
     void Update()
     {
 
-        if (construcaoNecessaria >= 0 && construcaoNecessaria < construcao.Length && construcao[construcaoNecessaria] != null)
+        if ( construcao != null)
         {
-             checkConstrução = construcao[construcaoNecessaria].GetMissao();
-        }else{
-            Debug.Log("Nao foi possivel construir");
+             checkConstrução = construcao.GetMissao();
+        }
+        if(construção2 != null){
+            checkConstrução2 = construção2.GetMissao();
         }
        
 
@@ -94,34 +96,24 @@ public class Construção : MonoBehaviour
 
     public void ConstruçãoConcluída(){
         Debug.Log("ENTROU NO METODO");
-        if(construcao[construcaoNecessaria] != null ){
+        if(construcao != null && construção2 == null){
                 if(checkConstrução == true){
                     SetMissaoConcluida(true);
-                }else  if(anim2 != null){
-                        
-                        anim2.Play("NPAentry");
-
-                    }
-            
-            if(construcaoNecessaria >= 1){
-                if(checkConstrução == true){
-                    construcaoNecessaria++;
-
-                    if(checkConstrução == true){
-                        SetMissaoConcluida(true);
-                        if(anim != null){
-                            anim.Play("NPAentry");
-                        }
-                    }
-                }else{
-                    if(anim2 != null){
-                        
-                        anim2.Play("NPAentry");
-
-                    }
+                    
                 }
+        }    
+        if(construcao == null && construção2 != null){
+            if(checkConstrução2 == true){
+                SetMissaoConcluida(true);
             }
-        }                       
+        }        
+        if(construcao != null && construção2 != null){
+            if(checkConstrução == true && checkConstrução2 == true){
+                SetMissaoConcluida(true);
+
+            }
+        }   
+       
     }
 
     public bool GetMissao()
