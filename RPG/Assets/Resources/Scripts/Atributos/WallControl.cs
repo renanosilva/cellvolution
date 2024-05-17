@@ -35,6 +35,7 @@ public class WallControl : MonoBehaviour {
             if(AtributoManager.instance.forcaMembrana >= nivelForcaMembranaRequerida)
             {
                 barreira.SetActive(false);
+                objMissoes.SetActive(false);
             }
             else
             {

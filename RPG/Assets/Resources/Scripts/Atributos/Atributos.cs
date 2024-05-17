@@ -18,6 +18,7 @@ public class Atributos : MonoBehaviour {
     public Text textoForcaMembrana;
     public Text textoNivelComunicacao;
     public GameObject painelAtributos;
+    public GameObject textoMissoes;
     
 
     // Start is called before the first frame update
@@ -50,6 +51,7 @@ public class Atributos : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 painelAtributos.SetActive(true);
+                textoMissoes.SetActive(false);
             }
         }
         else if(painelAtributos.activeSelf)
@@ -57,6 +59,7 @@ public class Atributos : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 painelAtributos.SetActive(false);
+                textoMissoes.SetActive(true);
             }
         }
     }
