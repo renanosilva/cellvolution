@@ -10,6 +10,9 @@ public class MenuPausa : MonoBehaviour
 
     public GameObject pausePanel;
 
+    [Header("referência ao levelLoader")]
+    public LevelLoader levelLoader;
+
     private bool paused;
 
     // Update is called once per frame
@@ -29,7 +32,8 @@ public class MenuPausa : MonoBehaviour
 
     void Loading()
     {
-        SceneManager.LoadSceneAsync("Menu");
+        //SceneManager.LoadSceneAsync("Menu");
+        levelLoader.Transition("Menu");
     }
 
     public void Pause()
