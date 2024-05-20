@@ -368,15 +368,16 @@ MonoBehaviour:
     imerso em uma narrativa fascinante que segue sua jornada desde uma c\xE9lula simples
     at\xE9 uma estrutura complexa e especializada."
   - "Prepare-se para enfrentar obst\xE1culos e desafios inimagin\xE1veis enquanto
-    navega por ambientes celulares diversificados, enfrentando amea\xE7as como v\xEDrus,
-    toxinas e estresses ambientais. No entanto, com habilidade, estrat\xE9gia e conhecimento,
-    voc\xEA poder\xE1 prosperar e evoluir, desbloqueando novas funcionalidades e alcan\xE7ando
+    navega por ambientes celulares diversificados, enfrentando amea\xE7as como v\xEDrus
+    e bact\xE9rias . No entanto, com habilidade, estrat\xE9gia e conhecimento, voc\xEA
+    poder\xE1 prosperar e evoluir, desbloqueando novas funcionalidades e alcan\xE7ando
     novos patamares de complexidade e efici\xEAncia."
   - "Embarque nesta aventura microsc\xF3pica e descubra o fascinante mundo oculto
     dentro de cada c\xE9lula, onde a vida come\xE7a e os segredos da exist\xEAncia
     s\xE3o revelados. Sua jornada est\xE1 prestes a come\xE7ar, c\xE9lula. O mundo
-    espera por voc\xEA."
+    espera por voc\xEA!"
   texto: {fileID: 926852834}
+  tempoEspera: 20
   levelLoader: {fileID: 2040120298}
 --- !u!4 &1085791987
 Transform:

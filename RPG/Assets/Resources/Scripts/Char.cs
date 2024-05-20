@@ -45,16 +45,14 @@ public class Char : MonoBehaviour
     }
 
     // Corotina para trocar animações
-    public IEnumerator trocarAnimadores()
+    public void trocarAnimadores()
     {
         if (scene == "Dentro")
         {
             // Define a animação, desabilita controles, aguarda e troca de animação
-            anim.Play("TP");
-            DisableControls();
-            yield return new WaitForSeconds(2);
-            anim.runtimeAnimatorController = Resources.Load("Animations/McAnim/MC Celula") as RuntimeAnimatorController;
             EnableControls();
+            anim.Play("TP");
+            anim.runtimeAnimatorController = Resources.Load("Animations/McAnim/MC Celula") as RuntimeAnimatorController;
             transform.position = transformSave.position;
             backgroundAudio.PlayAudio(orgBG);
         }
@@ -67,8 +65,7 @@ public class Char : MonoBehaviour
             anim.Play("TPinvertido");
             backgroundAudio.PlayAudio(cellBG);
             DisableControls();
-            yield return new WaitForSeconds(2);
-            EnableControls();   
+            Invoke("EnableControls", 2.5f);
         }
     }
 

@@ -9,6 +9,7 @@ public class Introducao : MonoBehaviour
     public string[] textos;
     int contador = 0;
     public Text texto;
+    public int tempoEspera;
 
     [Header("referência ao levelLoader")]
     public LevelLoader levelLoader;
@@ -25,9 +26,10 @@ public class Introducao : MonoBehaviour
         contador++;
 
         if(contador < textos.Length) {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(tempoEspera);
             StartCoroutine(rotina());
         } else {
+            yield return new WaitForSeconds(tempoEspera);
             levelLoader.Transition("Organismo");
         }
 
