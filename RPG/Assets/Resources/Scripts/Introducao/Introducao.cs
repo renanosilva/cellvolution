@@ -9,7 +9,6 @@ public class Introducao : MonoBehaviour
     public string[] textos;
     int contador = 0;
     public Text texto;
-    public int tempoEspera;
 
     [Header("referência ao levelLoader")]
     public LevelLoader levelLoader;
@@ -17,21 +16,24 @@ public class Introducao : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(rotina());
+        texto.text = textos[contador];
     }
 
-    public IEnumerator rotina()
+    private void FixedUpdate()
     {
-        texto.text = textos[contador];
-        contador++;
+        ProximoTexto();
+    }
 
+    public void ProximoTexto()
+    {
         if(contador < textos.Length) {
-            yield return new WaitForSeconds(tempoEspera);
-            StartCoroutine(rotina());
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                contador++;
+                texto.text = textos[contador];
+            }
         } else {
-            yield return new WaitForSeconds(tempoEspera);
             levelLoader.Transition("Organismo");
         }
-
     }
 }
