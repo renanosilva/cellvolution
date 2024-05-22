@@ -16,9 +16,11 @@ public class DialogueControl : MonoBehaviour
     public int[] qtdTurnos;
     public int turnoAtual = 0;
 
-    public NPC NPC;
+    //public NPC NPC;
     public Char player;
-    public Dialogue1 dialogue;
+    //public Dialogue1 dialogue;
+    private Sprite spriteNpc;
+    private string nomeNpc;
 
     [Header("Settings")]
     public float typingSpeed;
@@ -31,8 +33,10 @@ public class DialogueControl : MonoBehaviour
     {
         dialogueObj.SetActive(true);
         profile.sprite = p;
+        spriteNpc = p;
         sentences = txt;
         actorNameText.text = actorName;
+        nomeNpc = actorName;
         StartCoroutine(TypeSentence());
     }
 
@@ -63,9 +67,9 @@ public class DialogueControl : MonoBehaviour
                 showFullText = true;
               }
 
-              if (Input.GetKeyDown(KeyCode.Return)){
+             /* if (Input.GetKeyDown(KeyCode.Return)){
                 NextSentence();
-            }
+            }*/
 
         }
     }
@@ -105,10 +109,10 @@ public class DialogueControl : MonoBehaviour
 
                     if (qtdTurnos[turnoAtual] == 0)
                     {
-                        actorNameText.text = NPC.nome;
+                        actorNameText.text = nomeNpc;
                         nameAtual = 0;
                         turnoAtual++;
-                        profile.sprite = dialogue.profile;
+                        profile.sprite = spriteNpc;
                     }
                 }
 
@@ -121,6 +125,7 @@ public class DialogueControl : MonoBehaviour
                 dialogueObj.SetActive(false);
                 turnoAtual = 0;
                 player.EnableControls();
+                nameAtual = 0;
                
             }
         } 
