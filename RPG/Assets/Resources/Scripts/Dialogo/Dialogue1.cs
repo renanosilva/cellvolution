@@ -16,6 +16,7 @@ public class Dialogue1 : MonoBehaviour
     public NPC2 npc2;
     [Header("Referência ao player")]
     public Char player;
+    private Collider2D colisor;
 
     [Header("Habilidades requeridas")]
     public int forcaMembranaRequerida;
@@ -35,31 +36,53 @@ public class Dialogue1 : MonoBehaviour
     public bool onRadious;
 
 
-    private void Update()
+    private void Start()
     {
-        if (npc.condição == true )
+        colisor = GameObject.Find("MC").GetComponent<Collider2D>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        VerificarNPC();
+        ChamarDialogo();
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (colisor.tag == "Player" && celulaMissao == true)
+        {
+            estaAberto = false;
+        }
+    }
+
+
+    public void VerificarNPC()
+    {
+        if (npc.condição == true)
         {
             speechText = npc.falas;
             dc.qtdTurnos = npc.qtdTurnosnpc;
         }
 
-        if (npc1.condição == true)
+        else if (npc1.condição == true)
         {
             speechText = npc1.falas;
             dc.qtdTurnos = npc1.qtdTurnosnpc;
         }
 
-        if (npc2 != null && npc2.condição == true)	
+        else if (npc2 != null && npc2.condição == true)
         {
             speechText = npc2.falas;
             dc.qtdTurnos = npc2.qtdTurnosnpc;
         }
 
+    }
 
-
-        if (/*Input.GetKeyDown(KeyCode.Space) &&*/ onRadious && !estaAberto)
+    public void ChamarDialogo()
+    {
+        if (colisor.tag == "Player" && !estaAberto)
         {
-
             if ((AtributoManager.instance.forcaMembrana >= forcaMembranaRequerida) && (AtributoManager.instance.nivelComunicacao >= nivelComunicacaoRequerido))
             {
                 dc.Speech(profile, speechText, actorName);
@@ -67,7 +90,7 @@ public class Dialogue1 : MonoBehaviour
                 player.DisableControls();
 
                 SetGrupoMissoes(false);
-                
+
             }
             else
             {
@@ -87,33 +110,8 @@ public class Dialogue1 : MonoBehaviour
 
             }
         }
-        else if(!onRadious && celulaMissao)
-        {
-            estaAberto = false;
-        }
-
     }
 
-    private void FixedUpdate()
-    {
-        Interact();
-
-        
-    }
-
-    public void Interact()
-    {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
-
-        if(hit != null)
-        {
-            onRadious = true;
-        }
-        else
-        {
-            onRadious = false;
-        }
-    }
 
     private void OnDrawGizmosSelected()
     {
