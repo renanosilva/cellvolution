@@ -51,7 +51,11 @@ public class Construir : MonoBehaviour
             else
             {
                 // Se não houver itens suficientes, reproduz a animação e o áudio
-                anim.Play("ISFentry");
+                Debug.LogWarning("Itens insuficientes!");
+                if(anim != null){
+                     anim.Play("ISFentry");
+
+                }
                 pessoa.audioManager.PlayAudio(pessoa.ISF);
                 r = false;
                 break;
@@ -111,6 +115,7 @@ public class Construir : MonoBehaviour
         }
         else
         {
+            Debug.LogWarning("Itens insuficientes!");
             v = false;
         }
         return v;
@@ -149,6 +154,7 @@ public class Construir : MonoBehaviour
         }
         else
         {
+            Debug.LogWarning("Itens insuficientes! Não é possível consumir os itens!");
             Debug.Log("ISF");
         }
     }

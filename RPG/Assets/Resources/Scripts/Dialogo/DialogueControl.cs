@@ -74,12 +74,14 @@ public class DialogueControl : MonoBehaviour
         }
     }
 
-    public void GoToLastSentence()
+   public void GoToLastSentence()
 {
     index = sentences.Length - 1; // Define o índice para o último elemento do array
     StopAllCoroutines(); // Interrompe todas as coroutines em execução
     speechText.text = sentences[index]; // Atualiza o texto do diálogo para o último elemento
+
 }
+
 
     public void NextSentence()
     {

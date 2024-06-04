@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class Char : MonoBehaviour
 {
     // Variáveis públicas para configurar o personagem
     [Header("CharConfig")]
     public float Speed; // Velocidade do personagem
+
+    private float SpeedInicial;
+    public float health; 
+    public float onTime;
+    public bool OnTochEnime;
+
     [Header("Imports")]
     public Camera cam; // Referência para a câmera
     public TextoQuest texto; // Referência para o texto da quest
@@ -30,17 +37,39 @@ public class Char : MonoBehaviour
     private Transform transformSave; // Posição para salvar transformação
     public Quest quest; // Referência para a quest
     public ManagerScenes ms; // Gerenciador de cenas
-    public string scene; // Nome da cena
 
+    [Header("Purificacao Celular - Attack do player")]
+    public PurificacaoCelular purificacaoCelular;
+
+    public GameObject canvaTimer;
+    public GameObject canvaEnergia;
+
+    public BarrasController barraDeTempo;
+
+    public BarrasController barraDeEnergia;
+    private float energia;
+
+    public string scene; // Nome da cena
+    
+    public transformacao transformacao;
+
+    private bool transformed = false;
+    private damageable damageable;
     private void Awake()       
     {
         audioManager = GetComponent<AudioManager>(); // Obtém o componente AudioManager
         anim = GetComponent<Animator>(); // Obtém o componente Animator
         transformSave = GameObject.Find("TransformTpSave").GetComponent<Transform>(); // Encontra e obtém o transform para salvar
+        damageable = GetComponent<damageable>();
     }
 
     void Start()
     {
+        SpeedInicial = Speed;
+        if(purificacaoCelular != null){
+
+            energia = purificacaoCelular.energiaUsada;
+        }
         // Não há funcionalidades específicas no Start neste código
     }
 
@@ -109,9 +138,111 @@ public class Char : MonoBehaviour
         canControl = true;
     }
 
+    public void OnExitTochEnime(){
+        Speed = SpeedInicial;
+        OnTochEnime = false;
+    }
+    
+
+    private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.gameObject.tag == "Enime" && OnTochEnime == false ){
+            Speed -= 1f/100f;
+            OnTochEnime = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision){
+
+
+        if(collision.gameObject.tag == "Enime"){
+            Invoke("OnExitTochEnime", onTime);
+        }
+    }
+
+    void ativarTransformacao(){
+        transformed = !transformed;
+    }
     // Método chamado a cada frame
     private void Update()
     {
+        barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
+        if(Input.GetKey(KeyCode.T) && transformacao.IsInCooldown() == false && transformacao.transformBloque){
+            ativarTransformacao();
+            transformacao.SetIsTransformed(transformed);
+
+        }
+
+        if(transformacao.IsTransformed() == true){
+            if(barraDeEnergia.vidaAtual > 0f){
+                transformacao.ActivateTransformation();
+                anim.SetTrigger("OnTransformacao");
+
+            }
+
+        }
+
+        if(barraDeEnergia.vidaAtual < 100f){
+
+            canvaEnergia.gameObject.SetActive(true);
+        }
+        if(purificacaoCelular != null){
+
+            
+            if(Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true  && transformacao.GetCurrentEnergy() >= 15f && transformacao.IsTransformed() == true){
+
+                purificacaoCelular.SetISReactivation(false);
+                purificacaoCelular.AtivarReactiveAttack(false);
+                anim.SetTrigger("OnPurificacao");
+                canvaTimer.SetActive(true);
+                purificacaoCelular.AtivarAtaque(true);
+                purificacaoCelular.SetTimer(purificacaoCelular.timerAttack);
+                purificacaoCelular.SetReactiveTimerDelay();
+                barraDeTempo.vidaAtual = purificacaoCelular.timerAttack;
+                barraDeTempo.vidaMaxima = purificacaoCelular.timerAttack;
+
+                anim.SetTrigger("OnPurificacao2");
+
+                barraDeEnergia.vidaAtual = damageable.DimiuirEnergia(purificacaoCelular.energiaUsada);
+                Debug.LogWarning("Ativando purificacao");
+            }else{
+                Debug.LogWarning("Condicoes requeridas para ativacao nao atendidas");
+            }
+
+            if(purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 0f){
+
+                Debug.LogWarning("Desativando purificacao");
+                anim.SetTrigger("DesativarPurificacao");
+                purificacaoCelular.AtivarAtaque(false);
+                purificacaoCelular.SetTimer(0.8f);
+
+            }
+
+            if(purificacaoCelular.GetIsReactiveAttack() == false && purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 1f){
+
+                Debug.LogWarning("Reativando purificacao");
+                purificacaoCelular.ReactiveAttack();
+            }
+
+            if(purificacaoCelular.GetReactivationTimer() < 0f){
+
+                canvaTimer.SetActive(false);
+            }
+           
+        }
+        
+        health = damageable.GetHealth();
+
+        if(scene == "Dentro"){
+
+            if(purificacaoCelular != null){
+                purificacaoCelular.AtivarReactiveAttack(true);
+                barraDeTempo.vidaAtual = purificacaoCelular.timerAttack;
+                purificacaoCelular.SetIsAttackActive(false);
+                canvaTimer.gameObject.SetActive(false);
+            }
+             
+        }
+
         // Verifica se o personagem pode ser controlado
         if (canControl == true)
         {
@@ -186,5 +317,10 @@ public class Char : MonoBehaviour
                 }
             }
         }
+    }
+
+    public bool GetCanControl()
+    {
+        return canControl;
     }
 }
