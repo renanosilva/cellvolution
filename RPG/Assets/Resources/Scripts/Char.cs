@@ -166,17 +166,16 @@ public class Char : MonoBehaviour
     private void Update()
     {
         barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
-        if(Input.GetKey(KeyCode.T) && transformacao.IsInCooldown() == false && transformacao.transformBloque){
-            ativarTransformacao();
-            transformacao.SetIsTransformed(transformed);
 
-        }
+        transformacao.SetIsTransformed(transformed);
+        if(Input.GetKeyDown(KeyCode.K)){
+            if(transformacao.IsInCooldown() == false && transformacao.transformBloque && purificacaoCelular.GetIsAttackActive() == false){
+                ativarTransformacao();
+                Debug.LogWarning("Ativando transformação");
+                anim.SetTrigger("OnTransformacao"); 
 
-        if(transformacao.IsTransformed() == true){
-            if(barraDeEnergia.vidaAtual > 0f){
-                transformacao.ActivateTransformation();
-                anim.SetTrigger("OnTransformacao");
-
+            }else if(transformed == false){
+                transformacao.ActivateTransformation(false);
             }
 
         }
@@ -185,51 +184,7 @@ public class Char : MonoBehaviour
 
             canvaEnergia.gameObject.SetActive(true);
         }
-        if(purificacaoCelular != null){
 
-            
-            if(Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true  && transformacao.GetCurrentEnergy() >= 15f && transformacao.IsTransformed() == true){
-
-                purificacaoCelular.SetISReactivation(false);
-                purificacaoCelular.AtivarReactiveAttack(false);
-                anim.SetTrigger("OnPurificacao");
-                canvaTimer.SetActive(true);
-                purificacaoCelular.AtivarAtaque(true);
-                purificacaoCelular.SetTimer(purificacaoCelular.timerAttack);
-                purificacaoCelular.SetReactiveTimerDelay();
-                barraDeTempo.vidaAtual = purificacaoCelular.timerAttack;
-                barraDeTempo.vidaMaxima = purificacaoCelular.timerAttack;
-
-                anim.SetTrigger("OnPurificacao2");
-
-                barraDeEnergia.vidaAtual = damageable.DimiuirEnergia(purificacaoCelular.energiaUsada);
-                Debug.LogWarning("Ativando purificacao");
-            }else{
-                Debug.LogWarning("Condicoes requeridas para ativacao nao atendidas");
-            }
-
-            if(purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 0f){
-
-                Debug.LogWarning("Desativando purificacao");
-                anim.SetTrigger("DesativarPurificacao");
-                purificacaoCelular.AtivarAtaque(false);
-                purificacaoCelular.SetTimer(0.8f);
-
-            }
-
-            if(purificacaoCelular.GetIsReactiveAttack() == false && purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 1f){
-
-                Debug.LogWarning("Reativando purificacao");
-                purificacaoCelular.ReactiveAttack();
-            }
-
-            if(purificacaoCelular.GetReactivationTimer() < 0f){
-
-                canvaTimer.SetActive(false);
-            }
-           
-        }
-        
         health = damageable.GetHealth();
 
         if(scene == "Dentro"){
@@ -322,5 +277,10 @@ public class Char : MonoBehaviour
     public bool GetCanControl()
     {
         return canControl;
+    }
+
+    public bool GetTransformed()
+    {
+        return transformed;
     }
 }
