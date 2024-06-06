@@ -35,10 +35,13 @@ public class Dialogue1 : MonoBehaviour
     public DialogueControl dc;
     public bool onRadious;
 
+    private GameObject seta;
+
 
     private void Start()
     {
         colisor = GameObject.Find("MC").GetComponent<Collider2D>();
+        seta = GameObject.Find("TargetIndicator");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -108,6 +111,11 @@ public class Dialogue1 : MonoBehaviour
 
                 SetGrupoMissoes(true);
 
+            }
+
+            if(seta != null)
+            {
+                seta.SetActive(false);
             }
         }
     }
