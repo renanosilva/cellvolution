@@ -4,104 +4,177 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    // Saúde do inimigo
     public float health;
+    // Referência ao objeto do jogador
     public GameObject Player; 
+    // Velocidade de movimento do inimigo
     public float speed;
+    // Distância mínima para o jogador que ativa certos comportamentos
     public float distancePlayer;
 
+    // Ponto inicial do inimigo
     public Transform startPoint;
 
+    // Referência ao componente Rigidbody2D do inimigo
     private Rigidbody2D rb;
+    // Referência ao componente CircleCollider2D do inimigo
     private CircleCollider2D circle;
     
+    // Referência ao componente SpriteRenderer do inimigo
     private SpriteRenderer sprite;
 
+    // Referência ao componente damageable do inimigo
     private damageable damageable;
 
+    // Referência ao script PurificacaoCelular no jogador
     public PurificacaoCelular purificacao;
 
+    // Taxa de disparo do inimigo
     public float fireRate;
-    private float nextFireTime;  // Adicionado para controlar o tempo da próxima instância
+    // Tempo do próximo disparo permitido
+    private float nextFireTime;
 
+    // Array de pontos de passagem para onde a plataforma deve se mover
+    public Transform[] wayPoints;
+    // Tempo de espera entre mudanças de direção
+    public float waitTime;
+    // Direção do movimento: 1 para frente, -1 para trás
+    private int dir = 1;
+    // Índice atual no array de wayPoints
+    private int index;
+    // Flag para verificar se a plataforma está esperando
+    private bool wait;
+    // Temporizador para contar o tempo de espera
+    private float timer;
+
+    // Prefab do inimigo que será instanciado como projétil
     public Rigidbody2D enemyPrefab;
+    // Ponto de spawn do projétil
     public Transform shotSpawn;
 
+    // Referência ao componente Animator do inimigo
     private Animator anim;
 
     // Lista para rastrear clones do enemyPrefab
     private List<Rigidbody2D> enemyClones = new List<Rigidbody2D>();
 
+    // Construtor da classe Enemy
     public Enemy() {}
 
     // Use this for initialization
     void Start () {
+        // Obtém o componente Rigidbody2D anexado ao GameObject
         rb = GetComponent<Rigidbody2D>();
+        // Obtém o componente SpriteRenderer anexado ao GameObject
         sprite = GetComponent<SpriteRenderer>();
+        // Obtém o componente damageable anexado ao GameObject
         damageable = GetComponent<damageable>();
 
-        // Posicione o inimigo no ponto inicial
+        // Posiciona o inimigo no ponto inicial
         transform.position = startPoint.position;   
-        nextFireTime = Time.time; // Inicialize o próximo tempo de disparo para o tempo atual
+        // Inicializa o próximo tempo de disparo para o tempo atual
+        nextFireTime = Time.time;
     }
 
+    // Chamado em intervalos fixos para atualizações de física
     void FixedUpdate(){  
-        health = damageable.GetHealth(); // Obtém a saúde
-        Move();
+        // Obtém a saúde atual do inimigo
+        health = damageable.GetHealth();
+        float distanceToPlayer = Vector3.Distance(Player.transform.position, transform.position);
+        // Chama o método Move para atualizar o movimento do inimigo
+        if(distancePlayer > distanceToPlayer){	
+            Move();
+        }else{
+            // Se estiver em espera, conta o tempo de espera e retorna
+            if (wait)
+            {
+                CoutingWaitTime();
+                return;
+            }
 
+            // Verifica se precisa mudar os waypoints
+            ChangeWaypoints();
+
+            // Move a plataforma
+            Moving();
+        }
+        
+
+        // Verifica se o prefab do inimigo foi definido
         if (enemyPrefab != null) {
+            // Verifica se a saúde do inimigo é maior que 0
             if (health > 0) {
-                float distanceToPlayer = Vector3.Distance(Player.transform.position, transform.position);
-
+                // Verifica se a distância ao jogador é menor ou igual a 3 e se o tempo atual é maior ou igual ao próximo tempo de disparo
                 if (distanceToPlayer <= 3f && Time.time >= nextFireTime) {
+                    // Chama o método Fire para atirar
                     Fire();
-                    nextFireTime = Time.time + fireRate; // Atualize o próximo tempo de disparo
+                    // Atualiza o próximo tempo de disparo
+                    nextFireTime = Time.time + fireRate;
                 }
             } else {
+                // Chama o método EnemyDeath se a saúde do inimigo for 0 ou menor
                 EnemyDeath();
                 Debug.LogWarning("Vida do inimigo zerada!");
             }
         }
     }
     
+    // Método para mover o inimigo
     void Move(){
         if (health > 0) {
+            // Calcula a distância entre o jogador e o inimigo
             float distanceToPlayer = Vector3.Distance(Player.transform.position, transform.position);
             
+            // Verifica se a distância ao jogador é menor que a distância definida e se o ataque do jogador está ativo
             if (distanceToPlayer < distancePlayer && purificacao.GetIsAttackActive()) {
-                Flee();
+                Flee(); // Chama o método Flee para fugir
             } else if (distanceToPlayer < distancePlayer) {
-                FollowPlayer();
+                FollowPlayer(); // Chama o método FollowPlayer para seguir o jogador
             } else {
-                ReturnToStartPoint();
+                ReturnToStartPoint(); // Chama o método ReturnToStartPoint para retornar ao ponto inicial
             }
         } else {
-            EnemyDeath();
+            EnemyDeath(); // Chama o método EnemyDeath se a saúde for 0 ou menor
             Debug.LogWarning("Vida do inimigo zerada!");
         }
     }
 
+    // Método para seguir o jogador
     void FollowPlayer() {
+        // Move o inimigo em direção ao jogador
         transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
 
+        // Inverte o sprite dependendo da posição do jogador
         sprite.flipX = transform.position.x > Player.transform.position.x;
+        
     }
 
+    // Método para retornar ao ponto inicial
     void ReturnToStartPoint() {
+        // Move o inimigo de volta ao ponto inicial
         transform.position = Vector3.MoveTowards(transform.position, startPoint.position, speed * Time.deltaTime);
 
+        // Inverte o sprite dependendo da posição do ponto inicial
         sprite.flipX = transform.position.x > startPoint.position.x;
     }
 
+    // Método para fugir do jogador
     void Flee() {
+        // Calcula a direção oposta ao jogador
         Vector3 directionAwayFromPlayer = transform.position - Player.transform.position;
+        // Calcula a nova posição de fuga
         Vector3 fleePosition = transform.position + directionAwayFromPlayer.normalized * speed * Time.deltaTime;
         
+        // Move o inimigo para a posição de fuga
         transform.position = fleePosition;
 
+        // Inverte o sprite dependendo da posição do jogador
         sprite.flipX = transform.position.x > Player.transform.position.x;
     }
 
-     void EnemyDeath() {
+    // Método para tratar a morte do inimigo
+    void EnemyDeath() {
         health = 0;
         speed = 0;
 
@@ -111,28 +184,99 @@ public class Enemy : MonoBehaviour {
                 Destroy(clone.gameObject);
             }
         }
-        enemyClones.Clear(); // Limpar a lista após destruir os clones
+        // Limpar a lista após destruir os clones
+        enemyClones.Clear();
 
+        // Destruir os componentes do inimigo e o próprio GameObject
         Destroy(transform.gameObject.GetComponent<CircleCollider2D>());
         Destroy(transform.gameObject.GetComponent<Rigidbody2D>());
         Destroy(gameObject, 1f); 
     }
 
+    // Método chamado quando há uma colisão com o inimigo
     private void OnTriggerEnter2D(Collider2D collision) {
+        // Se o objeto colidindo for um ataque, diminui a saúde do inimigo
         if (collision.gameObject.tag == "Attack") {
             health--;
 
             if (health > 0) {
                 damageable.StartDamageSprite();
             } else {
-                EnemyDeath();
+                EnemyDeath(); // Chama o método EnemyDeath se a saúde for 0 ou menor
             }
         }
     }
 
+    // Método para atirar
+   
     void Fire() {
         Rigidbody2D newClone = Instantiate(enemyPrefab, shotSpawn.position, transform.rotation);
         newClone.gameObject.SetActive(true); // Ativa o clone
         enemyClones.Add(newClone); // Adiciona o clone à lista
     }
+
+    // Método para contar o tempo de espera
+    void CoutingWaitTime()
+    {
+        // Incrementa o temporizador com o tempo desde o último frame
+        timer += Time.deltaTime;
+
+        // Se o temporizador atingir o tempo de espera, reseta a espera e o temporizador
+        if (timer >= waitTime)
+        {
+            wait = false;
+            timer = 0;
+        }
+    }
+
+    // Método para mudar os waypoints quando necessário
+  void ChangeWaypoints()
+{
+    if (index < 0 || index >= wayPoints.Length)
+    {
+        Debug.LogWarning($"Index out of bounds: {index}. Array length: {wayPoints.Length}");
+        return; // Saia da função se o índice estiver fora dos limites
+    }
+
+    // Calcula a distância até o próximo waypoint
+    float distance = Vector2.Distance(transform.position, wayPoints[index].position);
+
+    // Se a direção for para frente e a distância for zero ou menor, avança para o próximo waypoint
+    if (dir > 0 && distance <= 0)
+    {
+        index++;
+
+        // Se alcançar o fim do array, inverte a direção e entra em espera
+        if (index >= wayPoints.Length)
+        {
+            index = wayPoints.Length - 1;
+            dir = -1;
+            wait = true;
+        }
+    }
+    // Se a direção for para trás e a distância for zero ou menor, retorna ao waypoint anterior
+    else if (dir < 0 && distance <= 0)
+    {
+        index--;
+
+        // Se alcançar o início do array, inverte a direção e entra em espera
+        if (index < 0)
+        {
+            index = 0;
+            dir = 1;
+            wait = true;
+        }
+    }
 }
+
+
+    // Método para mover a plataforma
+    void Moving()
+    {
+        Debug.LogWarning("Movendo com waipoints");
+        // Move a plataforma em direção ao waypoint atual com a velocidade especificada
+        transform.position = Vector2.MoveTowards(transform.position, wayPoints[index].position, speed * Time.deltaTime);
+    }
+}
+
+    // Método chamado quando
