@@ -206,6 +206,9 @@ public class Inventory : MonoBehaviour
     // Atualização do inventário
     private void Update()
     {
+        if(persoa.health <= 0){
+            itemInInv.Clear();
+        }
         if (opened)
         {
             // Verificações de entrada de teclado para navegar nos itens

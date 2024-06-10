@@ -95,6 +95,8 @@ public class transformacao : MonoBehaviour
                     DeactivateTransformation();
                     currentEnergy = 0;	
                 }
+            }else{
+                canvas.gameObject.SetActive(false);
             }
 
             if(isTransformed == false && DisableTransform == true){
@@ -174,6 +176,11 @@ public class transformacao : MonoBehaviour
     // Função para verificar se está em cooldown
     public bool IsInCooldown()
     {
-        return isInCooldown;
+       return isInCooldown;
+    }
+
+    public void DesbloquearTransformacao()
+    {
+        transformBloque = true;
     }
 }

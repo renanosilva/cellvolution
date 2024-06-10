@@ -68,7 +68,7 @@ public class damageable : MonoBehaviour {
     }
     else
     {
-        Debug.LogError("Barra de Vida não atribuída no Inspector.");
+        Debug.LogWarning("Barra de Vida não atribuída no Inspector.");
     }
 
     if (barraDeEnergia != null)
@@ -78,7 +78,7 @@ public class damageable : MonoBehaviour {
     }
     else
     {
-        Debug.LogError("Barra de Energia não atribuída no Inspector.");
+        Debug.LogWarning("Barra de Energia não atribuída no Inspector.");
     }
 }
 
