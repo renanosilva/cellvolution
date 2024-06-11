@@ -63,7 +63,7 @@ public class DialogueControl : MonoBehaviour
                 GoToLastSentence();
               }
 
-              if (Input.GetKeyDown(KeyCode.LeftShift    )){
+              if (Input.GetKeyDown(KeyCode.LeftShift)){
                 showFullText = true;
               }
 

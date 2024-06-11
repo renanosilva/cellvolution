@@ -36,7 +36,7 @@ public class NPCQuest : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Verifica se o objeto que entrou na área de colisão é o personagem principal e se ele já possui uma quest ativa
-        if (collision == colisor && MC.quest != null)
+        if (collision == colisor && MC.quest != null  && MC.CompareTag("Player"))
         {
             // Se o personagem não possuir uma quest ativa, inicia a quest associada ao NPC
             if (!MC.quest.isActive)

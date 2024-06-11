@@ -230,45 +230,28 @@ public class Enemy : MonoBehaviour {
     }
 
     // Método para mudar os waypoints quando necessário
-  void ChangeWaypoints()
-{
-    if (index < 0 || index >= wayPoints.Length)
-    {
-        Debug.LogWarning($"Index out of bounds: {index}. Array length: {wayPoints.Length}");
+ void ChangeWaypoints() {
+    if (index < 0 || index >= wayPoints.Length) {
+        Debug.LogError($"Index out of bounds: {index}. Array length: {wayPoints.Length}");
         return; // Saia da função se o índice estiver fora dos limites
     }
 
     // Calcula a distância até o próximo waypoint
     float distance = Vector2.Distance(transform.position, wayPoints[index].position);
 
-    // Se a direção for para frente e a distância for zero ou menor, avança para o próximo waypoint
-    if (dir > 0 && distance <= 0)
-    {
-        index++;
-
-        // Se alcançar o fim do array, inverte a direção e entra em espera
-        if (index >= wayPoints.Length)
-        {
-            index = wayPoints.Length - 1;
-            dir = -1;
-            wait = true;
+    // Se a distância for zero ou menor, escolha um novo waypoint aleatório
+    if (distance <= 0) {
+        int newIndex = Random.Range(0, wayPoints.Length);
+        
+        // Certifique-se de que o novo índice é diferente do atual
+        while (newIndex == index && wayPoints.Length > 1) {
+            newIndex = Random.Range(0, wayPoints.Length);
         }
-    }
-    // Se a direção for para trás e a distância for zero ou menor, retorna ao waypoint anterior
-    else if (dir < 0 && distance <= 0)
-    {
-        index--;
 
-        // Se alcançar o início do array, inverte a direção e entra em espera
-        if (index < 0)
-        {
-            index = 0;
-            dir = 1;
-            wait = true;
-        }
+        index = newIndex;
+        wait = true;
     }
 }
-
 
     // Método para mover a plataforma
     void Moving()
