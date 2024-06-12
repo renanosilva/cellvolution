@@ -232,7 +232,6 @@ public class Enemy : MonoBehaviour {
     // Método para mudar os waypoints quando necessário
  void ChangeWaypoints() {
     if (index < 0 || index >= wayPoints.Length) {
-        Debug.LogError($"Index out of bounds: {index}. Array length: {wayPoints.Length}");
         return; // Saia da função se o índice estiver fora dos limites
     }
 
@@ -256,9 +255,11 @@ public class Enemy : MonoBehaviour {
     // Método para mover a plataforma
     void Moving()
     {
-        Debug.LogWarning("Movendo com waipoints");
         // Move a plataforma em direção ao waypoint atual com a velocidade especificada
-        transform.position = Vector2.MoveTowards(transform.position, wayPoints[index].position, speed * Time.deltaTime);
+        if(wayPoints.Length != 0)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, wayPoints[index].position, speed * Time.deltaTime);
+        }
     }
 }
 
