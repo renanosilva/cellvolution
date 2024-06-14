@@ -10,6 +10,14 @@ public class MenuPausa : MonoBehaviour
 
     public GameObject pausePanel;
 
+    [Header("Ativação do menu de informação")]
+    public GameObject ativandoMenuInfo;
+    public GameObject desativandoMenupausa;
+
+    [Header("Ativação do menu de pausa")]
+    public GameObject ativandoMenuPausa;
+    public GameObject desativandoMenuInfo;
+
     [Header("referência ao levelLoader")]
     public LevelLoader levelLoader;
 
@@ -67,5 +75,31 @@ public class MenuPausa : MonoBehaviour
     {
         Debug.Log("Saindo do jogo");
         Application.Quit();
+    }
+
+    public void AtivarMenuInfo()
+    {
+        if (ativandoMenuInfo != null)
+        {
+            ativandoMenuInfo.SetActive(true); // Ativa o menu de informação
+        }
+
+        if (desativandoMenupausa != null)
+        {
+            desativandoMenupausa.SetActive(false); // Desativa o menu de pausa
+        }
+    }
+
+    public void AtivarMenuPausa()
+    {
+        if (ativandoMenuPausa != null)
+        {
+            ativandoMenuPausa.SetActive(true); // Ativa o menu de informação
+        }
+
+        if (desativandoMenuInfo != null)
+        {
+            desativandoMenuInfo.SetActive(false); // Desativa o menu de pausa
+        }
     }
 }
