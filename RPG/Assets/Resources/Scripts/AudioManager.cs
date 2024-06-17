@@ -7,24 +7,11 @@ public class AudioManager : MonoBehaviour
     // Declaração de uma variável pública que armazenará a referência a um componente AudioSource.
     public AudioSource audioSource;
 
-    // Propriedade estática para acessar a instância do AudioManager
-    public static AudioManager Instance { get; private set; }
-
     // Awake() é chamado quando o script é inicializado.
     private void Awake()
     {
-        if (Instance == null)
-        {
-            // Se não houver uma instância, define esta instância como a instância do Singleton e a torna persistente entre cenas.
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            audioSource = GetComponent<AudioSource>();
-        }
-        else
-        {
-            // Se já houver uma instância, destrói esta nova instância para manter apenas uma.
-            Destroy(gameObject);
-        }
+        // Obtém a referência ao componente AudioSource anexado a este GameObject.
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Método público que reproduz um AudioClip recebido como parâmetro.
@@ -36,7 +23,7 @@ public class AudioManager : MonoBehaviour
         audioSource.Play();
     }
 
-    // Método público para definir o volume do AudioSource.
+    //Método público para definir o volume do AudioSource.
     public void SetVolume(float volume)
     {
         audioSource.volume = volume;
@@ -48,3 +35,5 @@ public class AudioManager : MonoBehaviour
         return audioSource.volume;
     }
 }
+
+

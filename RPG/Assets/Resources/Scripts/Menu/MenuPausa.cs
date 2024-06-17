@@ -18,6 +18,9 @@ public class MenuPausa : MonoBehaviour
     public GameObject ativandoMenuPausa;
     public GameObject desativandoMenuInfo;
 
+    [Header("Ativação da tela com componentes")]
+    public GameObject ativandoTelaComponentes;
+
     [Header("referência ao levelLoader")]
     public LevelLoader levelLoader;
 
@@ -97,9 +100,35 @@ public class MenuPausa : MonoBehaviour
             ativandoMenuPausa.SetActive(true); // Ativa o menu de informação
         }
 
+        if (desativandoMenuInfo != null )
+        {
+            desativandoMenuInfo.SetActive(false); // Desativa o menu de pausa
+        }
+    }
+
+    public void AtivarTelaComponentes()
+    {
+        if (ativandoTelaComponentes != null)
+        {
+            ativandoTelaComponentes.SetActive(true); // Ativa o menu de informação
+        }
+
         if (desativandoMenuInfo != null)
         {
             desativandoMenuInfo.SetActive(false); // Desativa o menu de pausa
+        }
+    }
+
+    public void AtivarMenuPausa2()
+    {
+        if (ativandoMenuPausa != null)
+        {
+            ativandoMenuPausa.SetActive(true); // Ativa o menu de informação
+        }
+
+        if (ativandoTelaComponentes != null)
+        {
+            ativandoTelaComponentes.SetActive(false); // Desativa o menu de pausa
         }
     }
 }
