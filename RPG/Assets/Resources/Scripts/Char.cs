@@ -61,6 +61,7 @@ public class Char : MonoBehaviour
         anim = GetComponent<Animator>(); // Obtém o componente Animator
         transformSave = GameObject.Find("TransformTpSave").GetComponent<Transform>(); // Encontra e obtém o transform para salvar
         damageable = GetComponent<damageable>();
+        backgroundAudio = GetComponent<AudioManager>();
     }
 
     void Start()
@@ -83,7 +84,7 @@ public class Char : MonoBehaviour
             anim.Play("TP");
             anim.runtimeAnimatorController = Resources.Load("Animations/McAnim/MC Celula") as RuntimeAnimatorController;
             transform.position = transformSave.position;
-            backgroundAudio.PlayAudio(orgBG);
+           
         }
         else if (scene == "Organismo")
         {
@@ -92,7 +93,10 @@ public class Char : MonoBehaviour
             transformSave.position = transform.position;
             transform.position = ms.transform.position;
             anim.Play("TPinvertido");
-            backgroundAudio.PlayAudio(cellBG);
+            if(backgroundAudio != null){
+
+                backgroundAudio.PlayAudio(cellBG);
+            }
             DisableControls();
             Invoke("EnableControls", 2.5f);
         }
@@ -169,9 +173,8 @@ public class Char : MonoBehaviour
 
         transformacao.SetIsTransformed(transformed);
         if(Input.GetKeyDown(KeyCode.K)){
-            if(transformacao.IsInCooldown() == false && transformacao.transformBloque && purificacaoCelular.GetIsAttackActive() == false){
+            if(transformacao.IsInCooldown() == false && transformacao.transformBloque && purificacaoCelular.GetIsAttackActive() == false && barraDeEnergia.vidaAtual > 0f){
                 ativarTransformacao();
-                Debug.LogWarning("Ativando transformação");
                 anim.SetTrigger("OnTransformacao"); 
 
             }else if(transformed == false){
@@ -202,46 +205,46 @@ public class Char : MonoBehaviour
         if (canControl == true)
         {
             // Verifica as teclas pressionadas para movimento
-            if (Input.GetKey(KeyCode.W)) //w
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //w
             {
                 SetSpeedF(0);
                 transform.position += new Vector3(0, Speed, 0);
                 SetSpeedB(1);
             }
-            else if (Input.GetKey(KeyCode.D)) //D
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //D
             {
                 SetSpeedL(0);
                 transform.position += new Vector3(Speed, 0, 0);
                 SetSpeedR(1);
             }
-            else if (Input.GetKey(KeyCode.S)) //S
+            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) //S
             {
                 transform.position += new Vector3(0, -Speed, 0);
                 SetSpeedF(1);
             }
-            else if (Input.GetKey(KeyCode.A)) //A
+            else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //A
             {
                 transform.position += new Vector3(-Speed, 0, 0);
                 SetSpeedL(1);
             }
 
             // Verifica se as teclas foram soltas para parar o movimento
-            if (Input.GetKeyUp(KeyCode.W))//w
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))//w
             {
                 transform.position += new Vector3(0,0,0);
                 SetSpeedB(0);
             }
-            else if (Input.GetKeyUp(KeyCode.D)) //D
+            else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) //D
             {
                 transform.position += new Vector3(0,0,0);
                 SetSpeedR(0);    
             }
-            else if (Input.GetKeyUp(KeyCode.S)) //S
+            else if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)) //S
             {
                 transform.position += new Vector3(0,0,0);                   
                 SetSpeedF(0);
             }
-            else if (Input.GetKeyUp(KeyCode.A)) //A
+            else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) //A
             {
                 transform.position += new Vector3(0,0,0);                    
                 SetSpeedL(0);

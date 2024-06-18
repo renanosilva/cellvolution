@@ -159,9 +159,10 @@ public class damageable : MonoBehaviour {
     }
 
     // Função para definir a saúde com um valor específico
-    public void SetHealth(int amount)
+    public void SetHealth()
     {
-        currentHealth += amount; // Aumenta a saúde
+        int amount =2;
+        currentHealth = (currentHealth * amount); // Aumenta a saúde
         if (currentHealth >= maxHealth) // Garante que a saúde não ultrapasse o máximo
         {
             currentHealth = maxHealth;

@@ -132,7 +132,6 @@ public class PurificacaoCelular : MonoBehaviour
         // Verifica se o ataque está ativo
         if (isAttackActive)
         {
-            Debug.LogWarning("Contagem iniciada");
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
@@ -157,8 +156,6 @@ public class PurificacaoCelular : MonoBehaviour
             }
 
            
-        }else{ 
-            Debug.LogWarning("Transformação não ativa, ataque não iniciado");
         }
      
     }
@@ -167,13 +164,11 @@ public class PurificacaoCelular : MonoBehaviour
         if(attack != null){    
                 
             if(isAttackActive == false && reactivationTimer > 0f){
-                Debug.LogWarning("Contagem iniciada para reativar o ataque");
                 isReactivation = true; 
                 // Se o ataque está desativado, inicie o temporizador de reativação
                 reactivationTimer -= Time.deltaTime;
                 if (reactivationTimer <= 0f && timer < 1f)
                 {
-                    Debug.LogWarning("Contagem finalizada para reativar o ataque");
                     isReactiveAttack = true; // Torna o ataque reativável
                 }
             }
@@ -227,7 +222,6 @@ public class PurificacaoCelular : MonoBehaviour
           damageable damageable = other.GetComponent<damageable>();
         if (damageable != null && enemiesInRange.Contains(damageable))
         {
-            Debug.LogWarning("Inimigo removido");
             enemiesInRange.Remove(damageable);
         }
     }
@@ -235,7 +229,6 @@ public class PurificacaoCelular : MonoBehaviour
      void RemoverTodosInimigos()
     {
 
-        Debug.LogWarning("Todos os inimigos foram removidos");
         enemiesInRange.Clear();
     }
 

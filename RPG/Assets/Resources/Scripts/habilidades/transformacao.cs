@@ -59,10 +59,8 @@ public class transformacao : MonoBehaviour
                     barraDeTempo.vidaMaxima = purificacaoCelular.timerAttack;
                     energiaBarra.vidaAtual = damageable.DimiuirEnergia(purificacaoCelular.energiaUsada);
 
-                    Debug.LogWarning("Ativando purificacao");
                 }else if(purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 0f){
 
-                    Debug.LogWarning("Desativando purificacao");
                     anim.SetTrigger("DesativarPurificacao");
                     purificacaoCelular.AtivarAtaque(false);
                     purificacaoCelular.SetTimer(0.8f);
@@ -71,7 +69,6 @@ public class transformacao : MonoBehaviour
 
                 if(purificacaoCelular.GetIsReactiveAttack() == false && purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 1f){
 
-                    Debug.LogWarning("Reativando purificacao");
                     purificacaoCelular.ReactiveAttack();
                 }
 
@@ -93,17 +90,12 @@ public class transformacao : MonoBehaviour
                 {
                     // Desativa a transformação
                     DeactivateTransformation();
+                    anim.SetTrigger("OffTransformacao");
                     currentEnergy = 0;	
+                    isInCooldown = true;
+                    isTransformed = false;
+                    DisableTransform = false;
                 }
-            }else{
-                canvas.gameObject.SetActive(false);
-            }
-
-            if(isTransformed == false && DisableTransform == true){
-
-                DeactivateTransformation();
-                DisableTransform = false;
-                Debug.LogWarning("Desativando transformacao");
             }
 
             // Gerencia o cooldown
@@ -113,9 +105,16 @@ public class transformacao : MonoBehaviour
                 if (cooldownTimer <= 0)
                 {
                     isInCooldown = false;
+                    cooldownTimer = 0;
                 }
             }
             
+            if(isTransformed == false && DisableTransform == true){
+
+                DeactivateTransformation();
+                DisableTransform = false;
+            }
+
         }
     
     }
@@ -135,7 +134,8 @@ public class transformacao : MonoBehaviour
         if (isTransformed == false)
         {
             EndTransformation();
-            Debug.LogWarning("Desativando transformacao chamou");
+            anim.SetTrigger("OffTransformacao");
+
         }
     }
 

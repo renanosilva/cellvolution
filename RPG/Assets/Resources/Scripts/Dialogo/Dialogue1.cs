@@ -36,7 +36,7 @@ public class Dialogue1 : MonoBehaviour
     public bool onRadious;
 
     private GameObject seta;
-
+    
 
     private void Start()
     {
@@ -44,6 +44,7 @@ public class Dialogue1 : MonoBehaviour
         seta = GameObject.Find("TargetIndicator");
     }
 
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         VerificarNPC();
@@ -141,4 +142,6 @@ public class Dialogue1 : MonoBehaviour
             grupoMissoes.SetActive(state);
         }
     }
+
+    
 }

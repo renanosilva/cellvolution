@@ -56,8 +56,12 @@ public class Enemy : MonoBehaviour {
     // Referência ao componente Animator do inimigo
     private Animator anim;
 
+    private bool startMove = true;
+
     // Lista para rastrear clones do enemyPrefab
     private List<Rigidbody2D> enemyClones = new List<Rigidbody2D>();
+
+    public GameObject dialogue;
 
     // Construtor da classe Enemy
     public Enemy() {}
@@ -79,6 +83,12 @@ public class Enemy : MonoBehaviour {
 
     // Chamado em intervalos fixos para atualizações de física
     void FixedUpdate(){  
+
+        if(dialogue.gameObject.activeSelf == true){
+            startMove = false;
+        }else{
+            startMove = true;
+        }
         // Obtém a saúde atual do inimigo
         health = damageable.GetHealth();
         float distanceToPlayer = Vector3.Distance(Player.transform.position, transform.position);
@@ -122,7 +132,7 @@ public class Enemy : MonoBehaviour {
     
     // Método para mover o inimigo
     void Move(){
-        if (health > 0) {
+        if (health > 0 && startMove) {
             // Calcula a distância entre o jogador e o inimigo
             float distanceToPlayer = Vector3.Distance(Player.transform.position, transform.position);
             
@@ -134,7 +144,7 @@ public class Enemy : MonoBehaviour {
             } else {
                 ReturnToStartPoint(); // Chama o método ReturnToStartPoint para retornar ao ponto inicial
             }
-        } else {
+        } else if(health <= 0) {
             EnemyDeath(); // Chama o método EnemyDeath se a saúde for 0 ou menor
             Debug.LogWarning("Vida do inimigo zerada!");
         }
@@ -151,7 +161,7 @@ public class Enemy : MonoBehaviour {
     }
 
     // Método para retornar ao ponto inicial
-    void ReturnToStartPoint() {
+     void ReturnToStartPoint() {
         // Move o inimigo de volta ao ponto inicial
         transform.position = Vector3.MoveTowards(transform.position, startPoint.position, speed * Time.deltaTime);
 
