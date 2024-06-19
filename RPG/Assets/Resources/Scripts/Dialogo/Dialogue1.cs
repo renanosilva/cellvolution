@@ -47,14 +47,18 @@ public class Dialogue1 : MonoBehaviour
    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        VerificarNPC();
-        ChamarDialogo();
+
+        if (colisor == collision)
+        {
+            VerificarNPC();
+            ChamarDialogo();
+        }
         
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (colisor.tag == "Player" && celulaMissao == true)
+        if (colisor == collision && celulaMissao == true)
         {
             estaAberto = false;
         }
@@ -88,7 +92,7 @@ public class Dialogue1 : MonoBehaviour
 
     public void ChamarDialogo()
     {
-        if (colisor.tag == "Player" && !estaAberto)
+        if (!estaAberto)
         {
             if ((AtributoManager.instance.forcaMembrana >= forcaMembranaRequerida) && (AtributoManager.instance.nivelComunicacao >= nivelComunicacaoRequerido))
             {

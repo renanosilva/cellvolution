@@ -43,26 +43,13 @@ public class NPC1 : MonoBehaviour
         quest = GetComponent<Quest>();
     }
 
-    // Método chamado quando o personagem entra na área de interação com o NPC
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        // Verifica se o objeto que entrou na área de colisão é o personagem
-        if (colisor.tag == "Player")
-        {
-            // Define o NPC como o NPC1 do diálogo
-        }
-        // Verifica se a condição para iniciar o diálogo é verdadeira
-        if (condição == true)
-        {
-            // Inicia o diálogo
-        }
-    }
+   
 
     // Método chamado quando o personagem sai da área de interação com o NPC
     private void OnTriggerExit2D(Collider2D collision)
     {
         // Verifica se o objeto que saiu da área de colisão é o personagem e se a condição para iniciar o diálogo é verdadeira
-        if (colisor.tag == "Player" && condição == true)
+        if (colisor == collision && condição == true)
         {
             if (dialogue.forcaMembranaRequerida <= AtributoManager.instance.forcaMembrana && dialogue.nivelComunicacaoRequerido <= AtributoManager.instance.nivelComunicacao)
             {

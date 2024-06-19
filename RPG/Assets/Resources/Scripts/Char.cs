@@ -61,7 +61,7 @@ public class Char : MonoBehaviour
         anim = GetComponent<Animator>(); // Obtém o componente Animator
         transformSave = GameObject.Find("TransformTpSave").GetComponent<Transform>(); // Encontra e obtém o transform para salvar
         damageable = GetComponent<damageable>();
-        backgroundAudio = GetComponent<AudioManager>();
+        backgroundAudio = GameObject.Find("Background Music").GetComponent<AudioManager>();
     }
 
     void Start()
@@ -84,7 +84,8 @@ public class Char : MonoBehaviour
             anim.Play("TP");
             anim.runtimeAnimatorController = Resources.Load("Animations/McAnim/MC Celula") as RuntimeAnimatorController;
             transform.position = transformSave.position;
-           
+            backgroundAudio.PlayAudio(orgBG);
+
         }
         else if (scene == "Organismo")
         {
