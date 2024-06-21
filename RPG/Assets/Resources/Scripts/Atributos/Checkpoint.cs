@@ -107,6 +107,7 @@ public class Checkpoint : MonoBehaviour {
         CheckpointManager.instance.textoMissaoAtual = textoMissoes.text;
     }
 
+
     public void SalvarNoArquivo()
     {
         CheckpointManager.instance.Save();

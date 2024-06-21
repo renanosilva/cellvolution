@@ -2309,6 +2309,7 @@ MonoBehaviour:
   indiceCelulaAtiva: 0
   indiceBarreiraAtiva: 0
   textoMissaoAtual: 
+  nivelBarraProgresso: 0
   x: 0
   y: 0
   z: 0
