@@ -32,22 +32,22 @@ public class NPCQuest : MonoBehaviour
         MC.quest = GetComponent<Quest>();
     }
 
-    // Método chamado quando um objeto entra na área de colisão com o NPCQuest
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        // Verifica se o objeto que entrou na área de colisão é o personagem principal e se ele já possui uma quest ativa
-        if (collision == colisor && MC.quest != null  && MC.CompareTag("Player"))
-        {
-            // Se o personagem não possuir uma quest ativa, inicia a quest associada ao NPC
-            if (!MC.quest.isActive)
-            {
-                IniciarQuest();
-            }
-        }
-        // Se o personagem principal não possuir uma quest ativa e entrar na área de colisão com o NPCQuest, inicia a quest associada ao NPC
-        else if (MC.quest == null && collision == colisor)
-        {
-            IniciarQuest();
-        }
-    }
+    //// Método chamado quando um objeto entra na área de colisão com o NPCQuest
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    // Verifica se o objeto que entrou na área de colisão é o personagem principal e se ele já possui uma quest ativa
+    //    if (collision == colisor && MC.quest != null  && MC.CompareTag("Player"))
+    //    {
+    //        // Se o personagem não possuir uma quest ativa, inicia a quest associada ao NPC
+    //        if (!MC.quest.isActive)
+    //        {
+    //            IniciarQuest();
+    //        }
+    //    }
+    //    // Se o personagem principal não possuir uma quest ativa e entrar na área de colisão com o NPCQuest, inicia a quest associada ao NPC
+    //    else if (MC.quest == null && collision == colisor)
+    //    {
+    //        IniciarQuest();
+    //    }
+    //}
 }

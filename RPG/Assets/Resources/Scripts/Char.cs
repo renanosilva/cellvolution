@@ -55,6 +55,9 @@ public class Char : MonoBehaviour
 
     private bool transformed = false;
     private damageable damageable;
+
+    public Checkpoint posicaoSalvaJogador;
+
     private void Awake()       
     {
         audioManager = GetComponent<AudioManager>(); // Obtém o componente AudioManager
@@ -66,12 +69,14 @@ public class Char : MonoBehaviour
 
     void Start()
     {
+        this.gameObject.transform.position = posicaoSalvaJogador.NovaPosicaoJogador;
+
         SpeedInicial = Speed;
         if(purificacaoCelular != null){
 
             energia = purificacaoCelular.energiaUsada;
         }
-        // Não há funcionalidades específicas no Start neste código
+        
     }
 
     // Corotina para trocar animações

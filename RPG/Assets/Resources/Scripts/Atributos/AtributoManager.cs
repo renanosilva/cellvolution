@@ -85,4 +85,14 @@ public class AtributoManager : MonoBehaviour {
         }
     }
 
+    public void Reset()
+    {
+        velocidade = 0;
+        forcaMembrana = 0;
+        nivelComunicacao = 0;
+        nivelFortalecimento = 0;
+
+        Save();
+    }
+
 }

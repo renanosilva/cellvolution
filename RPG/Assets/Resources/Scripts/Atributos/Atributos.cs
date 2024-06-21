@@ -92,5 +92,10 @@ public class Atributos : MonoBehaviour {
         AtributoManager.instance.nivelFortalecimento = this.nivelFortalecimento;
     }
 
+    public void SalvarNoArquivo()
+    {
+        AtributoManager.instance.Save();
+    }
+
 
 }

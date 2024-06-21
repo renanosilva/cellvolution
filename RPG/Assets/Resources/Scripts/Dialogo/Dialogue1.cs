@@ -14,6 +14,7 @@ public class Dialogue1 : MonoBehaviour
     public NPC npc;
     public NPC1 npc1;
     public NPC2 npc2;
+
     [Header("Referência ao player")]
     public Char player;
     private Collider2D colisor;
@@ -34,6 +35,9 @@ public class Dialogue1 : MonoBehaviour
     [Header("Referência ao dialogue control")]
     public DialogueControl dc;
     public bool onRadious;
+
+    [Header("Atributo referente ao Checkpoint")]
+    public int indiceCheckpoint;
 
     private GameObject seta;
     

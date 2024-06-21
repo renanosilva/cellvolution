@@ -11,8 +11,24 @@ public class MenuPrincipalManager : MonoBehaviour
     // Método para jogar (transição para a cena do jogo)
     public void jogar()
     {
-        levelLoader.Transition(nomeDoLevelDeJogo);
+
+        if(CheckpointManager.instance.textoMissaoAtual == "")
+        {
+            levelLoader.Transition(nomeDoLevelDeJogo);
+        }
+        else
+        {
+            levelLoader.Transition("Organismo");
+        }
+
     }
+
+    public void NovoJogo()
+    {
+        CheckpointManager.instance.Reset();
+        AtributoManager.instance.Reset();
+    }
+
 
     // Método para abrir o painel de opções
     public void abrirOpcoes()
