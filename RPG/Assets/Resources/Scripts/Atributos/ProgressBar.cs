@@ -14,6 +14,8 @@ public class ProgressBar : MonoBehaviour
 
     public Animator animator;
 
+    private bool salvarProgresso;
+
     private void Start()
     {
         valorAtual = CheckpointManager.instance.nivelBarraProgresso;
@@ -53,14 +55,23 @@ public class ProgressBar : MonoBehaviour
             som.PlayAudio(Resources.Load<AudioClip>("audios/barraProgresso"));
         }
 
-        SalvarNivelProgresso();
+        if (salvarProgresso == true)
+        {
+            SetNivelProgresso();
+            CheckpointManager.instance.Save();
+        }
 
         yield return new WaitForSeconds(3f);
         animator.Play("Desaparecer");
     }
 
-    private void SalvarNivelProgresso()
+    private void SetNivelProgresso()
     {
         CheckpointManager.instance.nivelBarraProgresso = valorAtual;
+    }
+
+    public void SalvarBarraProgresso(bool state)
+    {
+        salvarProgresso = state;
     }
 }
