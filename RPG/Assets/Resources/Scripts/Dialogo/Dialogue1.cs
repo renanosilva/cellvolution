@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Dialogue1 : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Dialogue1 : MonoBehaviour
     public NPC npc;
     public NPC1 npc1;
     public NPC2 npc2;
+
+    private Text textoMissoes;
 
     [Header("Referência ao player")]
     public Char player;
@@ -45,6 +48,7 @@ public class Dialogue1 : MonoBehaviour
     private void Start()
     {
         colisor = GameObject.Find("MC").GetComponent<Collider2D>();
+        textoMissoes = GameObject.Find("TextoMissão").GetComponent<Text>();
         seta = GameObject.Find("TargetIndicator");
     }
 
@@ -65,6 +69,13 @@ public class Dialogue1 : MonoBehaviour
         if (colisor == collision && celulaMissao == true)
         {
             estaAberto = false;
+        }
+
+        if(!(AtributoManager.instance.forcaMembrana >= forcaMembranaRequerida) && !(AtributoManager.instance.nivelComunicacao >= nivelComunicacaoRequerido))
+        {
+            textoMissoes.text = "Procure outras células e realize as missões secundárias até obter os níveis de atributos necessários";
+            AudioManager som = GameObject.Find("MC").GetComponent<AudioManager>();
+            som.PlayAudio(Resources.Load<AudioClip>("audios/Quest Completa"));
         }
     }
 
