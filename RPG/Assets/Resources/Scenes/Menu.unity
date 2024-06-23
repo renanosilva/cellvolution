@@ -678,16 +678,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8762744761173369397, guid: 3b5291b75ca87e54192573c05b64bdff,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 420655905480534955, guid: 3b5291b75ca87e54192573c05b64bdff,
         type: 3}
       propertyPath: transitionAnim
       value: 
       objectReference: {fileID: 386827935}
+    - target: {fileID: 8762744761173369397, guid: 3b5291b75ca87e54192573c05b64bdff,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5291b75ca87e54192573c05b64bdff, type: 3}
 --- !u!1 &271551059
@@ -4524,6 +4524,43 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 29cec2d2eb44f844f95d33a4946008ee,
         type: 3}
+    - target: {fileID: 8761195521833279819, guid: a4d8f2cc6be607f488fd353f722ec682,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -637.1001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761195522330917816, guid: a4d8f2cc6be607f488fd353f722ec682,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -638.7001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761195523430737598, guid: a4d8f2cc6be607f488fd353f722ec682,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -637
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761195523432593735, guid: a4d8f2cc6be607f488fd353f722ec682,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761195523520487879, guid: a4d8f2cc6be607f488fd353f722ec682,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 518.7001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761195523015318192, guid: a4d8f2cc6be607f488fd353f722ec682,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 517.2001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761195522323604593, guid: a4d8f2cc6be607f488fd353f722ec682,
+        type: 3}
+      propertyPath: m_Text
+      value: "Voc\xEA tem certeza de que deseja iniciar um novo jogo?\n\nSe voc\xEA
+        continuar, todo o seu progresso atual ser\xE1 apagado e n\xE3o poder\xE1 ser
+        recuperado.\n\nVoc\xEA realmente deseja prosseguir com esta a\xE7\xE3o?"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4d8f2cc6be607f488fd353f722ec682, type: 3}
 --- !u!224 &2071965866 stripped
