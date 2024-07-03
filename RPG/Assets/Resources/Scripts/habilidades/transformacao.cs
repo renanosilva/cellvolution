@@ -78,7 +78,10 @@ public class transformacao : MonoBehaviour
                 }
 
                 canvas.gameObject.SetActive(true);
-                currentEnergy -= energyCostPerSecond * Time.deltaTime;
+                if(isTransformed == true){
+                     currentEnergy -= energyCostPerSecond * Time.deltaTime;
+
+                }
                 
                 isInCooldown = false;
                 // Diminui a energia enquanto a transformação está ativa

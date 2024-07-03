@@ -82,14 +82,14 @@ public class Dialogue1 : MonoBehaviour
 
     public void VerificarNPC()
     {
-        if (npc.condição == true)
+        if (npc != null && npc.condição == true)
         {   
             npc.enabled = true;
             speechText = npc.falas;
             dc.qtdTurnos = npc.qtdTurnosnpc;
         }
 
-         if (npc1.condição == true)
+         if (npc1 != null && npc1.condição == true)
         {
             npc1.enabled = true;
             speechText = npc1.falas;
