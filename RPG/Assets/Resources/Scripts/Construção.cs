@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Construção : MonoBehaviour
 {
+
+    public int id;
     private Char Char;
     private bool podeAbrir;
     [Header("Menu de Construção")]   
     public GameObject[] telaConstrução;
     
-    private int ConstrucaoAtual; // Nível atual da construção
+    public int ConstrucaoAtual; // Nível atual da construção
     [Header("Menu de construção necessario")]
     public Construção construcao;
     public Construção construção2; 

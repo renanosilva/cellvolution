@@ -11,10 +11,10 @@ public class transformacao : MonoBehaviour
     private float cooldownTimer; // Temporizador para o cooldown
     private bool isTransformed = false; // Indica se a transformação está ativa
     private bool isInCooldown = false; // Indica se a habilidade está em cooldown
-    private bool DisableTransform = false;
     public bool transformBloque = false;
     public Char personagem;
-    private Animator anim; 
+    private Animator anim;
+    private bool disableTransform;
 
     [SerializeField]
     public BarrasController barraDeEnergia;
@@ -35,12 +35,12 @@ public class transformacao : MonoBehaviour
 
     void Update()
     {
-        if(transformBloque){
+        
             // Gerencia a transformação
             if (isTransformed)
             {
-                DisableTransform = true;
 
+            disableTransform = true;
                 if(Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true  && GetCurrentEnergy() >= 15f && IsTransformed() == true){
                     anim.SetTrigger("OnPurificacao");
 
@@ -78,47 +78,36 @@ public class transformacao : MonoBehaviour
                 }
 
                 canvas.gameObject.SetActive(true);
-                if(isTransformed == true){
+                if(isTransformed == true && IsInCooldown() == false && transformBloque){
                      currentEnergy -= energyCostPerSecond * Time.deltaTime;
 
-                }
-                
+                } 
+
                 isInCooldown = false;
                 // Diminui a energia enquanto a transformação está ativa
 
                 barraDeEnergia.vidaAtual = currentEnergy;
 
                 // Verifica se a energia acabou
-                if (currentEnergy <= 0)
+                if (barraDeEnergia.vidaAtual <= 0)
                 {
                     // Desativa a transformação
-                    DeactivateTransformation();
-                    anim.SetTrigger("OffTransformacao");
                     currentEnergy = 0;	
                     isInCooldown = true;
                     isTransformed = false;
-                    DisableTransform = false;
+                    transformBloque = false;
+                    DeactivateTransformation();
                 }
             }
 
-            // Gerencia o cooldown
-            if (isInCooldown)
-            {
-                cooldownTimer -= Time.deltaTime;
-                if (cooldownTimer <= 0)
-                {
-                    isInCooldown = false;
-                    cooldownTimer = 0;
-                }
-            }
-            
-            if(isTransformed == false && DisableTransform == true){
 
-                DeactivateTransformation();
-                DisableTransform = false;
-            }
+            if(isTransformed == false && disableTransform == true)
+        {
+            EndTransformation();
 
         }
+  
+        
     
     }
 
@@ -137,7 +126,6 @@ public class transformacao : MonoBehaviour
         if (isTransformed == false)
         {
             EndTransformation();
-            anim.SetTrigger("OffTransformacao");
 
         }
     }
@@ -145,10 +133,11 @@ public class transformacao : MonoBehaviour
     // Função privada para finalizar a transformação
     private void EndTransformation()
     {
+        disableTransform = false;
         isTransformed = false;
         isInCooldown = true;
         cooldownTimer = cooldownTime;
-        anim.SetTrigger("OffTransformacao");
+        anim.Play("IdleCélula");
     }
 
     // Função para definir a energia atual (pode ser chamada de outro script)

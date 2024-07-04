@@ -13,6 +13,9 @@ public class Checkpoint : MonoBehaviour {
     public WallControl[] barreirasJogo;
     public Dialogue1[] celulasHistoria;
 
+    public int[] construcoesAtuais;
+    public Construção[] objetosConstrucoes;
+
     public Text textoMissoes;
 
     //variáveis que armazenam os valores carregados do arquivo de save
@@ -56,6 +59,12 @@ public class Checkpoint : MonoBehaviour {
         //Ativando o objeto da seta guia e mandando ela seguir a célula do capítulo salvo
         setaGuia.gameObject.SetActive(true);
         setaGuiaScript.NextTarget(celulaAtiva[indiceCelulaAtiva].transform);
+
+
+        if(CheckpointManager.instance.construcoesAtuais != null)
+        {
+            CarregarConstrucoes();
+        }
 
     }
 
@@ -127,6 +136,26 @@ public class Checkpoint : MonoBehaviour {
         CheckpointManager.instance.y = NovaPosicaoJogador.y;
         CheckpointManager.instance.z = NovaPosicaoJogador.z;
 
+    }
+
+    public void SalvarConstrucoes()
+    {
+        foreach(Construção posicao in objetosConstrucoes)
+        {
+            construcoesAtuais[posicao.id] = posicao.ConstrucaoAtual;
+        }
+
+        CheckpointManager.instance.construcoesAtuais = construcoesAtuais;
+    }
+
+    public void CarregarConstrucoes()
+    {
+        construcoesAtuais = CheckpointManager.instance.construcoesAtuais;
+
+        foreach(Construção construcao in objetosConstrucoes)
+        {
+            construcao.ConstrucaoAtual = construcoesAtuais[construcao.id];
+        }
     }
 
     public void VerificarMissaoBarreira()

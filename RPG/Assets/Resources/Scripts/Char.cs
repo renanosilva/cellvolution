@@ -175,13 +175,14 @@ public class Char : MonoBehaviour
     // Método chamado a cada frame
     private void Update()
     {
-        barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
+       // barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
 
         transformacao.SetIsTransformed(transformed);
         if(Input.GetKeyDown(KeyCode.K)){
-            if(transformacao.IsInCooldown() == false && transformacao.transformBloque && purificacaoCelular.GetIsAttackActive() == false && barraDeEnergia.vidaAtual > 0f){
+            if(transformacao.IsInCooldown() == false && purificacaoCelular.GetIsAttackActive() == false && barraDeEnergia.vidaAtual > 0f){
                 ativarTransformacao();
-                anim.SetTrigger("OnTransformacao"); 
+                transformacao.DesbloquearTransformacao();
+                anim.Play("OnTransformacao");
 
             }else if(transformed == false){
                 transformacao.ActivateTransformation(false);

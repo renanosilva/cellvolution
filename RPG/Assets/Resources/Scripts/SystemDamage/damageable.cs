@@ -195,7 +195,10 @@ public class damageable : MonoBehaviour {
                 if(construir.itensSuficientes()){	
                     construir.GastarConstruir();    
                      transformacao.SetCurrentEnergy(transformacao.GetCurrentEnergy() + 5f);
-
+                    if(transformacao.IsTransformed() != true)
+                    {
+                        transformacao.SetIsTransformed(false);
+                    }
                 }
 
                 if(transformacao.GetCurrentEnergy() > 100f){
