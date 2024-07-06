@@ -55,8 +55,8 @@ public class Char : MonoBehaviour
 
     private bool transformed = false;
     private damageable damageable;
-
     public Checkpoint posicaoSalvaJogador;
+    public GameObject  dialogue; 
 
     private void Awake()       
     {
@@ -100,8 +100,8 @@ public class Char : MonoBehaviour
             transform.position = ms.transform.position;
             anim.Play("TPinvertido");
             if(backgroundAudio != null){
-
-                backgroundAudio.PlayAudio(cellBG);
+                
+                //backgroundAudio.PlayAudio(cellBG);
             }
             DisableControls();
             Invoke("EnableControls", 2.5f);
@@ -109,6 +109,10 @@ public class Char : MonoBehaviour
     }
 
     // Método para definir velocidade de frente
+
+    public void TrocarAudio(AudioClip audio){
+        backgroundAudio.PlayAudio(audio);
+    }
     private void SetSpeedF(int speedF)
     {
         anim.SetInteger("SpeedF", speedF);
@@ -169,18 +173,29 @@ public class Char : MonoBehaviour
         }
     }
 
-    void ativarTransformacao(){
+    void AtivarTransformacao(){
         transformed = !transformed;
+    }
+
+    void SuperVelocidade(){
+        Speed = 0.22f;
     }
     // Método chamado a cada frame
     private void Update()
     {
        // barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
+        if(Input.GetKey(KeyCode.LeftShift) && transformacao.purificacaoCelular.gameObject.activeSelf == false && dialogue.activeSelf == false && scene != "Dentro"){
+            transformacao.currentEnergy -= 1f * Time.deltaTime;
+            barraDeEnergia.vidaAtual = transformacao.currentEnergy;
+            SuperVelocidade();
 
+        }else if(Input.GetKeyUp(KeyCode.LeftShift)){
+            Speed = SpeedInicial;
+        }
         transformacao.SetIsTransformed(transformed);
         if(Input.GetKeyDown(KeyCode.K)){
             if(transformacao.IsInCooldown() == false && purificacaoCelular.GetIsAttackActive() == false && barraDeEnergia.vidaAtual > 0f){
-                ativarTransformacao();
+                AtivarTransformacao();
                 transformacao.DesbloquearTransformacao();
                 anim.Play("OnTransformacao");
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using System.Data;
 
 // Classe que define um item
 [System.Serializable]
@@ -55,7 +56,9 @@ public class Inventory : MonoBehaviour
     private AudioManager audioManager; // Gerenciador de áudio
     public AudioClip abriu; // Som de abertura do inventário
     public AudioClip seleção; // Som de seleção de item
-
+    public GameObject[] construcoes;
+    private bool VerificadorConstrucoes;
+    public GameObject dialogueObj;
     public Image imagemItemSelecionado;
 
 
@@ -72,7 +75,7 @@ public class Inventory : MonoBehaviour
         description = GameObject.Find("Descricao").GetComponent<Text>();
         itemBG = GameObject.Find("itemBG").GetComponent<ItemBG>();
         invScene.SetActive(false);
-
+       
     }
 
     // Método para adicionar um item ao inventário
@@ -168,7 +171,7 @@ public class Inventory : MonoBehaviour
     // Método para mostrar/ocultar o inventário
     public void inventoryShow(bool option)
     {
-        if (option == true)
+        if (option == true && dialogueObj.activeSelf == false && VerificadorConstrucoes == false)
         {
             // Prepara o inventário para ser mostrado
             if (itensToShow != null)
@@ -204,8 +207,18 @@ public class Inventory : MonoBehaviour
     }
 
     // Atualização do inventário
-    private void Update()
+    private void FixedUpdate()
     {
+
+        foreach(GameObject posicao in construcoes){
+            if(posicao.activeInHierarchy){
+                VerificadorConstrucoes = true;
+                break;
+            }else{
+                VerificadorConstrucoes = false;
+            }
+
+        }
         if(persoa.health <= 0){
             itemInInv.Clear();
         }
@@ -274,6 +287,10 @@ public class Inventory : MonoBehaviour
                 description.text = "Descrição não disponível";
             }
         }
+    }
+    public void SetVerificadorConstrucoes(bool option)
+    {
+        VerificadorConstrucoes = option;
     }
 
 }

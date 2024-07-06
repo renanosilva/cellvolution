@@ -7,7 +7,7 @@ public class transformacao : MonoBehaviour
     public float energyCostPerSecond = 3f; // Quantidade de energia consumida por segundo
     public float cooldownTime = 20f; // Tempo de cooldown em segundos
 
-    private float currentEnergy= 100f; // Energia atual do personagem
+    public float currentEnergy= 100f; // Energia atual do personagem
     private float cooldownTimer; // Temporizador para o cooldown
     private bool isTransformed = false; // Indica se a transformação está ativa
     private bool isInCooldown = false; // Indica se a habilidade está em cooldown

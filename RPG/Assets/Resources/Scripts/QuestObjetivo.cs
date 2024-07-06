@@ -27,7 +27,6 @@
             bool r = false;
              verificador = inimigos.Count;
             if(tipoObjetivo == TipoObjetivo.eliminarInimigo){
-                Debug.Log("entrou na condicao inimigo");
                 foreach(Enemy posicao in inimigos){
                     if(posicao == null){
                        verificador--;
@@ -36,6 +35,11 @@
                            r = true;
                        }
                     }
+                }
+            }
+            if(tipoObjetivo == TipoObjetivo.pressioneBotão){
+                if(Input.GetKey(keyCode)){
+                    r = true;
                 }
             }
 

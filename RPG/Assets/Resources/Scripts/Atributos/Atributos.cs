@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Atributos : MonoBehaviour {
 
     //atributos referentes às habilidades
-    private int velocidade;
+    private int velocidade = 1;
     private int forcaMembrana;
     private int nivelComunicacao;
 

@@ -146,7 +146,6 @@ public class Enemy : MonoBehaviour {
             }
         } else if(health <= 0) {
             EnemyDeath(); // Chama o método EnemyDeath se a saúde for 0 ou menor
-            Debug.LogWarning("Vida do inimigo zerada!");
         }
     }
 

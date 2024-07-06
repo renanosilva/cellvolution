@@ -17,6 +17,10 @@ public class Construção : MonoBehaviour
     public Construção construção2; 
     private bool  checkConstrução;
     private bool  checkConstrução2;
+    private Inventory inv;
+    public GameObject dialogueObj;
+    private bool verificadorInv;
+    private bool verificadorDialogue;
 
     [SerializeField]
     public float distance;
@@ -34,11 +38,11 @@ public class Construção : MonoBehaviour
     private void Start()
     {
         Char = FindObjectOfType<Char>();
+        inv = FindObjectOfType<Inventory>();
     }
 
     void Update()
     {
-
         if ( construcao != null)
         {
              checkConstrução = construcao.GetMissao();
@@ -46,6 +50,15 @@ public class Construção : MonoBehaviour
         if(construção2 != null){
             checkConstrução2 = construção2.GetMissao();
         }
+
+        if(dialogueObj.activeSelf == true && inv.gameObject.activeSelf == true){
+            verificadorDialogue = true;
+            verificadorInv = true;
+        }else{
+            verificadorDialogue = false;
+            verificadorInv = false;
+        }
+        
        
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, distance);
@@ -60,7 +73,7 @@ public class Construção : MonoBehaviour
             }
 
             if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
-                && telaConstrução[ConstrucaoAtual].activeSelf == false && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
+                && telaConstrução[ConstrucaoAtual].activeSelf == false && podeAbrir && !GetMissao() && verificadorDialogue == false && verificadorInv == false) // Verifica se a missão não está concluída 
             {
                 telaConstrução[ConstrucaoAtual].SetActive(true);
                 Char.DisableControls();
@@ -84,20 +97,21 @@ public class Construção : MonoBehaviour
         distance = 0;
         missaoConcluida = concluida;
         Char.EnableControls();
+        inv.SetVerificadorConstrucoes(false);
         if(anim != null){
             anim.Play("NPAentry");
 
-        }       
+        }     
     }
     public void SetProximoNivelConstrucao(){
         distance = 1.5f;
         missaoConcluida = false; 
         podeAbrir = false; 
         ConstrucaoAtual++;
+        inv.SetVerificadorConstrucoes(false);
     }
 
     public void ConstruçãoConcluída(){
-        Debug.Log("ENTROU NO METODO");
         if(construcao != null && construção2 == null){
                 if(checkConstrução == true){
                     SetMissaoConcluida(true);
@@ -126,6 +140,9 @@ public class Construção : MonoBehaviour
     public void SetCheckConstrução(bool check)
     {
         checkConstrução = check;
+    }
+    public bool GetActive(){
+        return podeAbrir;
     }
     
 }
