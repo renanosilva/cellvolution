@@ -101,7 +101,7 @@ public class Char : MonoBehaviour
             anim.Play("TPinvertido");
             if(backgroundAudio != null){
                 
-                //backgroundAudio.PlayAudio(cellBG);
+                backgroundAudio.PlayAudio(cellBG);
             }
             DisableControls();
             Invoke("EnableControls", 2.5f);
@@ -183,10 +183,10 @@ public class Char : MonoBehaviour
     // Método chamado a cada frame
     private void Update()
     {
-       // barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
+        barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
         if(Input.GetKey(KeyCode.LeftShift) && transformacao.purificacaoCelular.gameObject.activeSelf == false && dialogue.activeSelf == false && scene != "Dentro"){
             transformacao.currentEnergy -= 1f * Time.deltaTime;
-            barraDeEnergia.vidaAtual = transformacao.currentEnergy;
+            //barraDeEnergia.vidaAtual = transformacao.currentEnergy;
             SuperVelocidade();
 
         }else if(Input.GetKeyUp(KeyCode.LeftShift)){

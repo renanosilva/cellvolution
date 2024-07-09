@@ -71,7 +71,7 @@ public class Dialogue1 : MonoBehaviour
             estaAberto = false;
         }
 
-        if(!(AtributoManager.instance.forcaMembrana >= forcaMembranaRequerida) && !(AtributoManager.instance.nivelComunicacao >= nivelComunicacaoRequerido))
+        if((AtributoManager.instance.forcaMembrana < forcaMembranaRequerida) || (AtributoManager.instance.nivelComunicacao < nivelComunicacaoRequerido))
         {
             textoMissoes.text = "Procure outras células e realize as missões secundárias até obter os níveis de atributos necessários";
             AudioManager som = GameObject.Find("MC").GetComponent<AudioManager>();
