@@ -30,5 +30,15 @@ public class Damager : MonoBehaviour {
 			}
 		}
 
-	}
+        if (damageable != null && damageable.CompareTag("Enime"))
+        {
+            damageable.TakeDamage(power, transform.position.x);
+            if (shaker != null)
+            {
+
+                Shaker.instance.SetValues(powerValue, duration);
+            }
+        }
+
+    }
 }

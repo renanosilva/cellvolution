@@ -39,7 +39,7 @@ public class damageable : MonoBehaviour {
     [SerializeField]
     private BarrasController barraDeVida;
     [SerializeField]
-    public BarrasController barraDeEnergia;
+    public barraEnergiaControler barraDeEnergia;
 
     [SerializeField]
     private Construir construir;
@@ -195,10 +195,7 @@ public class damageable : MonoBehaviour {
                 if(construir.itensSuficientes()){	
                     construir.GastarConstruir();    
                      transformacao.SetCurrentEnergy(transformacao.GetCurrentEnergy() + 5f);
-                    if(transformacao.IsTransformed() != true)
-                    {
-                        transformacao.SetIsTransformed(false);
-                    }
+                    transformacao.SetIsTransformed(false);
                 }
 
                 if(transformacao.GetCurrentEnergy() > 100f){
@@ -213,4 +210,6 @@ public class damageable : MonoBehaviour {
             Debug.LogWarning("Energia cheia");
         }
     }
+
+        
 }

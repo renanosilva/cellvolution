@@ -17,11 +17,10 @@ public class transformacao : MonoBehaviour
     private bool disableTransform;
 
     [SerializeField]
-    public BarrasController barraDeEnergia;
+    public barraEnergiaControler barraDeEnergia;
     public GameObject canvas;
     public GameObject canvaTimer;  
     public BarrasController barraDeTempo;
-    public BarrasController energiaBarra;
     public PurificacaoCelular purificacaoCelular;
     public damageable damageable;
 
@@ -40,7 +39,8 @@ public class transformacao : MonoBehaviour
             if (isTransformed)
             {
 
-            disableTransform = true;
+                barraDeEnergia.vidaAtual = currentEnergy;
+                disableTransform = true;
                 if(Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true  && GetCurrentEnergy() >= 15f && IsTransformed() == true){
                     anim.SetTrigger("OnPurificacao");
 
@@ -57,7 +57,10 @@ public class transformacao : MonoBehaviour
 
                     barraDeTempo.vidaAtual = purificacaoCelular.timerAttack;
                     barraDeTempo.vidaMaxima = purificacaoCelular.timerAttack;
-                    energiaBarra.vidaAtual = damageable.DimiuirEnergia(purificacaoCelular.energiaUsada);
+                if (barraDeEnergia != null)
+                {
+                    barraDeEnergia.vidaAtual = damageable.DimiuirEnergia(purificacaoCelular.energiaUsada);
+                }
 
                 }else if(purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 0f){
 
@@ -67,15 +70,8 @@ public class transformacao : MonoBehaviour
 
                 }
 
-                if(purificacaoCelular.GetIsReactiveAttack() == false && purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 1f){
+               
 
-                    purificacaoCelular.ReactiveAttack();
-                }
-
-                if(purificacaoCelular.GetReactivationTimer() < 0f){
-
-                    canvaTimer.SetActive(false);
-                }
 
                 canvas.gameObject.SetActive(true);
                 if(isTransformed == true && IsInCooldown() == false && transformBloque){
@@ -86,7 +82,7 @@ public class transformacao : MonoBehaviour
                 isInCooldown = false;
                 // Diminui a energia enquanto a transformação está ativa
 
-                barraDeEnergia.vidaAtual = currentEnergy;
+                
 
                 // Verifica se a energia acabou
                 if (barraDeEnergia.vidaAtual <= 0)
@@ -95,9 +91,19 @@ public class transformacao : MonoBehaviour
                     currentEnergy = 0;	
                     isInCooldown = true;
                     isTransformed = false;
-                    transformBloque = false;
                     DeactivateTransformation();
+                     transformBloque = true; 
                 }
+
+                if (barraDeEnergia.vidaAtual <= 0 && purificacaoCelular.GetTimer() > 0)
+                {
+                    purificacaoCelular.SetIsAttackActive(false);
+                    isTransformed = false;
+                    transformBloque = false; 
+
+                }
+
+         
             }
 
 
@@ -106,9 +112,19 @@ public class transformacao : MonoBehaviour
             EndTransformation();
 
         }
-  
-        
-    
+        if (purificacaoCelular.GetIsReactiveAttack() == false && purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 1f)
+        {
+
+            purificacaoCelular.ReactiveAttack();
+        }
+
+        if (purificacaoCelular.GetReactivationTimer() < 0f)
+        {
+
+            canvaTimer.SetActive(false);
+        }
+
+
     }
 
     // Função para ativar a transformação
@@ -171,8 +187,8 @@ public class transformacao : MonoBehaviour
        return isInCooldown;
     }
 
-    public void DesbloquearTransformacao()
+    public void DesbloquearTransformacao(bool state)
     {
-        transformBloque = true;
+        transformBloque = state;
     }
 }

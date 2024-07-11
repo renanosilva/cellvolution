@@ -46,7 +46,7 @@ public class Char : MonoBehaviour
 
     public BarrasController barraDeTempo;
 
-    public BarrasController barraDeEnergia;
+    public barraEnergiaControler barraDeEnergia;
     private float energia;
 
     public string scene; // Nome da cena
@@ -196,7 +196,7 @@ public class Char : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.K)){
             if(transformacao.IsInCooldown() == false && purificacaoCelular.GetIsAttackActive() == false && barraDeEnergia.vidaAtual > 0f){
                 AtivarTransformacao();
-                transformacao.DesbloquearTransformacao();
+                transformacao.DesbloquearTransformacao(true);
                 anim.Play("OnTransformacao");
 
             }else if(transformed == false){
@@ -219,6 +219,7 @@ public class Char : MonoBehaviour
                 barraDeTempo.vidaAtual = purificacaoCelular.timerAttack;
                 purificacaoCelular.SetIsAttackActive(false);
                 canvaTimer.gameObject.SetActive(false);
+                transformacao.SetIsTransformed(false);
             }
              
         }
@@ -232,6 +233,7 @@ public class Char : MonoBehaviour
                 SetSpeedF(0);
                 transform.position += new Vector3(0, Speed, 0);
                 SetSpeedB(1);
+
             }
             else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //D
             {
