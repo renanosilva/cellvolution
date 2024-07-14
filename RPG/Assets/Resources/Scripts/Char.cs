@@ -56,7 +56,10 @@ public class Char : MonoBehaviour
     private bool transformed = false;
     private damageable damageable;
     public Checkpoint posicaoSalvaJogador;
-    public GameObject  dialogue; 
+    public GameObject  dialogue;
+
+    // Variável para troca de controle
+    private bool useWASD = true;
 
     private void Awake()       
     {
@@ -76,7 +79,17 @@ public class Char : MonoBehaviour
 
             energia = purificacaoCelular.energiaUsada;
         }
-        
+
+        // Carrega a preferência do usuário
+        string controlScheme = PlayerPrefs.GetString("ControlScheme", "WASD");
+        useWASD = controlScheme == "WASD";
+
+    }
+
+    // Método para alternar esquema de controle
+    public void SetControlScheme(bool useWASD)
+    {
+        this.useWASD = useWASD;
     }
 
     // Corotina para trocar animações
@@ -224,56 +237,106 @@ public class Char : MonoBehaviour
              
         }
 
-        // Verifica se o personagem pode ser controlado
-        if (canControl == true)
-        {
+        ////Verifica se o personagem pode ser controlado
+        //if (canControl == true)
+        //{
+        //    //Verifica as teclas pressionadas para movimento
+        //    if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //w
+        //    {
+        //        SetSpeedF(0);
+        //        transform.position += new Vector3(0, Speed, 0);
+        //        SetSpeedB(1);
+
+        //    }
+        //    else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //D
+        //    {
+        //        SetSpeedL(0);
+        //        transform.position += new Vector3(Speed, 0, 0);
+        //        SetSpeedR(1);
+        //    }
+        //    else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) //S
+        //    {
+        //        transform.position += new Vector3(0, -Speed, 0);
+        //        SetSpeedF(1);
+        //    }
+        //    else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //A
+        //    {
+        //        transform.position += new Vector3(-Speed, 0, 0);
+        //        SetSpeedL(1);
+        //    }
+
+            //// Verifica se as teclas foram soltas para parar o movimento
+            //if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))//w
+            //{
+            //    transform.position += new Vector3(0,0,0);
+            //    SetSpeedB(0);
+            //}
+            //else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) //D
+            //{
+            //    transform.position += new Vector3(0,0,0);
+            //    SetSpeedR(0);    
+            //}
+            //else if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)) //S
+            //{
+            //    transform.position += new Vector3(0,0,0);                   
+            //    SetSpeedF(0);
+            //}
+            //else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) //A
+            //{
+            //    transform.position += new Vector3(0,0,0);                    
+            //    SetSpeedL(0);
+            //}
+
+            // Verifica se o personagem pode ser controlado
+            if (canControl == true)
+            {
             // Verifica as teclas pressionadas para movimento
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //w
+            if ((useWASD && Input.GetKey(KeyCode.W)) || (!useWASD && Input.GetKey(KeyCode.UpArrow)))
             {
                 SetSpeedF(0);
                 transform.position += new Vector3(0, Speed, 0);
                 SetSpeedB(1);
-
             }
-            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //D
+            else if ((useWASD && Input.GetKey(KeyCode.D)) || (!useWASD && Input.GetKey(KeyCode.RightArrow)))
             {
                 SetSpeedL(0);
                 transform.position += new Vector3(Speed, 0, 0);
                 SetSpeedR(1);
             }
-            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) //S
+            else if ((useWASD && Input.GetKey(KeyCode.S)) || (!useWASD && Input.GetKey(KeyCode.DownArrow)))
             {
                 transform.position += new Vector3(0, -Speed, 0);
                 SetSpeedF(1);
             }
-            else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //A
+            else if ((useWASD && Input.GetKey(KeyCode.A)) || (!useWASD && Input.GetKey(KeyCode.LeftArrow)))
             {
                 transform.position += new Vector3(-Speed, 0, 0);
                 SetSpeedL(1);
             }
 
             // Verifica se as teclas foram soltas para parar o movimento
-            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))//w
+            if ((useWASD && Input.GetKeyUp(KeyCode.W)) || (!useWASD && Input.GetKeyUp(KeyCode.UpArrow)))
             {
-                transform.position += new Vector3(0,0,0);
+                transform.position += new Vector3(0, 0, 0);
                 SetSpeedB(0);
             }
-            else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) //D
+            else if ((useWASD && Input.GetKeyUp(KeyCode.D)) || (!useWASD && Input.GetKeyUp(KeyCode.RightArrow)))
             {
-                transform.position += new Vector3(0,0,0);
-                SetSpeedR(0);    
+                transform.position += new Vector3(0, 0, 0);
+                SetSpeedR(0);
             }
-            else if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)) //S
+            else if ((useWASD && Input.GetKeyUp(KeyCode.S)) || (!useWASD && Input.GetKeyUp(KeyCode.DownArrow)))
             {
-                transform.position += new Vector3(0,0,0);                   
+                transform.position += new Vector3(0, 0, 0);
                 SetSpeedF(0);
             }
-            else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)) //A
+            else if ((useWASD && Input.GetKeyUp(KeyCode.A)) || (!useWASD && Input.GetKeyUp(KeyCode.LeftArrow)))
             {
-                transform.position += new Vector3(0,0,0);                    
+                transform.position += new Vector3(0, 0, 0);
                 SetSpeedL(0);
             }
         }
+    
 
         // Verifica se há uma quest em andamento
         if (quest != null)

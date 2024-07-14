@@ -29,7 +29,6 @@ public class MenuPrincipalManager : MonoBehaviour
         AtributoManager.instance.Reset();
     }
 
-
     // Método para abrir o painel de opções
     public void abrirOpcoes()
     {
