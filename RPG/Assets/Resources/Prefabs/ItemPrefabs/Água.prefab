@@ -69,7 +69,7 @@ SpriteRenderer:
   m_SortingLayerID: -202787039
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bf46ed832dfc8f44bb0413818525acdd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fde98af2cf096c0479d5ff12e5b12a24, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,5 +95,5 @@ MonoBehaviour:
   id: 6
   count: 1
   mutiplicador: 1
-  imagemDoItem: {fileID: 21300000, guid: bf46ed832dfc8f44bb0413818525acdd, type: 3}
+  imagemDoItem: {fileID: 21300000, guid: fde98af2cf096c0479d5ff12e5b12a24, type: 3}
   distance: 1
