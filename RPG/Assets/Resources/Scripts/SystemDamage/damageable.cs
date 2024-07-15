@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class damageable : MonoBehaviour {
 
+    public DeathLoader deathLoader;
+
     // Variável para definir a saúde máxima
     public int maxHealth;
 
@@ -92,6 +94,11 @@ public class damageable : MonoBehaviour {
         if (barraDeEnergia != null){
 
             energiaAtual = barraDeEnergia.vidaAtual;
+        }
+
+        if (currentHealth <= 0)
+        {
+            deathLoader.CarregarFade();
         }
     }
     // Função para receber dano
