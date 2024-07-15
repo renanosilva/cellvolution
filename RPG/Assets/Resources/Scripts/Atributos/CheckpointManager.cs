@@ -13,6 +13,7 @@ public class CheckDados
     public int indiceBarreiraAtiva;
     public string textoMissaoAtual;
     public float nivelBarraProgresso;
+    public List<string> itensColetados;
 
     public float x;
     public float y;
@@ -30,6 +31,7 @@ public class CheckpointManager : MonoBehaviour
     public int indiceBarreiraAtiva;
     public string textoMissaoAtual;
     public float nivelBarraProgresso;
+    public List<string> itensColetados;
 
     public float x;
     public float y;
@@ -66,6 +68,7 @@ public class CheckpointManager : MonoBehaviour
         data.indiceBarreiraAtiva = indiceBarreiraAtiva;
         data.textoMissaoAtual = textoMissaoAtual;
         data.nivelBarraProgresso = nivelBarraProgresso;
+        data.itensColetados = itensColetados;
 
         data.x = x;
         data.y = y;
@@ -92,6 +95,7 @@ public class CheckpointManager : MonoBehaviour
             indiceBarreiraAtiva = data.indiceBarreiraAtiva;
             textoMissaoAtual = data.textoMissaoAtual;
             nivelBarraProgresso = data.nivelBarraProgresso;
+            itensColetados = data.itensColetados;
 
             x = data.x;
             y = data.y;
@@ -107,6 +111,7 @@ public class CheckpointManager : MonoBehaviour
         indiceBarreiraAtiva = 0;
         textoMissaoAtual = "";
         nivelBarraProgresso = 0;
+        itensColetados = new List<string>();
 
         x = 0;
         y = 0;

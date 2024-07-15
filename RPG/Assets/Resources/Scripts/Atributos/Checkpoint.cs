@@ -34,6 +34,8 @@ public class Checkpoint : MonoBehaviour {
     public GameObject setaGuia;
     public TargetIndicator setaGuiaScript;
 
+    public List<string> itensColetados;
+
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +67,18 @@ public class Checkpoint : MonoBehaviour {
         {
             CarregarConstrucoes();
         }
+
+        if (CheckpointManager.instance.itensColetados == null)
+        {
+            itensColetados = new List<string>();
+        }
+        else
+        {
+            itensColetados = CheckpointManager.instance.itensColetados;
+            CheckpointManager.instance.itensColetados = null;
+        }
+
+        DestruirItensColetados();
 
     }
 
@@ -164,6 +178,26 @@ public class Checkpoint : MonoBehaviour {
         {
             barreirasJogo[indiceBarreiraAtiva].CheckMissaoCelula = true;
         }
+    }
+
+    public void DestruirItensColetados()
+    {
+
+        if (itensColetados != null)
+        {
+            foreach (string item in itensColetados)
+            {
+                GameObject itemColetado = GameObject.Find(item);
+                Destroy(itemColetado);
+            }
+
+        }
+
+    }
+
+    public void SalvarItensColetados()
+    {
+        CheckpointManager.instance.itensColetados = itensColetados;
     }
 
 }

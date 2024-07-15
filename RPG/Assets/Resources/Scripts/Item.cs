@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
+    private Checkpoint checkpoint;
+
     // Identificador único do item
     public int id;
     // Quantidade do item
@@ -31,6 +33,7 @@ public class Item : MonoBehaviour
         Char = FindObjectOfType<Char>();
         // Obtém a referência para o inventário
         inv = FindObjectOfType<Inventory>();
+        checkpoint = GameObject.Find("Checkpoint").GetComponent<Checkpoint>();
     }
 
     // Método chamado a cada frame
@@ -43,6 +46,7 @@ public class Item : MonoBehaviour
             inv.addItem(id, count, mutiplicador, imagemDoItem);
             // Reproduz o áudio de coleta do item
             Char.audioManager.PlayAudio(Char.itemColetado);
+            checkpoint.itensColetados.Add(gameObject.name + "");
             // Destroi o objeto do item após ser coletado
             Destroy(gameObject);            
         }

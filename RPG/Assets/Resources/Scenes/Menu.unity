@@ -2755,6 +2755,7 @@ MonoBehaviour:
   indiceBarreiraAtiva: 4
   textoMissaoAtual: 
   nivelBarraProgresso: 0
+  itensColetados: []
   x: 0
   y: 0
   z: 0
