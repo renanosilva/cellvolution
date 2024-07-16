@@ -49,4 +49,9 @@ public class MenuPrincipalManager : MonoBehaviour
         Debug.Log("Saindo do jogo");
         Application.Quit();
     }
+
+    public void LoadingMenu()
+    {
+        levelLoader.Transition("Menu");
+    }
 }
