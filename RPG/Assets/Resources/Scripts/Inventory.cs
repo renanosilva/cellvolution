@@ -56,7 +56,6 @@ public class Inventory : MonoBehaviour
     private AudioManager audioManager; // Gerenciador de áudio
     public AudioClip abriu; // Som de abertura do inventário
     public AudioClip seleção; // Som de seleção de item
-    public GameObject[] construcoes;
     private bool VerificadorConstrucoes;
     public GameObject dialogueObj;
     public Image imagemItemSelecionado;
@@ -210,15 +209,16 @@ public class Inventory : MonoBehaviour
     private void FixedUpdate()
     {
 
-        foreach(GameObject posicao in construcoes){
-            if(posicao.activeInHierarchy){
-                VerificadorConstrucoes = true;
-                break;
-            }else{
-                VerificadorConstrucoes = false;
-            }
-
+        if(AtributoManager.instance.bloquearTela == true)
+        {
+            VerificadorConstrucoes = true;
+        } else
+        {
+            VerificadorConstrucoes = false;
+            AtributoManager.instance.bloquearTela = false;
         }
+
+
         if(persoa.health <= 0){
             itemInInv.Clear();
         }

@@ -73,14 +73,17 @@ public class Construção : MonoBehaviour
             }
 
             if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
-                && telaConstrução[ConstrucaoAtual].activeSelf == false && podeAbrir && !GetMissao() && verificadorDialogue == false && verificadorInv == false) // Verifica se a missão não está concluída 
+                && telaConstrução[ConstrucaoAtual].activeSelf == false && podeAbrir && !GetMissao() && verificadorDialogue == false && verificadorInv == false) // Verifica se a missão não está concluída
             {
+                AtributoManager.instance.bloquearTela = true;
                 telaConstrução[ConstrucaoAtual].SetActive(true);
                 Char.DisableControls();
-            }else if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
+            } else if (collider.gameObject == Char.gameObject && Input.GetKeyDown(KeyCode.C)
                 && telaConstrução[ConstrucaoAtual].activeSelf && podeAbrir && !GetMissao()) // Verifica se a missão não está concluída
             {
                 telaConstrução[ConstrucaoAtual].SetActive(false);
+                AtributoManager.instance.bloquearTela = false;
+
                 Char.DisableControls();
             }
         }
@@ -97,6 +100,7 @@ public class Construção : MonoBehaviour
         distance = 0;
         missaoConcluida = concluida;
         Char.EnableControls();
+        AtributoManager.instance.bloquearTela = false;
         inv.SetVerificadorConstrucoes(false);
         if(anim != null){
             anim.Play("NPAentry");
@@ -109,6 +113,7 @@ public class Construção : MonoBehaviour
         podeAbrir = false; 
         ConstrucaoAtual++;
         inv.SetVerificadorConstrucoes(false);
+        AtributoManager.instance.bloquearTela = false;
     }
 
     public void ConstruçãoConcluída(){
@@ -143,6 +148,11 @@ public class Construção : MonoBehaviour
     }
     public bool GetActive(){
         return podeAbrir;
+    }
+
+    public void DesbloquearTela()
+    {
+        AtributoManager.instance.bloquearTela = false;
     }
     
 }

@@ -81,12 +81,20 @@ public class Enemy : MonoBehaviour {
         nextFireTime = Time.time;
     }
 
+   
+
     // Chamado em intervalos fixos para atualizações de física
     void FixedUpdate(){  
 
-        if(dialogue.gameObject.activeSelf == true){
+
+
+        
+
+        if(dialogue.gameObject.activeSelf == true || AtributoManager.instance.bloquearTela == true)
+        {
             startMove = false;
-        }else{
+        }else if(dialogue.gameObject.activeSelf == false && AtributoManager.instance.bloquearTela == false)
+        {
             startMove = true;
         }
         // Obtém a saúde atual do inimigo
@@ -269,6 +277,11 @@ public class Enemy : MonoBehaviour {
         {
             transform.position = Vector2.MoveTowards(transform.position, wayPoints[index].position, speed * Time.deltaTime);
         }
+    }
+
+    public void SetMove(bool state)
+    {
+        startMove = state;
     }
 }
 

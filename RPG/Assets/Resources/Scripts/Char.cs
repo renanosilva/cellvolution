@@ -16,6 +16,8 @@ public class Char : MonoBehaviour
     public float onTime;
     public bool OnTochEnime;
 
+    private Enemy inimigos;
+
     [Header("Imports")]
     public Camera cam; // Referência para a câmera
     public TextoQuest texto; // Referência para o texto da quest
@@ -195,7 +197,9 @@ public class Char : MonoBehaviour
     }
     // Método chamado a cada frame
     private void Update()
-    {
+    {   
+
+
         barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
         if(Input.GetKey(KeyCode.LeftShift) && transformacao.purificacaoCelular.gameObject.activeSelf == false && dialogue.activeSelf == false && scene != "Dentro"){
             transformacao.currentEnergy -= 1f * Time.deltaTime;

@@ -23,6 +23,8 @@ public class AtributoManager : MonoBehaviour {
 
     public static AtributoManager instance;
 
+    public Boolean bloquearTela;
+
     [Header("Atributos referentes às habilidades")]
     public int velocidade;
     public int forcaMembrana;

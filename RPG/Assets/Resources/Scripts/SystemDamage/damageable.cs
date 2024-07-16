@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class damageable : MonoBehaviour {
 
     public DeathLoader deathLoader;
+    public GameObject Fade;
 
     // Variável para definir a saúde máxima
     public int maxHealth;
@@ -96,8 +97,9 @@ public class damageable : MonoBehaviour {
             energiaAtual = barraDeEnergia.vidaAtual;
         }
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && deathLoader != null)
         {
+            Fade.gameObject.SetActive(true);
             deathLoader.CarregarFade();
         }
     }
