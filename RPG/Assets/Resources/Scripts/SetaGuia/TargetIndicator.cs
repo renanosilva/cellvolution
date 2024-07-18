@@ -25,14 +25,6 @@ public class TargetIndicator : MonoBehaviour {
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-        if(Target.gameObject.activeSelf == false){
-            celula4 = GameObject.Find("Celula#4");
-            NextTarget(celula4.transform);
-            if(celula4 == null){
-                celula5 = GameObject.Find("Celula#5");
-                NextTarget(celula5.transform);
-            }
-        }
 
     }
 

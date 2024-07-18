@@ -15,8 +15,8 @@ public class Construção : MonoBehaviour
     [Header("Menu de construção necessario")]
     public Construção construcao;
     public Construção construção2; 
-    private bool  checkConstrução;
-    private bool  checkConstrução2;
+    public bool  checkConstrução;
+    public bool  checkConstrução2;
     private Inventory inv;
     public GameObject dialogueObj;
     private bool verificadorInv;
@@ -29,7 +29,7 @@ public class Construção : MonoBehaviour
     [Header("Texto da missão")]
     public string txt;
 
-    private bool missaoConcluida = false; // Variável para indicar se a missão foi concluída
+    public bool missaoConcluida = false; // Variável para indicar se a missão foi concluída
 
     [Header("Animação da construção ao conclui-la")]
     public Animator anim;

@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour {
     // Velocidade de movimento do inimigo
     public float speed;
     // Distância mínima para o jogador que ativa certos comportamentos
-    public float distancePlayer;
+    private float distancePlayer = 10f;
 
     // Ponto inicial do inimigo
     public Transform startPoint;
@@ -79,6 +79,7 @@ public class Enemy : MonoBehaviour {
         transform.position = startPoint.position;   
         // Inicializa o próximo tempo de disparo para o tempo atual
         nextFireTime = Time.time;
+        
     }
 
    
@@ -112,6 +113,7 @@ public class Enemy : MonoBehaviour {
             ChangeWaypoints();
 
             // Move a plataforma
+                speed = 3;
             Moving();
         }
         
