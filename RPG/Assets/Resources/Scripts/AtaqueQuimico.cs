@@ -53,6 +53,7 @@ public class AtaqueQuimico : MonoBehaviour
 
     public Text NUmberText;
     public GameObject canvaText;
+    public Animator anim;
 
     private void Start()
     {
@@ -122,6 +123,7 @@ public class AtaqueQuimico : MonoBehaviour
                 numberShot = 25;
                 timerRecarga = 10;
                 canvaTimer.SetActive(false);
+                recarga = false;
             }
         }
 
@@ -185,5 +187,6 @@ public class AtaqueQuimico : MonoBehaviour
     public void SetAttackActive()
     {
         atackActive = true; 
+        anim.Play("NPAentry");
     }
 }
