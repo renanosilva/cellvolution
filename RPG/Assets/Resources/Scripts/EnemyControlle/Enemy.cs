@@ -87,9 +87,6 @@ public class Enemy : MonoBehaviour {
     void FixedUpdate(){  
 
 
-
-        
-
         if(dialogue.gameObject.activeSelf == true || AtributoManager.instance.bloquearTela == true)
         {
             startMove = false;

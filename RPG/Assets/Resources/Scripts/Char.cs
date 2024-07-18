@@ -59,6 +59,7 @@ public class Char : MonoBehaviour
     private damageable damageable;
     public Checkpoint posicaoSalvaJogador;
     public GameObject  dialogue;
+    public GameObject ataque;
 
     // Variável para troca de controle
     private bool useWASD = true;
@@ -198,7 +199,11 @@ public class Char : MonoBehaviour
     // Método chamado a cada frame
     private void Update()
     {   
-
+        if(transformacao.IsTransformed()){
+            ataque.SetActive(true);
+        }else if(transformacao.IsTransformed() == false){
+            ataque.SetActive(false);
+        }
 
         barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
         if(Input.GetKey(KeyCode.LeftShift) && transformacao.purificacaoCelular.gameObject.activeSelf == false && dialogue.activeSelf == false && scene != "Dentro"){
