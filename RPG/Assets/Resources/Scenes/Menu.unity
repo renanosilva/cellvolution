@@ -4478,6 +4478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc0909c87f537734894df8bff5c56be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloquearTela: 0
   velocidade: 0
   forcaMembrana: 0
   nivelComunicacao: 0
