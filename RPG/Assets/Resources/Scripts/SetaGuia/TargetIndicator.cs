@@ -7,8 +7,7 @@ public class TargetIndicator : MonoBehaviour {
     public Transform Target;
     public float HideDistance;
 
-    private GameObject celula4;
-    private GameObject celula5;
+    public List<GameObject> celulas;
 
     private void Update() {
         var dir = Target.position - transform.position;
@@ -25,7 +24,13 @@ public class TargetIndicator : MonoBehaviour {
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-
+        if(gameObject == null){
+           foreach(GameObject celula in celulas ){
+                if(celula.activeSelf == true){
+                    NextTarget(celula.transform);
+                }
+           }
+        }
     }
 
     private void SetChildrenActive(bool value)

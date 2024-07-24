@@ -27,7 +27,7 @@ public class AtaqueQuimico : MonoBehaviour
     public float attackRate = 0.5f;
 
     // Indica se o ataque está ativo
-    private bool atackActive;
+    private bool atackActive = true;
 
     // Taxa de disparo em segundos
     public float fireRate = 0.25f;

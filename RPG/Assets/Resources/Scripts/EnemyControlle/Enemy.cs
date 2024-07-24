@@ -87,7 +87,6 @@ public class Enemy : MonoBehaviour {
     // Chamado em intervalos fixos para atualizações de física
     void FixedUpdate(){  
 
-
         if(dialogue.gameObject.activeSelf == true || AtributoManager.instance.bloquearTela == true)
         {
             startMove = false;
@@ -113,7 +112,6 @@ public class Enemy : MonoBehaviour {
             ChangeWaypoints();
 
             // Move a plataforma
-                speed = 3;
             Moving();
         }
         
@@ -166,6 +164,8 @@ public class Enemy : MonoBehaviour {
         
     }
 
+    
+
     // Método para retornar ao ponto inicial
      void ReturnToStartPoint() {
         // Move o inimigo de volta ao ponto inicial
@@ -183,7 +183,7 @@ public class Enemy : MonoBehaviour {
         Vector3 fleePosition = transform.position + directionAwayFromPlayer.normalized * speed * Time.deltaTime;
         
         // Move o inimigo para a posição de fuga
-        transform.position = fleePosition;
+        rb.MovePosition(fleePosition);
 
         // Inverte o sprite dependendo da posição do jogador
         sprite.flipX = transform.position.x > Player.transform.position.x;
@@ -228,6 +228,7 @@ public class Enemy : MonoBehaviour {
     void Fire() {
         Rigidbody2D newClone = Instantiate(enemyPrefab, shotSpawn.position, transform.rotation);
         newClone.gameObject.SetActive(true); // Ativa o clone
+        newClone.AddForce(transform.right * 2, ForceMode2D.Impulse);
         enemyClones.Add(newClone); // Adiciona o clone à lista
     }
 

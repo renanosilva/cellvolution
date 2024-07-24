@@ -11,8 +11,6 @@ public class WallControl : MonoBehaviour {
     public int nivelForcaMembranaRequerida;
     public string textoMensagem;
     public GameObject objMissoes;
-    public GameObject objMissoes1;
-    public GameObject objMissoes2;
     private Collider2D colisor;
 
     [Header("Referência à caixa de mensagem")]
@@ -51,32 +49,14 @@ public class WallControl : MonoBehaviour {
                     barreira.SetActive(false);
                     proximaBarreira.SetActive(true);
                     objMissoes.SetActive(false);
-                    if (objMissoes1 != null)
-                    {
-                        objMissoes1.SetActive(false);
-
-                    }
-                    if (objMissoes2 != null)
-                    {
-                         objMissoes2.SetActive(false);
-
-                    }
+                    
                 }
                 else
                 {
                     texto.text = textoMensagem;
                     caixaMensagem.Play(nomeAnimacao);
                     objMissoes.SetActive(true);
-                    if (objMissoes1 != null)
-                    {
-                        objMissoes1.SetActive(true);
-
-                    }
-                    if (objMissoes2 != null)
-                    {
-                        objMissoes2.SetActive(true);
-
-                    }
+          
                     
                 }
 

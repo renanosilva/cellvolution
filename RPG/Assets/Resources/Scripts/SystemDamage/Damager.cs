@@ -20,25 +20,34 @@ public class Damager : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		damageable damageable = other.GetComponent<damageable>();
-		if(damageable != null && !damageable.CompareTag("Enime"))
-		{
-			damageable.TakeDamage(power, transform.position.x);
-			 if(shaker != null){
+		if(gameObject.CompareTag("Enime")){
 
-				Shaker.instance.SetValues(powerValue, duration);
+			Debug.Log("Enime colidiu");
+			damageable damageable = other.GetComponent<damageable>();
+			if(damageable != null && damageable.CompareTag("Player"))
+			{
+				damageable.TakeDamage(power, transform.position.x);
+				if(shaker != null){
+
+					Shaker.instance.SetValues(powerValue, duration);
+				}
 			}
 		}
 
-        if (damageable != null && damageable.CompareTag("Enime"))
-        {
-            damageable.TakeDamage(power, transform.position.x);
-            if (shaker != null)
-            {
+		if(gameObject.CompareTag("Player")){
 
-                Shaker.instance.SetValues(powerValue, duration);
-            }
-        }
+			Debug.Log("Player colidiu");
+			damageable damageable = other.GetComponent<damageable>();
+			if (damageable != null && damageable.CompareTag("Enime"))
+			{
+				damageable.TakeDamage(power, transform.position.x);
+				if (shaker != null)
+				{
+
+					Shaker.instance.SetValues(powerValue, duration);
+				}
+			}
+		}
 
     }
 }

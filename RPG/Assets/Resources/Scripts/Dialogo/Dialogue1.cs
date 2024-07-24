@@ -29,8 +29,6 @@ public class Dialogue1 : MonoBehaviour
 
     [Header("Referência ao grupo das missões secundárias")]
     public GameObject grupoMissoes;
-    public GameObject grupoMissoes2;
-    public GameObject grupoMissoes3;
 
     [Header("Layer do player")]
     public LayerMask playerLayer;
@@ -163,15 +161,6 @@ public class Dialogue1 : MonoBehaviour
             grupoMissoes.SetActive(state);
         }
 
-        if (grupoMissoes2 != null)
-        {
-            grupoMissoes2.SetActive(state);
-        }
-
-        if (grupoMissoes3 != null)
-        {
-            grupoMissoes3.SetActive(state);
-        }
     }
 
     
