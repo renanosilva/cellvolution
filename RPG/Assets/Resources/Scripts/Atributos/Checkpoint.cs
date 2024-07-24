@@ -36,10 +36,25 @@ public class Checkpoint : MonoBehaviour {
 
     public List<string> itensColetados;
 
+    public Inventory inventory;
+    public List<itemInInv> itensInvent;
+
 
     // Start is called before the first frame update
     void Start()
     {
+
+        inventory = GameObject.Find("MC").GetComponent<Inventory>();
+
+        if (CheckpointManager.instance.itensInventario != null)
+        {
+            Debug.Log("Carregando inventario");
+            CarregarInventario();
+        } else
+        {
+
+        }
+
         if (!CheckpointManager.instance.textoMissaoAtual.Equals(""))
         {
             textoMissoes.text = CheckpointManager.instance.textoMissaoAtual;
@@ -47,6 +62,7 @@ public class Checkpoint : MonoBehaviour {
 
         indiceCelulaAtiva = CheckpointManager.instance.indiceCelulaAtiva;
         indiceBarreiraAtiva = CheckpointManager.instance.indiceBarreiraAtiva;
+       
 
         //Carregando as células e as barreiras ativas do último salvamento
         CarregarCelulasAtivas();
@@ -79,6 +95,7 @@ public class Checkpoint : MonoBehaviour {
         }
 
         DestruirItensColetados();
+
 
     }
 
@@ -199,5 +216,26 @@ public class Checkpoint : MonoBehaviour {
     {
         CheckpointManager.instance.itensColetados = itensColetados;
     }
+
+    public void SalvarItensInv()
+    {
+        inventory = GameObject.Find("MC").GetComponent<Inventory>();
+        itensInvent = inventory.itemInInv;
+        CheckpointManager.instance.itensInventario = itensInvent;
+    }
+
+    public void CarregarInventario()
+    {
+        StartCoroutine(CarregarInventarioCorrotina());
+    }
+
+    IEnumerator CarregarInventarioCorrotina()
+    {
+        yield return new WaitForSeconds(1.5f);
+        itensInvent = CheckpointManager.instance.itensInventario;
+        inventory.itemInInv = itensInvent;
+        CheckpointManager.instance.itensInventario = null;
+    }
+    
 
 }

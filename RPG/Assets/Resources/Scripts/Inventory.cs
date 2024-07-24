@@ -30,7 +30,8 @@ public class itemInInv
     public int id; // ID do item
     public int count; // Quantidade do item
     public int mutiplicador; // Multiplicador para quantidade
-    public Sprite imagemDoItem; // Imagem do item
+    //public Sprite imagemDoItem; // Imagem do item
+    public int idImagem;
 }
 
 // Classe principal do inventário
@@ -78,7 +79,7 @@ public class Inventory : MonoBehaviour
     }
 
     // Método para adicionar um item ao inventário
-    public void addItem(int id, int count, int mutiplicador, Sprite imagem)
+    public void addItem(int id, int count, int mutiplicador, int idImagem)
     {
         // Verifica se o item já está no inventário
         bool t = false;
@@ -99,8 +100,8 @@ public class Inventory : MonoBehaviour
             iii.id = id;
             iii.mutiplicador = mutiplicador;
             iii.count = count * mutiplicador;
-            iii.imagemDoItem = imagem;
-
+            //iii.imagemDoItem = imagem;
+            iii.idImagem = idImagem;
             itemInInv.Add(iii);
         }
     }
@@ -189,7 +190,16 @@ public class Inventory : MonoBehaviour
             for (int i = 0; i < itemInInv.Count; i++)
             {
                 int id = itemInInv[i].id;
-                itemImages[i].ItemInvsprite = itemInInv[i].imagemDoItem;
+
+                if(itemInInv[i].idImagem == 0)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/glicose");
+                }
+                else if (itemInInv[i].idImagem == 1)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/proteinas");
+                }
+
                 if (i == 0)
                     itensToShow.Add(ItemsDB[id].name + " / " + itemInInv[i].count);
                 else
@@ -275,7 +285,7 @@ public class Inventory : MonoBehaviour
             for (int i = 0; i < itensToShow.Count; i++)
             {
                 itens.text = itensToShow[selected];
-                imagemItemSelecionado.sprite = itemInInv[selected].imagemDoItem;
+                imagemItemSelecionado.sprite = itemImages[selected].ItemInvsprite;
                 imagemItemSelecionado.color = new Color32(255, 255, 255, 255);
             }
             if (itemInInv[selected].id >= 0 && itemInInv[selected].id < ItemsDB.Count)

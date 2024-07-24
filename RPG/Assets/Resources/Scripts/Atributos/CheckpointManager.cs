@@ -20,6 +20,7 @@ public class CheckDados
     public float z;
 
     public int[] construcoesAtuais;
+    public List<itemInInv> itensInventario;
 }
 
 public class CheckpointManager : MonoBehaviour
@@ -38,6 +39,7 @@ public class CheckpointManager : MonoBehaviour
     public float z;
 
     public int[] construcoesAtuais;
+    public List<itemInInv> itensInventario;
 
     private string path;
 
@@ -53,7 +55,7 @@ public class CheckpointManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        path = Application.persistentDataPath + "/CheckSave.txt";
+        path = Application.persistentDataPath + "/salvamento.txt";
 
         Load();
     }
@@ -69,6 +71,7 @@ public class CheckpointManager : MonoBehaviour
         data.textoMissaoAtual = textoMissaoAtual;
         data.nivelBarraProgresso = nivelBarraProgresso;
         data.itensColetados = itensColetados;
+        data.itensInventario = itensInventario;
 
         data.x = x;
         data.y = y;
@@ -96,6 +99,7 @@ public class CheckpointManager : MonoBehaviour
             textoMissaoAtual = data.textoMissaoAtual;
             nivelBarraProgresso = data.nivelBarraProgresso;
             itensColetados = data.itensColetados;
+            itensInventario = data.itensInventario;
 
             x = data.x;
             y = data.y;
@@ -112,6 +116,7 @@ public class CheckpointManager : MonoBehaviour
         textoMissaoAtual = "";
         nivelBarraProgresso = 0;
         itensColetados = new List<string>();
+        itensInventario = new List<itemInInv>();
 
         x = 0;
         y = 0;
