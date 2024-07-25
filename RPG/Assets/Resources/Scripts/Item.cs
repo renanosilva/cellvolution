@@ -43,7 +43,7 @@ public class Item : MonoBehaviour
         if (Vector2.Distance(Char.transform.position, transform.position) < distance)
         {
             // Adiciona o item ao inventário
-            inv.addItem(id, count, mutiplicador, imagemDoItem);
+            inv.addItem(id, count, mutiplicador, id);
             // Reproduz o áudio de coleta do item
             Char.audioManager.PlayAudio(Char.itemColetado);
             checkpoint.itensColetados.Add(gameObject.name + "");
