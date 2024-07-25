@@ -236,6 +236,12 @@ public class Checkpoint : MonoBehaviour {
         inventory.itemInInv = itensInvent;
         CheckpointManager.instance.itensInventario = null;
     }
+
+    public void CarregarItensAoPausar()
+    {
+        CheckpointManager.instance.itensColetados = itensColetados;
+        CheckpointManager.instance.itensInventario = itensInvent;
+    }
     
 
 }

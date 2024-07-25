@@ -199,6 +199,34 @@ public class Inventory : MonoBehaviour
                 {
                     itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/proteinas");
                 }
+                else if (itemInInv[i].idImagem == 2)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/lipidios");
+                }
+                else if (itemInInv[i].idImagem == 3)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/AcidoLatico");
+                }
+                else if (itemInInv[i].idImagem == 4)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/Guanosina");
+                }
+                else if (itemInInv[i].idImagem == 5)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/Fosfato");
+                }
+                else if (itemInInv[i].idImagem == 6)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/Agua");
+                }
+                else if (itemInInv[i].idImagem == 7)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/Leucina");
+                }
+                else if (itemInInv[i].idImagem == 8)
+                {
+                    itemImages[i].ItemInvsprite = Resources.Load<Sprite>("Sprites/itens/Histidina");
+                }
 
                 if (i == 0)
                     itensToShow.Add(ItemsDB[id].name + " / " + itemInInv[i].count);
