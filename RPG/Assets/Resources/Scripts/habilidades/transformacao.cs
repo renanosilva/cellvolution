@@ -15,6 +15,7 @@ public class transformacao : MonoBehaviour
     public Char personagem;
     private Animator anim;
     private bool disableTransform;
+    public AtaqueQuimico ataque;
 
     [SerializeField]
     public barraEnergiaControler barraDeEnergia;
@@ -30,6 +31,7 @@ public class transformacao : MonoBehaviour
         cooldownTimer = cooldownTime;
 
         anim = GetComponent<Animator>();
+
     }
 
     void Update()
@@ -41,7 +43,7 @@ public class transformacao : MonoBehaviour
 
                 barraDeEnergia.vidaAtual = currentEnergy;
                 disableTransform = true;
-                if(Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true  && GetCurrentEnergy() >= 15f && IsTransformed() == true){
+                if(Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true  && GetCurrentEnergy() >= 15f && IsTransformed() == true && ataque.recarga == false){
                     anim.SetTrigger("OnPurificacao");
 
                     purificacaoCelular.SetISReactivation(false);

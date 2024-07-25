@@ -28,14 +28,14 @@ public class timer : MonoBehaviour
     {
         TimeCount();
 
-        if (purificacaoCelular.GetIsAttackActive() == true)
+        if (purificacaoCelular.GetIsAttackActive() == true && ataqueQuimico.GetRecarga() == false)
         {
             textMOstrado.text = "Duração do ataque: ";
             timeValue = purificacaoCelular.GetTimer();
             barraDeVida.vidaAtual = timeValue;
         }
 
-        if (purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetReactivationTimer() > 0f)
+        if (purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetReactivationTimer() > 0f && ataqueQuimico.GetRecarga() == false)
         {
             textMOstrado.text = "Reativação do ataque: ";
             timeValue = purificacaoCelular.GetReactivationTimer();
