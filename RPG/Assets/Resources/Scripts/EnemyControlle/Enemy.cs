@@ -209,20 +209,6 @@ public class Enemy : MonoBehaviour {
         Destroy(gameObject, 1f); 
     }
 
-    // Método chamado quando há uma colisão com o inimigo
-    private void OnTriggerEnter2D(Collider2D collision) {
-        // Se o objeto colidindo for um ataque, diminui a saúde do inimigo
-        if (collision.gameObject.tag == "Attack") {
-            health--;
-
-            if (health > 0) {
-                damageable.StartDamageSprite();
-            } else {
-                EnemyDeath(); // Chama o método EnemyDeath se a saúde for 0 ou menor
-            }
-        }
-    }
-
     // Método para atirar
    
     void Fire() {

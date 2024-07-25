@@ -60,6 +60,9 @@ public class Char : MonoBehaviour
     public Checkpoint posicaoSalvaJogador;
     public GameObject  dialogue;
     public GameObject ataque;
+    private bool stateAtaque;
+
+    public AtaqueQuimico ataqueQuimico;
 
     // Variável para troca de controle
     private bool useWASD = true;
@@ -193,16 +196,22 @@ public class Char : MonoBehaviour
         transformed = !transformed;
     }
 
+    void AtivarMiraAtaqueQuimico()
+    {
+        stateAtaque = !stateAtaque;
+        ataque.SetActive(stateAtaque);
+    }
+
     void SuperVelocidade(){
         Speed = 0.22f;
     }
     // Método chamado a cada frame
     private void Update()
-    {   
-        if(transformacao.IsTransformed()){
-            ataque.SetActive(true);
-        }else if(transformacao.IsTransformed() == false){
-            ataque.SetActive(false);
+    {
+
+        if (Input.GetMouseButtonDown(1) && transformacao.IsTransformed() && ataqueQuimico.atackActive)
+        {
+            AtivarMiraAtaqueQuimico();
         }
 
         barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();

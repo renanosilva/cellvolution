@@ -27,7 +27,7 @@ public class AtaqueQuimico : MonoBehaviour
     public float attackRate = 0.5f;
 
     // Indica se o ataque está ativo
-    private bool atackActive = true;
+    public bool atackActive;
 
     // Taxa de disparo em segundos
     public float fireRate = 0.25f;
@@ -46,7 +46,7 @@ public class AtaqueQuimico : MonoBehaviour
     public GameObject canvaTimer;
     public BarrasController barraTempo;
     public float timerRecarga = 10;
-    private bool recarga;
+    public bool recarga;
     public GameObject purificacao;
     public transformacao transformacao;
     private Char personagem;
@@ -95,10 +95,6 @@ public class AtaqueQuimico : MonoBehaviour
         // Aplicar a rotação ao transform do objeto que contém o script
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-        if (transformacao.IsTransformed()){
-            bullet.SetActive(true);
-        }
-      
 
         if (Input.GetMouseButtonDown(0) && atackActive == true && bullet.activeSelf == true && numberShot > 0 && purificacao.activeSelf == false && transformacao.IsTransformed() == true && personagem.scene == "Organismo"
             )
