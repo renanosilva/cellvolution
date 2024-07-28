@@ -20,6 +20,7 @@ public class CheckDados
     public float z;
 
     public int[] construcoesAtuais;
+    public bool[] construcoesConcluidas;
     public List<itemInInv> itensInventario;
 }
 
@@ -39,6 +40,7 @@ public class CheckpointManager : MonoBehaviour
     public float z;
 
     public int[] construcoesAtuais;
+    public bool[] construcoesConcluidas;
     public List<itemInInv> itensInventario;
 
     private string path;
@@ -77,6 +79,7 @@ public class CheckpointManager : MonoBehaviour
         data.y = y;
         data.z = z;
 
+        data.construcoesConcluidas = construcoesConcluidas;
         data.construcoesAtuais = construcoesAtuais;
 
         bf.Serialize(file, data);
@@ -105,6 +108,7 @@ public class CheckpointManager : MonoBehaviour
             y = data.y;
             z = data.z;
 
+            construcoesConcluidas = data.construcoesConcluidas;
             construcoesAtuais = data.construcoesAtuais;
         }
     }
@@ -122,10 +126,16 @@ public class CheckpointManager : MonoBehaviour
         y = 0;
         z = 0;
 
+        if(construcoesConcluidas != null)
+        {
+            construcoesAtuais = null;
+        }
+
         if(construcoesAtuais != null)
         {
             construcoesAtuais = null;
         }
+
 
         Save();
     }

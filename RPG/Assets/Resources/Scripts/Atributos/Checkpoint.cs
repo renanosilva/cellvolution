@@ -15,6 +15,7 @@ public class Checkpoint : MonoBehaviour {
 
     public int[] construcoesAtuais;
     public Construção[] objetosConstrucoes;
+    public bool[] construcoesConcluidas;
 
     public Text textoMissoes;
 
@@ -79,7 +80,7 @@ public class Checkpoint : MonoBehaviour {
         setaGuiaScript.NextTarget(celulaAtiva[indiceCelulaAtiva].transform);
 
 
-        if(CheckpointManager.instance.construcoesAtuais != null)
+        if(CheckpointManager.instance.construcoesAtuais != null && CheckpointManager.instance.construcoesConcluidas != null)
         {
             CarregarConstrucoes();
         }
@@ -174,18 +175,22 @@ public class Checkpoint : MonoBehaviour {
         foreach(Construção posicao in objetosConstrucoes)
         {
             construcoesAtuais[posicao.id] = posicao.ConstrucaoAtual;
+            construcoesConcluidas[posicao.id] = posicao.missaoConcluida;
         }
 
         CheckpointManager.instance.construcoesAtuais = construcoesAtuais;
+        CheckpointManager.instance.construcoesConcluidas = construcoesConcluidas;
     }
 
     public void CarregarConstrucoes()
     {
         construcoesAtuais = CheckpointManager.instance.construcoesAtuais;
+        construcoesConcluidas = CheckpointManager.instance.construcoesConcluidas;
 
         foreach(Construção construcao in objetosConstrucoes)
         {
             construcao.ConstrucaoAtual = construcoesAtuais[construcao.id];
+            construcao.missaoConcluida = construcoesConcluidas[construcao.id];
         }
     }
 

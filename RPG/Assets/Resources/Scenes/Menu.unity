@@ -2760,6 +2760,7 @@ MonoBehaviour:
   y: 0
   z: 0
   construcoesAtuais: 
+  construcoesConcluidas: 
   itensInventario: []
 --- !u!4 &1118155234
 Transform:
