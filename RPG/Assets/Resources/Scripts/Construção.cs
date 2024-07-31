@@ -84,7 +84,7 @@ public class Construção : MonoBehaviour
                 telaConstrução[ConstrucaoAtual].SetActive(false);
                 AtributoManager.instance.bloquearTela = false;
 
-                Char.DisableControls();
+                Char.EnableControls();
             }
         }
     }

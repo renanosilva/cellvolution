@@ -7,7 +7,7 @@ public class TargetIndicator : MonoBehaviour {
     public Transform Target;
     public float HideDistance;
 
-    public List<GameObject> celulas;
+    public List<Transform> celulas;
 
     private void Update() {
         var dir = Target.position - transform.position;
@@ -24,13 +24,7 @@ public class TargetIndicator : MonoBehaviour {
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-        if(gameObject == null){
-           foreach(GameObject celula in celulas ){
-                if(celula.activeSelf == true){
-                    NextTarget(celula.transform);
-                }
-           }
-        }
+        
     }
 
     private void SetChildrenActive(bool value)
@@ -43,6 +37,25 @@ public class TargetIndicator : MonoBehaviour {
 
     public void NextTarget(Transform state)
     {
-        Target = state;
+
+        Transform novaPosicao = state;
+
+        foreach (Transform celula in celulas)
+        {
+            if(celula.name.Equals(state.name))
+            {
+                Debug.Log(celula.name + " = " + state.name);
+
+                if(celula.gameObject.activeSelf == false)
+                {
+                    Debug.Log(celula.name + " desativada");
+                    Dialogue1 dialogue = celula.GetComponent<Dialogue1>();
+                    novaPosicao = celulas[dialogue.indiceCheckpoint + 1].transform;
+
+
+                }
+            }
+        }
+        Target = novaPosicao;
     }
 }

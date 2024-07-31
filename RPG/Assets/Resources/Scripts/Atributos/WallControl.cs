@@ -56,6 +56,7 @@ public class WallControl : MonoBehaviour {
                     texto.text = textoMensagem;
                     caixaMensagem.Play(nomeAnimacao);
                     objMissoes.SetActive(true);
+                   
           
                     
                 }
