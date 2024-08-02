@@ -53,7 +53,7 @@ public class AtaqueQuimico : MonoBehaviour
 
     public Text NUmberText;
     public GameObject canvaText;
-    public Animator anim;
+    private Animator anim;
 
     private void Start()
     {
@@ -64,6 +64,7 @@ public class AtaqueQuimico : MonoBehaviour
 
         numberShot = 25;
         personagem = FindObjectOfType<Char>();
+        anim = GetComponent<Animator>();
     }
 
     // Método chamado uma vez por frame

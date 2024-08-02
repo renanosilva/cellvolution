@@ -109,12 +109,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7759016677222543699}
   - component: {fileID: 474334347124997440}
-  - component: {fileID: 218010011416019353}
   - component: {fileID: 5899673934302216217}
   - component: {fileID: 2117699755457560495}
   - component: {fileID: 1645869855802663690}
   - component: {fileID: 3457106336587568615}
   - component: {fileID: 4876543243109362195}
+  - component: {fileID: 791558397}
   m_Layer: 11
   m_Name: Mini virus 1
   m_TagString: Enime
@@ -185,29 +185,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &218010011416019353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3538208471464427888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ccf9ffb619d08d4eaee24a1d4e08a34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
-  Player: {fileID: 0}
-  speed: 6
-  startPoint: {fileID: 7759016677222543699}
-  purificacao: {fileID: 0}
-  fireRate: 0
-  wayPoints: []
-  waitTime: 0
-  enemyPrefab: {fileID: 0}
-  shotSpawn: {fileID: 0}
-  dialogue: {fileID: 0}
 --- !u!114 &5899673934302216217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,6 +430,25 @@ PolygonCollider2D:
       - {x: -0.32999998, y: -1.4699999}
       - {x: -0.11, y: -1.38}
       - {x: 0.01, y: -1.28}
+--- !u!114 &791558397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538208471464427888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ed7a6270193c24d8c3f840e11f8d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
+  Player: {fileID: 0}
+  speed: 5
+  distancePlayer: 10
+  enemyFather: {fileID: 0}
+  purificacao: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!1001 &6327730532143748197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -460,6 +456,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9058597066061949814}
     m_Modifications:
+    - target: {fileID: 6491691945825477165, guid: 8c7a99ca3e9c66245b46296fae752b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: BarraDeVida
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491691945825477165, guid: 8c7a99ca3e9c66245b46296fae752b4b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6491691945825477164, guid: 8c7a99ca3e9c66245b46296fae752b4b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -564,16 +570,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6491691945825477165, guid: 8c7a99ca3e9c66245b46296fae752b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: BarraDeVida
-      objectReference: {fileID: 0}
-    - target: {fileID: 6491691945825477165, guid: 8c7a99ca3e9c66245b46296fae752b4b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6491691945553219536, guid: 8c7a99ca3e9c66245b46296fae752b4b,
         type: 3}

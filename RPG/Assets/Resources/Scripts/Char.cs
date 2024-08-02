@@ -177,21 +177,6 @@ public class Char : MonoBehaviour
     }
     
 
-    private void OnTriggerEnter2D(Collider2D collision){
-        if(collision.gameObject.tag == "Enime" && OnTochEnime == false ){
-            Speed -= 1f/100f;
-            OnTochEnime = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision){
-
-
-        if(collision.gameObject.tag == "Enime"){
-            Invoke("OnExitTochEnime", onTime);
-        }
-    }
-
     void AtivarTransformacao(){
         transformed = !transformed;
     }
@@ -215,7 +200,7 @@ public class Char : MonoBehaviour
         }
 
         barraDeEnergia.vidaAtual = transformacao.GetCurrentEnergy();
-        if(Input.GetKey(KeyCode.LeftShift) && transformacao.purificacaoCelular.gameObject.activeSelf == false && dialogue.activeSelf == false && scene != "Dentro"){
+        if(Input.GetKey(KeyCode.LeftShift) && transformacao.purificacaoCelular.gameObject.activeSelf == false && dialogue.activeSelf == false && scene != "Dentro" && barraDeEnergia.vidaAtual > 0f){
             transformacao.currentEnergy -= 1f * Time.deltaTime;
             //barraDeEnergia.vidaAtual = transformacao.currentEnergy;
             SuperVelocidade();

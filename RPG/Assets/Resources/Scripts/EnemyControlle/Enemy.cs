@@ -50,6 +50,8 @@ public class Enemy : MonoBehaviour {
 
     // Prefab do inimigo que será instanciado como projétil
     public Rigidbody2D enemyPrefab;
+    public EnemyPrefabs enemyFather;
+
     // Ponto de spawn do projétil
     public Transform shotSpawn;
 
@@ -100,7 +102,9 @@ public class Enemy : MonoBehaviour {
         // Chama o método Move para atualizar o movimento do inimigo
         if(distancePlayer > distanceToPlayer){	
             Move();
-        }else{
+        }
+        if (distancePlayer < distanceToPlayer)
+        {
             // Se estiver em espera, conta o tempo de espera e retorna
             if (wait)
             {
@@ -118,6 +122,7 @@ public class Enemy : MonoBehaviour {
 
         // Verifica se o prefab do inimigo foi definido
         if (enemyPrefab != null) {
+
             // Verifica se a saúde do inimigo é maior que 0
             if (health > 0) {
                 // Verifica se a distância ao jogador é menor ou igual a 3 e se o tempo atual é maior ou igual ao próximo tempo de disparo
@@ -154,20 +159,21 @@ public class Enemy : MonoBehaviour {
         }
     }
 
+
     // Método para seguir o jogador
-    void FollowPlayer() {
+    void FollowPlayer()
+    {
         // Move o inimigo em direção ao jogador
         transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
 
         // Inverte o sprite dependendo da posição do jogador
         sprite.flipX = transform.position.x > Player.transform.position.x;
-        
+
     }
 
-    
-
     // Método para retornar ao ponto inicial
-     void ReturnToStartPoint() {
+    void ReturnToStartPoint()
+    {
         // Move o inimigo de volta ao ponto inicial
         transform.position = Vector3.MoveTowards(transform.position, startPoint.position, speed * Time.deltaTime);
 
@@ -176,14 +182,15 @@ public class Enemy : MonoBehaviour {
     }
 
     // Método para fugir do jogador
-    void Flee() {
+    void Flee()
+    {
         // Calcula a direção oposta ao jogador
         Vector3 directionAwayFromPlayer = transform.position - Player.transform.position;
         // Calcula a nova posição de fuga
         Vector3 fleePosition = transform.position + directionAwayFromPlayer.normalized * speed * Time.deltaTime;
-        
+
         // Move o inimigo para a posição de fuga
-        rb.MovePosition(fleePosition);
+        transform.position = fleePosition;
 
         // Inverte o sprite dependendo da posição do jogador
         sprite.flipX = transform.position.x > Player.transform.position.x;
@@ -210,12 +217,15 @@ public class Enemy : MonoBehaviour {
     }
 
     // Método para atirar
-   
-    void Fire() {
+    void Fire()
+    {
         Rigidbody2D newClone = Instantiate(enemyPrefab, shotSpawn.position, transform.rotation);
         newClone.gameObject.SetActive(true); // Ativa o clone
         newClone.AddForce(transform.right * 2, ForceMode2D.Impulse);
         enemyClones.Add(newClone); // Adiciona o clone à lista
+
+        // Define o pai do minienemy como este inimigo
+        newClone.GetComponent<EnemyPrefabs>().SetEnemyFather(this.transform);
     }
 
     // Método para contar o tempo de espera
@@ -269,6 +279,6 @@ public class Enemy : MonoBehaviour {
     {
         startMove = state;
     }
-}
 
-    // Método chamado quando
+   
+}

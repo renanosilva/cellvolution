@@ -9,6 +9,7 @@ TagManager:
   - Attack
   - miniEnemy
   - shot
+  - Barreira
   layers:
   - Default
   - TransparentFX

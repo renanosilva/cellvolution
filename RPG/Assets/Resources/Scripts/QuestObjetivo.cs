@@ -15,7 +15,7 @@
         public List<int> QuantRequerida;
         // Lista que armazena os IDs dos itens necessários para completar o objetivo
         public List<int> idItem;
-        // Código da tecla associada ao objetivo de pressionar botão
+    // Código da tecla associada ao objetivo de pressionar botão
 
         public List<Enemy> inimigos;
         private int verificador;
@@ -27,12 +27,13 @@
             bool r = false;
              verificador = inimigos.Count;
             if(tipoObjetivo == TipoObjetivo.eliminarInimigo){
+
                 foreach(Enemy posicao in inimigos){
                     if(posicao == null){
                        verificador--;
 
                        if(verificador <=0){
-                           r = true;
+                           r = true;                            
                        }
                     }
                 }
