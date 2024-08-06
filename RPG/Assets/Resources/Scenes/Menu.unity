@@ -871,16 +871,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8762744761173369397, guid: 3b5291b75ca87e54192573c05b64bdff,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 420655905480534955, guid: 3b5291b75ca87e54192573c05b64bdff,
         type: 3}
       propertyPath: transitionAnim
       value: 
       objectReference: {fileID: 386827935}
+    - target: {fileID: 8762744761173369397, guid: 3b5291b75ca87e54192573c05b64bdff,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5291b75ca87e54192573c05b64bdff, type: 3}
 --- !u!1 &271551059
@@ -2751,8 +2751,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38edb875237ca4148be7975fa74e62ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceCelulaAtiva: 3
-  indiceBarreiraAtiva: 4
+  indiceCelulaAtiva: 4
+  indiceBarreiraAtiva: 6
   textoMissaoAtual: 
   nivelBarraProgresso: 0
   itensColetados: []

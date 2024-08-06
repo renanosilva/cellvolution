@@ -79,10 +79,7 @@ public class damageable : MonoBehaviour {
         barraDeEnergia.vidaMaxima = energiaAtual; // Atualiza a barra de vida
         barraDeEnergia.vidaAtual = energiaAtual;
     }
-    else
-    {
-        Debug.LogWarning("Barra de Energia não atribuída no Inspector.");
-    }
+
 }
 
 
@@ -198,7 +195,6 @@ public class damageable : MonoBehaviour {
 
     public void AumentarEnergiaButao(){
         if(energiaAtual < 100f){
-            Debug.Log("Energia aumentada");
             if(construir != null){
                 if(construir.itensSuficientes()){	
                     construir.GastarConstruir();    
@@ -211,11 +207,9 @@ public class damageable : MonoBehaviour {
                 }
 
             }else{
-                Debug.LogWarning("GameObject construir nulo");
             }
             
         }else{
-            Debug.LogWarning("Energia cheia");
         }
     }
 

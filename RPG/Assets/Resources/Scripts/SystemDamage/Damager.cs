@@ -22,7 +22,7 @@ public class Damager : MonoBehaviour {
 	{
 		if(gameObject.CompareTag("Enime")){
 
-			Debug.Log("Enime colidiu");
+			
 			damageable damageable = other.GetComponent<damageable>();
 			if(damageable != null && damageable.CompareTag("Player"))
 			{
@@ -36,7 +36,6 @@ public class Damager : MonoBehaviour {
 
 		if(gameObject.CompareTag("Player")){
 
-			Debug.Log("Player colidiu");
 			damageable damageable = other.GetComponent<damageable>();
 			if (damageable != null && damageable.CompareTag("Enime"))
 			{

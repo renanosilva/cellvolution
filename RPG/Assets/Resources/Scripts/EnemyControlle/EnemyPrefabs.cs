@@ -68,7 +68,6 @@ public class EnemyPrefabs : MonoBehaviour
         if (distanceToPlayer > distancePlayer)
         {
 
-            Debug.Log("Entrou no metodo de seguir o obj pai");
             FollowEnemyFather(); // Chama o método FollowEnemyFather para seguir o inimigo pai
         }
 

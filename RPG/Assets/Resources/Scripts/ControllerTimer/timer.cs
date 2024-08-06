@@ -46,7 +46,6 @@ public class timer : MonoBehaviour
 
         if (purificacaoCelular.GetIsAttackActive() == false && ataqueQuimico.GetRecarga() == true)
         {
-            Debug.Log("Entrou na condicao");
             textMOstrado.text = "Recarregamendo: ";
             timeValue = ataqueQuimico.timerRecarga;
             barraDeVida.vidaAtual = timeValue;
