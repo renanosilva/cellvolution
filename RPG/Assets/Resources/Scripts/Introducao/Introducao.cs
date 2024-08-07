@@ -16,7 +16,7 @@ public class Introducao : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        texto.text = textos[contador];
+        texto.text = textos[0];
     }
 
     private void FixedUpdate()
@@ -26,14 +26,18 @@ public class Introducao : MonoBehaviour
 
     public void ProximoTexto()
     {
-        if(contador < textos.Length) {
-            if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            if(contador < textos.Length - 1)
             {
                 contador++;
                 texto.text = textos[contador];
             }
-        } else {
-            levelLoader.Transition("Organismo");
+            else
+            {
+                levelLoader.Transition("Organismo");
+                return;
+            }
         }
     }
 }
