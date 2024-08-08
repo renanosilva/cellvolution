@@ -194,7 +194,8 @@ public class Char : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(1) && transformacao.IsTransformed() && ataqueQuimico.atackActive)
+
+        if (Input.GetMouseButtonDown(1) && ataqueQuimico.atackActive)
         {
             AtivarMiraAtaqueQuimico();
         }
@@ -305,16 +306,19 @@ public class Char : MonoBehaviour
                 SetSpeedL(0);
                 transform.position += new Vector3(Speed, 0, 0);
                 SetSpeedR(1);
+                anim.Play("MovCélula");
             }
             else if ((useWASD && Input.GetKey(KeyCode.S)) || (!useWASD && Input.GetKey(KeyCode.DownArrow)))
             {
                 transform.position += new Vector3(0, -Speed, 0);
                 SetSpeedF(1);
+                anim.Play("MovCélula");
             }
             else if ((useWASD && Input.GetKey(KeyCode.A)) || (!useWASD && Input.GetKey(KeyCode.LeftArrow)))
             {
                 transform.position += new Vector3(-Speed, 0, 0);
                 SetSpeedL(1);
+                anim.Play("MovCélula");
             }
 
             // Verifica se as teclas foram soltas para parar o movimento

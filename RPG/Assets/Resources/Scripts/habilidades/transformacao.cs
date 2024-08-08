@@ -93,8 +93,8 @@ public class transformacao : MonoBehaviour
                     currentEnergy = 0;	
                     isInCooldown = true;
                     isTransformed = false;
-                    DeactivateTransformation();
                      transformBloque = true; 
+                    DeactivateTransformation();
                 }
 
                 if (barraDeEnergia.vidaAtual <= 0 && purificacaoCelular.GetTimer() > 0)

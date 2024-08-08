@@ -104,7 +104,10 @@ public class AtaqueQuimico : MonoBehaviour
             string number = numberShot.ToString();
             NUmberText.text = number;
             canvaText.SetActive(true);
-        } 
+        } else if (bullet.activeSelf == false)
+        {
+            canvaText.SetActive(false);
+        }
 
         if (numberShot == 0)
         {

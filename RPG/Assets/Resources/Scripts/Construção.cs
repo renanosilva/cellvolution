@@ -112,6 +112,7 @@ public class Construção : MonoBehaviour
         missaoConcluida = false; 
         podeAbrir = false; 
         ConstrucaoAtual++;
+        Char.EnableControls();
         inv.SetVerificadorConstrucoes(false);
         AtributoManager.instance.bloquearTela = false;
     }

@@ -48,13 +48,6 @@ public class Enemy : MonoBehaviour {
     // Temporizador para contar o tempo de espera
     private float timer;
 
-    // Prefab do inimigo que será instanciado como projétil
-    public Rigidbody2D enemyPrefab;
-    public EnemyPrefabs enemyFather;
-
-    // Ponto de spawn do projétil
-    public Transform shotSpawn;
-
     // Referência ao componente Animator do inimigo
     private Animator anim;
 
@@ -118,26 +111,7 @@ public class Enemy : MonoBehaviour {
             // Move a plataforma
             Moving();
         }
-        
-
-        // Verifica se o prefab do inimigo foi definido
-        if (enemyPrefab != null) {
-
-            // Verifica se a saúde do inimigo é maior que 0
-            if (health > 0) {
-                // Verifica se a distância ao jogador é menor ou igual a 3 e se o tempo atual é maior ou igual ao próximo tempo de disparo
-                if (distanceToPlayer <= 3f && Time.time >= nextFireTime) {
-                    // Chama o método Fire para atirar
-                    Fire();
-                    // Atualiza o próximo tempo de disparo
-                    nextFireTime = Time.time + fireRate;
-                }
-            } else {
-                // Chama o método EnemyDeath se a saúde do inimigo for 0 ou menor
-                EnemyDeath();
-                Debug.LogWarning("Vida do inimigo zerada!");
-            }
-        }
+       
     }
     
     // Método para mover o inimigo
@@ -214,18 +188,6 @@ public class Enemy : MonoBehaviour {
         Destroy(transform.gameObject.GetComponent<CircleCollider2D>());
         Destroy(transform.gameObject.GetComponent<Rigidbody2D>());
         Destroy(gameObject, 1f); 
-    }
-
-    // Método para atirar
-    void Fire()
-    {
-        Rigidbody2D newClone = Instantiate(enemyPrefab, shotSpawn.position, transform.rotation);
-        newClone.gameObject.SetActive(true); // Ativa o clone
-        newClone.AddForce(transform.right * 2, ForceMode2D.Impulse);
-        enemyClones.Add(newClone); // Adiciona o clone à lista
-
-        // Define o pai do minienemy como este inimigo
-        newClone.GetComponent<EnemyPrefabs>().SetEnemyFather(this.transform);
     }
 
     // Método para contar o tempo de espera
