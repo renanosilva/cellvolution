@@ -63,24 +63,24 @@ public class DialogueControl : MonoBehaviour
                 GoToLastSentence();
               }
 
-              if (Input.GetKeyDown(KeyCode.LeftShift)){
+              if (Input.GetKeyDown(KeyCode.Return) && (speechText.text != sentences[index])){
                 showFullText = true;
               }
 
-             /* if (Input.GetKeyDown(KeyCode.Return)){
+              if (Input.GetKeyDown(KeyCode.Return) && (speechText.text == sentences[index])){
                 NextSentence();
-            }*/
+            }
 
         }
     }
 
-   public void GoToLastSentence()
-{
-    index = sentences.Length - 1; // Define o índice para o último elemento do array
-    StopAllCoroutines(); // Interrompe todas as coroutines em execução
-    speechText.text = sentences[index]; // Atualiza o texto do diálogo para o último elemento
+    public void GoToLastSentence()
+    {
+        index = sentences.Length - 1; // Define o índice para o último elemento do array
+        StopAllCoroutines(); // Interrompe todas as coroutines em execução
+        speechText.text = sentences[index]; // Atualiza o texto do diálogo para o último elemento
 
-}
+    }
 
 
     public void NextSentence()
