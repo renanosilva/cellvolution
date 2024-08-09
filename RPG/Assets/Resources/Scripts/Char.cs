@@ -27,6 +27,7 @@ public class Char : MonoBehaviour
     [Header("Audios")]
     public AudioClip orgBG; // Áudio para o fundo do organismo
     public AudioClip cellBG; // Áudio para o fundo da célula
+    public AudioClip backgroundSave;
     public AudioClip itemColetado; // Áudio para quando um item é coletado
     public AudioClip ISF; // Áudio para a habilidade de ISF
     public AudioClip Construído; // Áudio para quando algo é construído
@@ -74,6 +75,7 @@ public class Char : MonoBehaviour
         transformSave = GameObject.Find("TransformTpSave").GetComponent<Transform>(); // Encontra e obtém o transform para salvar
         damageable = GetComponent<damageable>();
         backgroundAudio = GameObject.Find("Background Music").GetComponent<AudioManager>();
+        backgroundSave = orgBG;
     }
 
     void Start()
@@ -108,7 +110,7 @@ public class Char : MonoBehaviour
             anim.Play("TP");
             anim.runtimeAnimatorController = Resources.Load("Animations/McAnim/MC Celula") as RuntimeAnimatorController;
             transform.position = transformSave.position;
-            backgroundAudio.PlayAudio(orgBG);
+            backgroundAudio.PlayAudio(backgroundSave);
 
         }
         else if (scene == "Organismo")
@@ -130,8 +132,10 @@ public class Char : MonoBehaviour
     // Método para definir velocidade de frente
 
     public void TrocarAudio(AudioClip audio){
-        backgroundAudio.PlayAudio(audio);
+        backgroundSave = audio;
+        backgroundAudio.PlayAudio(backgroundSave);
     }
+
     private void SetSpeedF(int speedF)
     {
         anim.SetInteger("SpeedF", speedF);
