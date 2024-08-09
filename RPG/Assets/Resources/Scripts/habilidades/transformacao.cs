@@ -37,86 +37,59 @@ public class transformacao : MonoBehaviour
     void Update()
     {
         
-            // Gerencia a transformação
-            if (isTransformed)
+        // Gerencia a transformação
+        if (isTransformed)
+        {
+
+            barraDeEnergia.vidaAtual = currentEnergy;
+            disableTransform = true;
+            if (Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true && GetCurrentEnergy() >= 15f && IsTransformed() == true && ataque.recarga == false)
             {
-
-                barraDeEnergia.vidaAtual = currentEnergy;
-                disableTransform = true;
-                if(Input.GetKey(KeyCode.Q) && purificacaoCelular.GetIsReactiveAttack() == true  && GetCurrentEnergy() >= 15f && IsTransformed() == true && ataque.recarga == false){
-                    anim.SetTrigger("OnPurificacao");
-
-                    purificacaoCelular.SetISReactivation(false);
-                    purificacaoCelular.AtivarReactiveAttack(false);
-                    purificacaoCelular.AtivarAtaque(true);
-                    purificacaoCelular.SetTimer(purificacaoCelular.timerAttack);
-                    purificacaoCelular.SetReactiveTimerDelay();
-                    purificacaoCelular.radius = 2f;
-
-                    anim.SetTrigger("OnPurificacao2");
-
-                    canvaTimer.SetActive(true);
-
-                    barraDeTempo.vidaAtual = purificacaoCelular.timerAttack;
-                    barraDeTempo.vidaMaxima = purificacaoCelular.timerAttack;
-                if (barraDeEnergia != null)
-                {
-                    barraDeEnergia.vidaAtual = damageable.DimiuirEnergia(purificacaoCelular.energiaUsada);
-                }
-
-                }else if(purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 0f){
-
-                    anim.SetTrigger("DesativarPurificacao");
-                    purificacaoCelular.AtivarAtaque(false);
-                    purificacaoCelular.SetTimer(0.8f);
-
-                }
-
-               
-
-
-                canvas.gameObject.SetActive(true);
-                if(isTransformed == true && IsInCooldown() == false && transformBloque){
-                     currentEnergy -= energyCostPerSecond * Time.deltaTime;
-
-                } 
-
-                isInCooldown = false;
-                // Diminui a energia enquanto a transformação está ativa
-
-                
-
-                // Verifica se a energia acabou
-                if (barraDeEnergia.vidaAtual <= 0)
-                {
-                    // Desativa a transformação
-                    currentEnergy = 0;	
-                    isInCooldown = true;
-                    isTransformed = false;
-                     transformBloque = true; 
-                    DeactivateTransformation();
-                }
-
-                if (barraDeEnergia.vidaAtual <= 0 && purificacaoCelular.GetTimer() > 0)
-                {
-                    purificacaoCelular.SetIsAttackActive(false);
-                    isTransformed = false;
-                    transformBloque = false; 
-
-                }
-
-         
+                activePurificacao();
             }
 
+            if (purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 0f || barraDeEnergia.vidaAtual <= 0f)
+            {
+                anim.SetTrigger("DesativarPurificacao");
+                purificacaoCelular.AtivarAtaque(false);
+                purificacaoCelular.SetTimer(0.8f);
 
-            if(isTransformed == false && disableTransform == true)
-        {
+            }
+
+            canvas.gameObject.SetActive(true);
+            if(isTransformed == true && IsInCooldown() == false && transformBloque){
+                currentEnergy -= energyCostPerSecond * Time.deltaTime;
+            } 
+
+            isInCooldown = false;                
+
+            // Verifica se a energia acabou
+            if (barraDeEnergia.vidaAtual <= 0)
+            {
+                // Desativa a transformação
+                currentEnergy = 0;	
+                isInCooldown = true;
+                isTransformed = false;
+                    transformBloque = true; 
+                DeactivateTransformation();
+            }
+
+            if (barraDeEnergia.vidaAtual <= 0 && purificacaoCelular.GetTimer() > 0)
+            {
+                purificacaoCelular.SetIsAttackActive(false);
+                isTransformed = false;
+                transformBloque = false; 
+
+            }
+        
+        }
+
+        if(isTransformed == false && disableTransform == true) {
             EndTransformation();
 
         }
         if (purificacaoCelular.GetIsReactiveAttack() == false && purificacaoCelular.GetIsAttackActive() == false && purificacaoCelular.GetTimer() <= 1f)
         {
-
             purificacaoCelular.ReactiveAttack();
         }
 
@@ -127,6 +100,30 @@ public class transformacao : MonoBehaviour
         }
 
 
+    }
+
+    public void activePurificacao()
+    {
+      
+        anim.SetTrigger("OnPurificacao");
+
+        purificacaoCelular.SetISReactivation(false);
+        purificacaoCelular.AtivarReactiveAttack(false);
+        purificacaoCelular.AtivarAtaque(true);
+        purificacaoCelular.SetTimer(purificacaoCelular.timerAttack);
+        purificacaoCelular.SetReactiveTimerDelay();
+        purificacaoCelular.radius = 2f;
+
+        anim.SetTrigger("OnPurificacao2");
+
+        canvaTimer.SetActive(true);
+
+        barraDeTempo.vidaAtual = purificacaoCelular.timerAttack;
+        barraDeTempo.vidaMaxima = purificacaoCelular.timerAttack;
+        if (barraDeEnergia != null)
+        {
+            barraDeEnergia.vidaAtual = damageable.DimiuirEnergia(purificacaoCelular.energiaUsada);
+        }
     }
 
     // Função para ativar a transformação

@@ -62,7 +62,7 @@ public class AtaqueQuimico : MonoBehaviour
         barraTempo.vidaAtual = timerRecarga;
         barraTempo.vidaMaxima = timerRecarga;
 
-        numberShot = 25;
+        numberShot = 15;
         personagem = FindObjectOfType<Char>();
         anim = GetComponent<Animator>();
     }
@@ -97,15 +97,13 @@ public class AtaqueQuimico : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
 
-        if (Input.GetMouseButtonDown(0) && atackActive == true && bullet.activeSelf == true && numberShot > 0 && purificacao.activeSelf == false && transformacao.IsTransformed() == true && personagem.scene == "Organismo"
-            )
-        {
+        if (Input.GetMouseButtonDown(0) && atackActive == true && bullet.activeSelf == true && numberShot > 0 && purificacao.activeSelf == false && transformacao.IsTransformed() == true && personagem.scene == "Organismo"){
             Fire();
             string number = numberShot.ToString();
             NUmberText.text = number;
             canvaText.SetActive(true);
-        } else if (bullet.activeSelf == false)
-        {
+
+        } else if (bullet.activeSelf == false){
             canvaText.SetActive(false);
         }
 

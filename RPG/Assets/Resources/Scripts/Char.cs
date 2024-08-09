@@ -63,7 +63,7 @@ public class Char : MonoBehaviour
     private bool stateAtaque;
 
     public AtaqueQuimico ataqueQuimico;
-
+    public GameObject canvaDisparadoAtaque;
     // Variável para troca de controle
     private bool useWASD = true;
 
@@ -122,6 +122,7 @@ public class Char : MonoBehaviour
                 
                 backgroundAudio.PlayAudio(cellBG);
             }
+
             DisableControls();
             Invoke("EnableControls", 2.5f);
         }
@@ -185,6 +186,7 @@ public class Char : MonoBehaviour
     {
         stateAtaque = !stateAtaque;
         ataque.SetActive(stateAtaque);
+        canvaDisparadoAtaque.SetActive(stateAtaque);
     }
 
     void SuperVelocidade(){

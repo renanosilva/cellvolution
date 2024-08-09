@@ -15,6 +15,7 @@
         public List<int> QuantRequerida;
         // Lista que armazena os IDs dos itens necessários para completar o objetivo
         public List<int> idItem;
+        private bool r; 
     // Código da tecla associada ao objetivo de pressionar botão
 
         public List<Enemy> inimigos;
@@ -24,7 +25,7 @@
         // Método para verificar se o objetivo foi completado
         public bool completou()
         {
-            bool r = false;
+             r = false;
              verificador = inimigos.Count;
             if(tipoObjetivo == TipoObjetivo.eliminarInimigo){
 

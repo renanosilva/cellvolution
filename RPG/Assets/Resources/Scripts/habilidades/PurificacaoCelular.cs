@@ -26,6 +26,8 @@ public class PurificacaoCelular : MonoBehaviour
     public bool transformacaoAtivada;
     private Shaker shaker;
 
+    public barraEnergiaControler barraEnergia;
+
     private void Start()
     {
      
@@ -133,7 +135,7 @@ public class PurificacaoCelular : MonoBehaviour
         if (isAttackActive)
         {
             timer -= Time.deltaTime;
-            if (timer <= 0)
+            if (timer <= 0 || barraEnergia.vidaAtual <= 0f)
             {
                 isAttackActive = false;
                 AtivarAtaque(false); // Desativa o ataque quando o tempo expirar
@@ -161,7 +163,7 @@ public class PurificacaoCelular : MonoBehaviour
     }
 
     public void ReactiveAttack(){
-        if(attack != null){    
+        if(attack != null ){    
                 
             if(isAttackActive == false && reactivationTimer > 0f){
                 isReactivation = true; 

@@ -20,7 +20,7 @@ public class damageable : MonoBehaviour {
     public UnityEvent OnDeath;
 
     // Variável para armazenar a saúde atual
-    private int currentHealth;
+    public int currentHealth;
 
     // Flags para controlar invencibilidade e estado de morte
     private bool invincible;
