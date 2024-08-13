@@ -93,10 +93,6 @@ public class PurificacaoCelular : MonoBehaviour
                             Shaker.instance.SetValues(powerValue, duration);
                         }
                     }
-                    else
-                    {
-                        Debug.LogWarning("damageable component is missing on enemy: " + enemy.name);
-                    }
                 }
             }
         }

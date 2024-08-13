@@ -14,10 +14,13 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadScene(string sceneName)
     {
-        transitionAnim.SetTrigger("Start");
+        
 
-        yield return new WaitForSeconds(1f);
+            transitionAnim.SetTrigger("Start");
 
-        SceneManager.LoadScene(sceneName);
+            yield return new WaitForSeconds(1f);
+
+            SceneManager.LoadScene(sceneName);
+        
     }
 }

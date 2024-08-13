@@ -14,18 +14,21 @@ public class Interactable : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (used)
-			return;
+		if(collision.CompareTag("Player")){
+			Debug.Log("Interagindo");
+			if (used)
+				return;
 
-		if (singleUse)
-			used = true;
+			if (singleUse)
+				used = true;
 
-		OnTrigger.Invoke();
-	}
+			OnTrigger.Invoke();
+		}
+		}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-
+		Debug.Log("Saindo");
 		if (singleUse)
 			return;
 

@@ -115,7 +115,6 @@ public class Construir : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Itens insuficientes!");
             v = false;
         }
         return v;
@@ -148,14 +147,9 @@ public class Construir : MonoBehaviour
         if (podeConstruir())
         {
             // Se é possível construir, reproduz o áudio e chama o evento de construção
-            Debug.Log("proximo");
             pessoa.audioManager.PlayAudio(pessoa.Construído);
             onConstruction.Invoke();
         }
-        else
-        {
-            Debug.LogWarning("Itens insuficientes! Não é possível consumir os itens!");
-            Debug.Log("ISF");
-        }
+       
     }
 }
