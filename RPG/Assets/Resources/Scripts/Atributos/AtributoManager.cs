@@ -10,7 +10,6 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class PlayerDados
 {
     //Atributos referentes às habilidades
-    public int velocidade;
     public int forcaMembrana;
     public int nivelComunicacao;
 
@@ -26,7 +25,6 @@ public class AtributoManager : MonoBehaviour {
     public Boolean bloquearTela;
 
     [Header("Atributos referentes às habilidades")]
-    public int velocidade;
     public int forcaMembrana;
     public int nivelComunicacao;
 
@@ -58,7 +56,6 @@ public class AtributoManager : MonoBehaviour {
         FileStream file = File.Create(path);
         PlayerDados data = new PlayerDados();
 
-        data.velocidade = velocidade;
         data.forcaMembrana = forcaMembrana;
         data.nivelComunicacao = nivelComunicacao;
 
@@ -79,7 +76,6 @@ public class AtributoManager : MonoBehaviour {
             PlayerDados data = (PlayerDados)bf.Deserialize(file);
             file.Close();
 
-            velocidade = data.velocidade;
             forcaMembrana = data.forcaMembrana;
             nivelComunicacao = data.nivelComunicacao;
 
@@ -89,7 +85,6 @@ public class AtributoManager : MonoBehaviour {
 
     public void Reset()
     {
-        velocidade = 0;
         forcaMembrana = 0;
         nivelComunicacao = 0;
         nivelFortalecimento = 0;

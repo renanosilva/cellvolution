@@ -35,7 +35,7 @@ public class AtaqueQuimico : MonoBehaviour
     // Impulso aplicado ao bullet ao disparar
     public float shotImpulse = 10;
 
-    public int numberShot = 25;
+    public int numberShot = 15;
     // Tempo para o próximo disparo permitido
     private float nextFire;
 

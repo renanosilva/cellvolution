@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Atributos : MonoBehaviour {
 
     //atributos referentes às habilidades
-    private int velocidade = 1;
     private int forcaMembrana;
     private int nivelComunicacao;
 
@@ -14,7 +13,6 @@ public class Atributos : MonoBehaviour {
     private int nivelFortalecimento;
 
     [Header("Objetos do painel de atributos")]
-    public Text textoVelocidade;
     public Text textoForcaMembrana;
     public Text textoNivelComunicacao;
     public GameObject painelAtributos;
@@ -26,7 +24,6 @@ public class Atributos : MonoBehaviour {
     {
 
         //Atributos referentes à habilidades
-        velocidade = AtributoManager.instance.velocidade;
         forcaMembrana = AtributoManager.instance.forcaMembrana;
         nivelComunicacao = AtributoManager.instance.nivelComunicacao;
 
@@ -34,7 +31,6 @@ public class Atributos : MonoBehaviour {
         nivelFortalecimento = AtributoManager.instance.nivelFortalecimento;
 
         //Substituindo os textos dos objetos do painel de atributos
-        textoVelocidade.text = "Velocidade: " + AtributoManager.instance.velocidade;
         textoForcaMembrana.text = "Força da Membrana: " + AtributoManager.instance.forcaMembrana;
         textoNivelComunicacao.text = "Nivel de comunicação: " + AtributoManager.instance.nivelComunicacao;
     }
@@ -64,13 +60,6 @@ public class Atributos : MonoBehaviour {
         }
     }
 
-
-    public void SetAumentoVelocidade(int velocidade)
-    {
-        this.velocidade = this.velocidade + velocidade;
-        AtributoManager.instance.velocidade = this.velocidade;
-        textoVelocidade.text = "Velocidade: " + this.velocidade;
-    }
 
     public void SetAumentoForcaMembrana(int forcaMembrana)
     {

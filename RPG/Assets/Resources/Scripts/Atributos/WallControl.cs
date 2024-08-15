@@ -41,6 +41,9 @@ public class WallControl : MonoBehaviour {
             {
                 texto.text = "Você ainda não é capaz de chegar a esse lugar!";
                 caixaMensagem.Play(nomeAnimacao);
+            }else if (barreiraNormal == true && barreira.activeSelf == false)
+            {
+                proximaBarreira.SetActive(true);
             }
             else if (CheckMissaoCelula == true && !barreiraNormal)
             {
