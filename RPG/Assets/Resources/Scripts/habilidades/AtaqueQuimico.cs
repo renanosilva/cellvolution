@@ -185,6 +185,6 @@ public class AtaqueQuimico : MonoBehaviour
     public void SetAttackActive()
     {
         atackActive = true; 
-        anim.Play("NPAentry");
+        //anim.Play("NPAentry");
     }
 }
