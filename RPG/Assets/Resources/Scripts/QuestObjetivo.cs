@@ -22,6 +22,8 @@
         private int verificador;
         public KeyCode keyCode;
 
+        public TargetIndicator setaGuia;
+
         // Método para verificar se o objetivo foi completado
         public bool completou()
         {
@@ -36,6 +38,11 @@
                        if(verificador <=0){
                            r = true;                            
                        }
+                    }
+                    else
+                    {
+                        setaGuia.NextTarget(posicao.transform);
+                        setaGuia.gameObject.SetActive(true);
                     }
                 }
             }

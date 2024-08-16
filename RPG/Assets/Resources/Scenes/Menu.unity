@@ -2751,8 +2751,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38edb875237ca4148be7975fa74e62ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceCelulaAtiva: 4
-  indiceBarreiraAtiva: 6
+  indiceCelulaAtiva: 0
+  indiceBarreiraAtiva: 0
   textoMissaoAtual: 
   nivelBarraProgresso: 0
   itensColetados: []
