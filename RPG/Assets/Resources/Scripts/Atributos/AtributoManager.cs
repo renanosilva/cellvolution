@@ -92,4 +92,6 @@ public class AtributoManager : MonoBehaviour {
         Save();
     }
 
+    
+
 }

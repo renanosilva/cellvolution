@@ -86,5 +86,15 @@ public class Atributos : MonoBehaviour {
         AtributoManager.instance.Save();
     }
 
+    public void BloquearTela()
+    {
+        AtributoManager.instance.bloquearTela = true;
+    }
+
+    public void DesbloquearTela()
+    {
+        AtributoManager.instance.bloquearTela = false;
+    }
+
 
 }
