@@ -3548,7 +3548,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: dd595b2ea36581c47b9bfa6c329fa72d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04794c1ef2133634297840bc9a0804ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4481,7 +4481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloquearTela: 0
-  velocidade: 0
   forcaMembrana: 0
   nivelComunicacao: 0
   nivelFortalecimento: 0
