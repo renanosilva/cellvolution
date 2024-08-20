@@ -428,22 +428,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textos:
-  - "Bem-vindo a uma jornada extraordin\xE1ria, onde voc\xEA mergulhar\xE1 no microcosmo
-    pulsante e vibrante de uma c\xE9lula viva. Prepare-se para explorar um universo
-    min\xFAsculo, por\xE9m repleto de complexidade e maravilhas, onde cada organela,
-    membrana e mol\xE9cula desempenha um papel vital na sobreviv\xEAncia e no funcionamento
-    dessa c\xE9lula."
+  - "Bem-vindo (a) a uma jornada extraordin\xE1ria, onde voc\xEA mergulhar\xE1 no
+    microcosmo pulsante e vibrante de uma c\xE9lula viva. Prepare-se para explorar
+    um universo min\xFAsculo, por\xE9m repleto de complexidade e maravilhas, na qual
+    cada mol\xE9cula, membrana e organela desempenha um papel vital na sobreviv\xEAncia
+    e no funcionamento dessa c\xE9lula."
   - "Neste jogo, voc\xEA assumir\xE1 o papel de uma c\xE9lula rec\xE9m-formada, lan\xE7ada
     em um mundo intrincado e cheio de desafios. Desde o seu nascimento, voc\xEA estar\xE1
     imerso em uma narrativa fascinante que segue sua jornada desde uma c\xE9lula simples
     at\xE9 uma estrutura complexa e especializada."
   - "Prepare-se para enfrentar obst\xE1culos e desafios inimagin\xE1veis enquanto
     navega por ambientes celulares diversificados, enfrentando amea\xE7as como v\xEDrus
-    e bact\xE9rias . No entanto, com habilidade, estrat\xE9gia e conhecimento, voc\xEA
+    e bact\xE9rias. No entanto, com habilidade, estrat\xE9gia e conhecimento, voc\xEA
     poder\xE1 prosperar e evoluir, desbloqueando novas funcionalidades e alcan\xE7ando
     novos patamares de complexidade e efici\xEAncia."
   - "Embarque nesta aventura microsc\xF3pica e descubra o fascinante mundo oculto
-    dentro de cada c\xE9lula, onde a vida come\xE7a e os segredos da exist\xEAncia
+    dentro de cada c\xE9lula, na qual a vida come\xE7a e os segredos da exist\xEAncia
     s\xE3o revelados. Sua jornada est\xE1 prestes a come\xE7ar, c\xE9lula. O mundo
     espera por voc\xEA!"
   texto: {fileID: 926852834}
