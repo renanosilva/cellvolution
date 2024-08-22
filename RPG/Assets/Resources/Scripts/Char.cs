@@ -65,6 +65,7 @@ public class Char : MonoBehaviour
 
     public AtaqueQuimico ataqueQuimico;
     public GameObject canvaDisparadoAtaque;
+
     // Variável para troca de controle
     private bool useWASD = true;
 
@@ -184,6 +185,7 @@ public class Char : MonoBehaviour
 
     void AtivarTransformacao(){
         transformed = !transformed;
+        transformacao.SetIsTransformed(transformed);
     }
 
     void AtivarMiraAtaqueQuimico()
@@ -199,8 +201,6 @@ public class Char : MonoBehaviour
     // Método chamado a cada frame
     private void Update()
     {
-
-
         if (Input.GetMouseButtonDown(1) && ataqueQuimico.atackActive)
         {
             AtivarMiraAtaqueQuimico();
@@ -215,11 +215,15 @@ public class Char : MonoBehaviour
         }else if(Input.GetKeyUp(KeyCode.LeftShift)){
             Speed = SpeedInicial;
         }
-        transformacao.SetIsTransformed(transformed);
+
+        if(anim.GetCurrentAnimatorStateInfo(0).IsName("OnTransformacao")){
+            transformacao.SetIsTransformed(true);
+            transformacao.DesbloquearTransformacao(true);
+        }
         if(Input.GetKeyDown(KeyCode.K)){
+            AtivarTransformacao();
             if(transformacao.IsInCooldown() == false && purificacaoCelular.GetIsAttackActive() == false && barraDeEnergia.vidaAtual > 0f){
-                AtivarTransformacao();
-                transformacao.DesbloquearTransformacao(true);
+                transformacao.DesbloquearTransformacao(transformed);
                 anim.Play("OnTransformacao");
 
             }else if(transformed == false){

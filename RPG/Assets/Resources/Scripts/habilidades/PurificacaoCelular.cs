@@ -71,7 +71,11 @@ public class PurificacaoCelular : MonoBehaviour
     }
 
     public void AtivarAtaque(bool state)
-    {
+    {   
+        if(state == false){
+            radius = 0;
+            attack.SetActive(false);
+        }
         if (attack != null)
         {
             attack.SetActive(state);
