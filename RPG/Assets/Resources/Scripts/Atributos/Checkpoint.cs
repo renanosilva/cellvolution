@@ -51,10 +51,7 @@ public class Checkpoint : MonoBehaviour {
         {
             Debug.Log("Carregando inventario");
             CarregarInventario();
-        } else
-        {
-
-        }
+        } 
 
         if (!CheckpointManager.instance.textoMissaoAtual.Equals(""))
         {
@@ -244,8 +241,7 @@ public class Checkpoint : MonoBehaviour {
 
     public void CarregarItensAoPausar()
     {
-        CheckpointManager.instance.itensColetados = itensColetados;
-        CheckpointManager.instance.itensInventario = itensInvent;
+        CheckpointManager.instance.Load();
     }
     
 

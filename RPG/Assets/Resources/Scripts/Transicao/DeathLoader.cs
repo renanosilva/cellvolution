@@ -16,6 +16,7 @@ public class DeathLoader : MonoBehaviour
     {
         anim.Play("Fade_Morte");
         yield return new WaitForSeconds(4f);
+        CheckpointManager.instance.Load();
         levelLoader.Transition("Menu");
     }
 }
