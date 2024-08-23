@@ -13,6 +13,7 @@ public class BarrasController : MonoBehaviour
    public Text ValorMaximo;
 
 
+
    public float vidaMaxima{
         set{
             slider.maxValue = value;

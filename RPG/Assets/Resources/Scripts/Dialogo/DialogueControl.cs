@@ -100,7 +100,7 @@ public class DialogueControl : MonoBehaviour
 
                     if (qtdTurnos[turnoAtual] == 0)
                     {
-                        actorNameText.text = "Player";
+                        actorNameText.text = "Jogador";
                         nameAtual = 1;
                         turnoAtual++;
                         profile.sprite = Resources.Load<Sprite>("Sprites/celula");

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 699712769158300008}
   - component: {fileID: 8091607358138942188}
   - component: {fileID: 4995655316456299721}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: TextValorMax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8186165762339095447}
   - component: {fileID: 5657696654092420202}
   - component: {fileID: 4285487617144046539}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 4553976081934886532}
   - component: {fileID: 5356990685737223334}
   - component: {fileID: 4621672604490500793}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: TextHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,9 +238,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Health
-
-'
+  m_Text: Vida
 --- !u!1 &3943449817908839538
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +250,7 @@ GameObject:
   - component: {fileID: 658785649129731025}
   - component: {fileID: 5680661858229773536}
   - component: {fileID: 9132033925732346437}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: TextValorAtual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +331,7 @@ GameObject:
   - component: {fileID: 6491691945233609355}
   - component: {fileID: 6491691945233609353}
   - component: {fileID: 6491691945233609354}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +405,7 @@ GameObject:
   - component: {fileID: 6491691945521344319}
   - component: {fileID: 6491691945521344317}
   - component: {fileID: 6491691945521344318}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6491691945532082436}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +515,7 @@ GameObject:
   - component: {fileID: 6491691945553219536}
   - component: {fileID: 6491691945553219542}
   - component: {fileID: 6491691945553219543}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Background borda right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,8 +538,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 157.3, y: -0.0000048876}
-  m_SizeDelta: {x: 14.1, y: 47.5}
+  m_AnchoredPosition: {x: 157.3, y: 0.000012159}
+  m_SizeDelta: {x: 14.1, y: 58.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6491691945553219542
 CanvasRenderer:
@@ -591,7 +589,7 @@ GameObject:
   - component: {fileID: 6491691945825477164}
   - component: {fileID: 6491691945825477171}
   - component: {fileID: 6491691945825477170}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BarraDeVida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +696,7 @@ GameObject:
   - component: {fileID: 6491691946735027277}
   - component: {fileID: 6491691946735027283}
   - component: {fileID: 6491691946735027276}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,7 +770,7 @@ GameObject:
   - component: {fileID: 6491691946771783543}
   - component: {fileID: 6491691946771783541}
   - component: {fileID: 6491691946771783542}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,7 +844,7 @@ GameObject:
   - component: {fileID: 6491691946829212461}
   - component: {fileID: 6491691946829212467}
   - component: {fileID: 6491691946829212460}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BackgroundIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6491691947172157878}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +955,7 @@ GameObject:
   - component: {fileID: 4510980891052642385}
   - component: {fileID: 5526831746764542299}
   - component: {fileID: 1800355124271478820}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: backgroundTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 72.935005, y: -27.18}
+  m_AnchoredPosition: {x: 72.935005, y: -39}
   m_SizeDelta: {x: -173.67, y: -76.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5526831746764542299

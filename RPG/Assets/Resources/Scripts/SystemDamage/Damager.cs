@@ -10,7 +10,7 @@ public class Damager : MonoBehaviour {
 	public float powerValue = 50;
 	public float duration = 0.5f;
 
-	private Shaker shaker;
+    private Shaker shaker;
 
 
 	private void Start(){
@@ -34,7 +34,7 @@ public class Damager : MonoBehaviour {
 			}
 		}
 
-		if(gameObject.CompareTag("Player")){
+        if (gameObject.CompareTag("Player")){
 
 			damageable damageable = other.GetComponent<damageable>();
 			if (damageable != null && damageable.CompareTag("Enime"))
