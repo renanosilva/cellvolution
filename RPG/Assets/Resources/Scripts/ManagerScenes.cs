@@ -31,6 +31,7 @@ public class ManagerScenes : MonoBehaviour
         {
             Char.trocarAnimadores();
             Char.scene = "Organismo";
+            Char.SetVelocidade();
             onOrganismEnter.Invoke();
         }
         else if (Input.GetKeyDown(KeyCode.E) && Char.scene == "Organismo")

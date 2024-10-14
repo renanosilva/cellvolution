@@ -11,7 +11,7 @@ public class Char : MonoBehaviour
     [Header("CharConfig")]
     public float Speed; // Velocidade do personagem
 
-    private float SpeedInicial;
+    private float SpeedInicial = 0.15f;
     public float health; 
     public float onTime;
     public bool OnTochEnime;
@@ -71,6 +71,8 @@ public class Char : MonoBehaviour
 
     private void Awake()       
     {
+        SpeedInicial = Speed;
+
         audioManager = GetComponent<AudioManager>(); // Obtém o componente AudioManager
         anim = GetComponent<Animator>(); // Obtém o componente Animator
         transformSave = GameObject.Find("TransformTpSave").GetComponent<Transform>(); // Encontra e obtém o transform para salvar
@@ -83,7 +85,6 @@ public class Char : MonoBehaviour
     {
         this.gameObject.transform.position = posicaoSalvaJogador.NovaPosicaoJogador;
 
-        SpeedInicial = Speed;
         if(purificacaoCelular != null){
 
             energia = purificacaoCelular.energiaUsada;
@@ -386,5 +387,8 @@ public class Char : MonoBehaviour
     public bool GetTransformed()
     {
         return transformed;
+    }
+    public void SetVelocidade(){
+        Speed = 0.15f;
     }
 }
